@@ -120,6 +120,15 @@ Method| Description| COGS when prices are rising| Ending Inventory when prices a
 FIFO|first in, first out|Lowest|Highest
 LIFO|last in, first out|Highest|Lowest
 Weighted average cost|---|Middle|Middle
+> LIFO is **prohibited** under IFRS
+
+### depreciation expense recognition
+* straight-line method: (cost - residual)/useful life
+* double declining method: 2*(cost - accumulated depreciation)/useful life
+
+### Non-recurring item
++ discounted operations: is one that management has decided to dispose of, but either has not yet done so, or has disposed of in the current year after the operation had generated income or losses.
++ continuing operations
 
 ### Basic EPS
 
@@ -134,9 +143,99 @@ $$Diluted\ EPS = \frac{(Net\ income)}{(Weighted\ average\ number\ of\ shares\ ou
 #### diluted EPS when a company has convertible debt outstanding
 $$Diluted\ EPS = \frac{(Net\ income + After-tax\ interest\ on\ convertible\ debt - Preferred\ dividends)}{(Weighted\ average\ number\ of\ shares\ outstanding + Additional\ common\ shares\ that\ would\ have\ been\ issued\ at\ conversion)}$$
 
-#### diluted EPS when a company has convertible debt outstanding
+#### diluted EPS when a company has option outstanding
 $$Diluted\ EPS = \frac{(Net\ income - Preferred\ dividends)}{(Weighted\ average\ number\ of\ shares\ outstanding + (New\ shares\ that\ would\ have\ been\ issued\ at\ option\ exercise - Shares\ that\ could\ have\ been\ purchased\ with\ cash\ received\ upon\ exercise) \times (Proportion\ of\ year\ during\ which\ the\ financial\ instruments\ were\ outstanding)}$$
 
 ### Income statement ratios
 $$Net\ profit\ margin = \frac{Net\ income}{Revenue}$$
 $$Gross\ profit\ margin = \frac{Gross\ profit}{Revenue}$$
+
+### miscellaneous
++ expenses may be categorized by either nature of function:
+    * expense by function: COGS;
+    * expense by nature: tax expense/ interest expense
++ net revenue is revenue for goods sold during the period less any returns and allowances
++ for long term:
+    * percentage-of-complete method: both for US GAAP & IFRS when outcome can be measured reliably
+    * completed contract method is used under US GAAP when outcome cannot be measured reliably
+    * cost recovery method is used under IFRS when outcome cannot be measure reliably
+
+# understanding balance sheets
+
+## current and non-current classification
++ current assets include cash and other assets that will likely be converted into cash or used up within one year or one operating cycle, whichever is greater.
+    * cash and cash equivalents
+    * marketable securities
+    * accounts receivable
+    * inventories
+        following techniques can be used for measurement of the cost:
+        - standard cost
+        - retail method: sales value is reduced by the gross margin to calculate cost
+    * other current assets
++ current liabilities are obligations that will be satisfied within one year or operating cycle.
+    * accounts payable
+    * notes payable and current portion of long-term debt
+    * deferred income or unearned earning
++ non-current assets will not be converted into cash or used up within one year or operating cycle.
+    * property, plant and equipment (PP&E)
+        - recoverable amount: the higher of an asset's fair value less cost, and its value in use
+        - fair value less cost
+        - value in use: the present value of the future cash flows expected to be derived from the assets
+    * investment property
+    * intangible assets
+    * good will
+    * financial assets
+        - derivatives
+        - held-to-maturity
+        - held for trading
+        - available-for-sale
++ non-current liabilities
+    * long-term financial liabilities
+    * deferred tax liabilities
++ current assets minus current liabilities equals **working capital**
++ equity
+    * contributed capital
+    * preferred shares
+    * treasury shares
+    * retained earning (留存收益)
+    * accumulated other comprehensive income
+    * noncontrolling interest (or minority interest)
+
+## common size analysis
++ vertical common-size analysis
++ cross sectional common-size analysis
+
+## balance sheet ratio
+### liquidity ratios
+ratio| calculation | indicates
+----|------------|---------
+current ratio| current asset / current liabilities| ability to meet current liabilities
+quick ratio|(cash+marketable securities + receivables) / current liabilities| ability to meet current liabilities more
+cash ratios|(cash+marketable securities) / current liabilities|most
+
+### solvency ratios
+ratio| calculation | indicates
+----|------------|---------
+long-term debt-to-equity| long-term debt / total equity|financial risk and financial leverage
+debt-to-equity|total debt / total equity|ditto
+total debt| total debt / total assets|ditto
+financial leverage|total assets / total equity| ditto
+
+### miscellaneous
++ accrued liabilities: 应计费用
++ impairment write-downs: reduction in equity
+
+# understand cash flow statements
++ cash flow from operation activities (CFO)
++ cash flow from investing activities (CFI)
++ cash flow from financing activities (CFF)
+**noncash investing and financing activities** are not reported in the cash flow statement since they do not result in inflows or outflows of cash.
++ Direct method: shows the specific cash inflows and outflows that result in reported cash flow from operating activities.
+    * advantage: it presents the firm's operating cash receipts and payments while the indirect method only presents the net result of these receipts and payments.
++ Indirect method: shows how cash flow from operations can be obtained from reported net income as the result of a series of adjustments.
+    * advantage: it focuses on the differences in net income and operating cash flow.
+
+## linkage and preparation
+### linkage
++ operating cash flow + financing cash flow + investing cash flow = change in cash balance
++ change in cash balance + beginning cash balance = ending cash balance
