@@ -1,5 +1,7 @@
 # economics
 
+[TOC]
+
 ## demand analysis: the customer
 > demand function: a relationship that expresses the quantity demanded of a good or service as function of own-price and possibly other variables.
 
@@ -415,31 +417,397 @@ Using a fixed basket of goods and services has three serious biases:
 + For productivity, or output per hour, the faster that it can grow, the further that wages can rise without putting pressure on business costs per unit of output.
 
 # Economics
+## fiscal policy and monetary policy
++ fiscal policy: refers to the use of taxes and **government** spending to affect the level of aggregate expenditures
++ monetary policy: refers to the actions taken by a **nation's central bank** to affect aggregate output and prices through changes in bank reserves, reserve requirements, or its target interest rate.
+
+## money
+> money is most commonly defined as a generally accepted medium of exchange.
+
+Money has three primary functions:
++ money serves as a medium of exchange or means of payment because it is accepted as payment for goods and service
++ money also serves as a **unit of account** because prices of all goods and services are expressed in unit of money: dollars, yen, yuan and so forth. measures of value.
++ money provides a **store of value** because money received for work or goods now can be saved to purchase goods later.
+
+`Narrow money` is the amount of notes (currency) and coins in circulation in an economy plus balances in checkable bank deposit. `Broad money` includes narrow money plus any amount available in liquid assets, which can be used to make purchase.
+
+According to the Federal Reserve Bank of New York:
+> The money supply measures reflect the different degrees of liquidity -- or spendability -- that different types of money have. The narrowest measure, M1, is restricted to the most liquid forms of money; it consists of currency in the hands of the public; travelers checks; demand deposit, and other deposits against which checks can be written. M2 includes M1, plus savings accounts, time deposits of under $100,000, and balance in retail money market mutual funds.
+
+Items           | M1 | M2 | M3
+----------------|----|----|----
+currency in circulation                           | X | X | X
+overnight deposits                                | X | X | X
+deposits with an agreed maturity of up to 2 years |   | X | X
+deposits redeemable at notice of up to 3 months   |   | X | X
+repurchase agreements                             |   |   | X
+money market fund shares/ units                   |   |   | X
+debt securities issued with a maturity of up to 2 years                                             |   |   | X
+
+### the money creation process
+In the early stages of money development, promissory notes were developed.
+> promissory notes: A written promise to pay a certain amount of money on demand (见票即付).
+
+The customers deposited gold with early bankers. And the promissory notes themselves then became a medium of exchange.
+Bankers, recognizing that all the deposits would never be withdrawn at the same time, started lending a portion of deposits to earn interest. This led to what is called fractional reserve banking.
+
+> reserve requirement: the requirement for banks to hold reserves in proportion to the size of deposits.
+
+money created = New deposit/Reserve requirement
+
+> money multiplier: 1 divided by the reserve requirement
+
+money multiplier = 1/Reserve requirement
+
+### the quantity theory of money
+The **quantity equation of exchange** is known as
+$$M \times V = P \times Y$$
+where M is the quantity of money, V is the velocity of circulation of money, P is the average price level, and Y is real output. The belief that real variables (real GDP and velocity) are not affected by monetary variables (money supply and prices) is referred to as **money neutrality**.
+
+### the demand of money
+there are three reason for holding money:
+1. transaction demand
+2. precautionary demand
+3. speculative demand
+
+### the supply of money
+the supply of money is determined by the central bank and is independent of the interest rate. This accounts for vertical (perfectly inelastic) supply curve. A central bank can affect short-term interest rates by increasing or decreasing the money supply.
+
+### the Fisher Effect
+> Fisher effect: the thesis that the real rate of interest in an economy is stable over time so that changes in nominal interest rates are the results of changes in expected inflation
+
+$$R_{nom} = R_{real} + \pi^e$$
+where $R_{nom}$ is the nominal interest rate, $R_{real}$ is the required real rate and $\pi^e$ is the expected rate of inflation.
+Investors can never be sure about future values of such economic variables as inflation and real growth. To compensate them for this uncertainty, they require a risk premium.
+$$R_{nom} = R_{real} + \pi^e + risk\ premiun$$
+
+## the roles and objectives of central bank
++ there are several key roles of central banks:
+    * sole supplier of currency
+    * banker to the government and other banks
+    * regulator and supervisor of payments system
+    * lender of last resort
+    * holder of gold and foreign exchange reserves
+    * conductor of monetary policy
++ the primary objectives of a central bank is to **control inflation** and **promote price stability**. In addition to price stability, some central banks have other stated goals, such as:
+    * stability in exchange rates with foreign currencies
+    * full employment (US Federal Reserve)
+    * sustainable positive economic growth
+    * moderate long-term interest rates
+
++ target independent
++ operational independent
+
+> Note: not all central banks has a role of being supervision of banks. When it is a central bank's role, responsibility may be shared with one or more entities.
+
+### the cost of inflation
++ expected inflation
+    * menu cost: a cost of inflation in which business constantly have to incur the costs of changing the advertised prices of their goods and services
+    * show leather cost: hold less cash
++ unexpected inflation
+    * In an economy with volatile inflation rates, lenders will require higher interest rates to compensate for the additional risk they face from unexpected changes in inflation. Higher borrowing rates slow business investment and reduce the level of economic activity.
+    * information about supply and demand from changes in prices becomes less reliable.
+
+Low levels of inflation has higher economic costs than moderate levels, all else equal; unanticipated inflation has greater costs than anticipated inflation.
+
+### monetary policy tools
++ open market operations: buying and selling of securities by the central bank
++ the central bank's policy rate: the interest rate that a central bank sets at which it is willing to lend money to the commercial banks
+    * repurchase agreement
++ reserve requirement: increase the reserve requirement will decrease the funds available for lending and the money supply.
+
+### the transmission mechanism
+![A Stylized Representation of the Monetary Transmission Mechanism](/Users/shouzeluo/Desktop/Transmission.png)
+the central bank's policy rate works through the economy via any one, and often all, of the following interconnected channels:
+
++ short-term interest rates
++ changes in the values of key asset prices
++ the exchange rate
++ the expectations of economic agents
+
+### the qualities of effective central banks
+for a central bank to succeed in its inflation-targeting policies, it should have three essential qualities:
+
++ independence
++ credibility
++ transparency
+
+### exchange rate targeting
++ interest rate targeting: increasing the money supply when specific interest rates rose above the target band and decreasing when below
++ inflation target: most widely used, the most common inflation rate target is 2%
++ exchange rate targeting: for developing countries
+
+## contractionary and expansionary monetary policies and the neutral rate
++ contractionary: tending to cause the real economy to contract
++ expansionary: tending to cause the real economy to grow
++ neutral rate of interest: the rate of interest that neither spurs or nor slows down the underlying economy.
+    neutral rate = trend growth + inflation target
++ the source of the shock to the inflation rate:
+    * demand shock
+    * supply shock
+
+## limitation of monetary policy
++ problems in the monetary transmission mechanism
+    * bond market vigilantes: bond market participants who might reduce their demand for long-term bonds, thus pushing up their yields
+    * liquidity trap: a condition in which the demand for money becomes infinitely elastic so that injections of money into the economy will not lower interest rates or affect real activity, often associated with deflation.
++  interest rate adjustment in a deflationary environment and quantitative easing as a response
+    * quantitative easing (QE): an expansionary monetary policy based on aggressive open market purchase operations.
+
+# fiscal policy
+fiscal policy refers to a government's use of spending and taxation to meet macroeconomic goals.
+
++ Keynesians believe that fiscal policy can have powerful effects on AD, output, employment when there is substantial spare capacity in an economy.
++ Monetarists believe that **fiscal** changes only have a **temporary effect** on AD and that **monetary** policy is a more effective tool for restraining or boosting inflationary pressures.
+
++ discretionary fiscal policy: refers to the spending and taxing decisions of a national government that are intended to stabilize the economy.
++ automatic stabilizers: are built-in fiscal devices triggered by the state of the economy.
+
++ **objective of fiscal policy may include**:
+    * influencing the level of economic activity and aggregate demand
+    * redistributing wealth and income among segments of the population
+    * allocating resources among economic agents and sectors in the economy
+
+## fiscal policy tools
+### spending tools
++ transfer payments: transfer payments are not included in GDP
++ current spending: refers to government purchases of goods and services on an ongoing and routine basis
++ capital spending: refers to government spending on **infrastructure**, such as roads, schools, bridges, and hospitals. Capital spending is expected to boost future productivity of the economy.
+
+### revenue tools
++ direct taxes
++ indirect taxes
+
+`pay-as-you-go` rule is a neutral policy because any increases in spending or reductions in revenues would be offset. Accordingly, there would be not net impact on the budget deficit/surplus.
+The belief is that high levels of debt to GDP may lead to higher future tax rates which may lead to disincentives to economic activity.
+
+Desirable attributes of tax policy:
+
++ simplicity to use and enforce
++ efficiency
++ fairness
+    * horizontal equality: people in similar situations
+    * vertical equality: richer people should pay more in taxes
++ sufficiency: taxes should generate sufficient revenues to meet the spending needs of the government
+
+### advantage and disadvantage of fiscal policy tools
++ advantage:
+    * social policies, such as discouraging tobacco use, can be implemented very quickly via indirect taxes
+    * quick implementation of indirect taxes also means that government revenues can be increase without significant additional costs
++ disadvantage：
+    * direct taxes and transfer payments **take time** to implement, delaying the impact of fiscal policy
+    * capital spending also takes a long time to implement. The economy may have recovered by the time its impact is felt.
+
+### fiscal multiplier
+$$G - T + B = Budget\ suplus\ OR\ deficit$$
+where, B is the payment of transfer benefit
+$$YD = Y - NT = (1-t)Y$$
+
+marginal propensity to consume (MPC): the proportion of an additional unit of disposable income that is consumed or spent; the change in consumption for a small change in income.
+
+fiscal multiplier = 1/(1 - MPC(1-t))
+
++ Ricardian equivalence: an economic theory that implies that it makes no difference whether a government finances a deficit by increasing taxes or issuing debt.
+
+### difficulties in executing fiscal policy
++ recognition lag
++ action lag
++ impact lag
+
+additional macroeconomic issues may hinder usefulness of fiscal policy:
+
++ misreading economic statistics
++ crowding-out effect: expansionary fiscal policy may crowd out private investment, reducing the impact on AD.
++ supply shortages: if economic activity is slow due to resource constraints and not due to low demand, expansionary fiscal policy will fail to achieve its objectives.
++ limits to deficits: if the deficit is already too high as a proportion of GDP, funding the deficit will be problematic.
++ multiple targets: if the economy has high unemployment coupled with high inflation, fiscal policy cannot address both problems simultaneously.
+
+## the relationship between monetary and fiscal policy
++ easy fiscal policy/ tight monetary policy
+    AD will  likely be higher (due to fiscal policy), while interest rates will be higher (due to increased government borrowing and tight monetary policy). Government spending as a proportion of GDP will increase.
++ tight fiscal policy/ easy monetary policy
+    interest rate will fall from decreased government borrowing and from the expansion of the money supply, increasing both private consumption and output. Government spending as a proportion of GDP will decrease due to contractionary fiscal policy. The private sector would grow as a result of lower interest rates.
++ easy monetary policy/ easy fiscal policy
+    the impact will be highly expansionary taken together. Interest rates will usually be lower, and the private and public sectors will both expand.
++ tight monetary policy/ tight fiscal policy
+    AD and GDP would be lower, and interest rates would be higher due to tight monetary policy. Both the private and public sectors would contract.
+
+## miscellaneous
++ precautionary balances tend to rise with the volume and value of transaction in the economy, and therefore rise with GDP.
++ excess supply = money supply - money demand > 0 at a certain rate
 
 
+# international trade and capital flows
+## warm-up: international trade
++ imports: goods and services that firms, individuals, and governments purchase from producers in other countries.
++ exports: goods and services that firms, individuals, and governments from other countries purchase from domestic producers.
++ Autarky or closed economy: a country that does not trade with other countries
++ free trade: a government places no restrictions or charges on import and export activity
++ trade protection: a government places restrictions, limits, or charges on export or imports
++ world price: the price of a good or service in world markets for those to whom trade is not restricted
++ domestic price: the price of a good or service in the domestic country, which may be equal to the world price if free trade is permitted or different from the world price when the domestic country restricts trade.
++ net exports: the value of a country's export minus the value of its imports over some period.
++ trade surplus: net exports are positive; the value of the goods and services a country exports greater than the value of the goods and services it imports
++ trade deficit: net exports are negative; the value of the goods and services a country exports is less than the value of the goods and services it imports.
++ terms of trade: the ratio of an index of the prices of a country's exports to an index of the prices of its imports expressed relative to a base value of 1000. If a country's terms of trade are currently 102, the prices of the goods it exports have risen relative to the prices of the goods it imports since the base period.
++ foreign direct investment (FDI): ownership of productive resources (land, factories, natural resources) in a foreign country.
++ multinational corporation (MNC): a firm that has made foreign direct investment in one or more foreign countries, operating production facilities and subsidiary companies in foreign countries.
++ foreign portfolio investment (FPI): short term investment in such foreign financial instruments as foreign stocks and foreign government bonds.
 
+## GDP and GNP
++ Gross national product: total value of goods and services produced by the labor and capital of a country's citizens.
++ Gross domestic product: total value of goods and services produced within a country's borders over a period, typically a year.
 
+## benefits and costs of international trade
++ benefits: import lower cost goods/ increasing employment, wages and profit from export
++ cost: compete with domestic industries
 
+## comparative advantage and absolute advantage
++ absolute advantage: a country's ability to produce a good or service at a lower absolute cost than its trading partner.
++ comparative advantage: a country's ability to produce a good or service at a lower relative cost, or opportunity cost, than its trading partner.
 
+## Ricardian and Heckscher-Ohlin models of comparative advantage
++ Ricardian model of trade: has only one factor -- labor. The source of differences in production costs in Ricardo's model is different in labor productivity due to difference in technology.
++ Heckscher-Ohlin model: there are two factor -- capital and labor. The source of comparative advantage (different in opportunity costs) in this model is differences in the relative amounts of each factor the countries possess (factor endowments).
 
+A country captures more of the gains from trade the more the final terms of trade differ from its autarkic prices. 国际市场开放以后价格与自产自销价相差越多则盈利越多。
 
+## type of trade and capital restrictions and their economic implications
+Some of the reason for trade restrictions that have support from economics are:
 
++ infant industry
++ national security
 
+Other arguments for trade restrictions that have little support in theory are:
 
++ protecting domestic jobs: while some jobs are certainly lost, and some groups and regions are negatively affected by free trade, other jobs (in export industries or growing domestic goods and services industries) will be created, and prices for domestic consumers will be less without import restriction.
++ protecting domestic industries: industry firms often use political influence to get protection from foreign competition, usually to the detriment of consumers, who pay higher prices.
 
+types of trade restrictions include:
 
++ tariffs (关税): taxes on imported good collected by the government
++ quotas (配额): limits on the amount of imports allowed over some period
++ export subsidies: government payments to firms that export goods
++ minimum domestic content: requirement that some percentage of product content must be from domestic country
++ voluntary export restraint: a country voluntarily restricts the amount of a good that can be exported, often in the hope of avoiding tariffs or quotas imposed by their trading partners.
 
+## economic implications of trade restrictions
+The welfare effects of the tariffs or quotas can be summarized as follows:
++ consumers suffer a loss of consumer surplus because of the increase in price. This effect is represented by areas A+B+C+D.
++ local producers gain producer surplus from a higher price for their output, represented by A.
++ the government gains tariff revenue on imports $Q^2Q^3$, represented by C.
++ the deadweight loss to the country's welfare is B+D
 
+![welfare effects](https://jigsaw.vitalsource.com/books/9781942471899/epub/OEBPS/images/CFA0135-R-EXH12.png)
 
++ voluntary export restraint (VER): VERs are another way of protecting the domestic producers in the importing country. They result in a welfare loss to the importing country equal to that of an equivalent quota with no government charge for the import licenses; that is, no capture of the quota rents.
++ export subsidies: are payments by a government to its country's exporters.
 
+Most of the effects of all four of these protectionist policies are the same. With respect to the domestic (importing) country. import quotas, tariffs, and VERs all:
 
++ reducing imports
++ increase price
++ decrease consumer surplus
++ increase domestic quantity supplied
++ increase producer surplus
 
+with one exception, all will decrease national welfare. Quotas and tariffs in a large country could increase national welfare under a specific set of assumptions, primarily because for a country that imports a large amount of good, setting a quota or tariff could **reduce the world price** for the good.
 
+## capital restriction
+capital restrictions on the flow of financial capital across borders include outright prohibition of investment in the domestic country by foreigners, prohibition of or taxes on the income earned on foreign investments by domestic citizens, prohibition of foreign investment in certain domestic industries, and restrictions on repatriation of earnings of foreign entities operating in a country.
+Overall, capital restrictions are thought to decrease economic welfare. However, over the short term, they have helped developing countries avoid the impact ...
 
+## motivations for and advantages of trading blocs (集团), common markets and economic unions.
 
+### trading blocs or regional trading agreement (RTA)
++ Free Trade Areas: all barriers to the flow of goods and services among members are eliminated, but each country maintains its own policies against non-members
++ Customs Union: extends FTA by not only allowing free movement of goods and services among members but also creating a common trade policy against non-members
++ Common Market: incorporates all aspects of a customs union and extends it by allowing free movement of factors of production among members
++ Economic Union: incorporates all aspects of a common market and requires common economic institutions and coordination of economic policies among members
++ Monetary Union: members of a monetary union adopt a common currency.
 
+## common objectives of capital restrictions imposed by government
++ reducing the volatility of domestic asset prices
++ maintain fixed exchange rates
++ keep domestic interest rates low
++ protect strategic industries
 
+## balance of payments accounts including their components
+> balance of payments (BOP): A double-entry bookkeeping system that summarizes a country's economic transactions with the rest of the world for a particular period of time, typically a calendar quarter or year.
 
+### current account
++ merchandise trade
++ service
++ income receipt
++ unilateral transfers
 
+### capital account
++ capital account
++ sales and purchase of non-produced, non-financial assets
 
+### financial account
++ government-owned assets abroad
++ foreign-owned assets in the country
 
+### conditional
+国际收支结构一般有四种情况:
+
+1. 经常项目和资本与金融项目都出现顺差，这时不仅国际收支量上出现顺差，而且结构也较好，因而一般认为是最好的一种情况。
+2. 经常项目与资本与金融项目都出现逆差，这是最坏的一种情况。
+3. 经常项目出现顺差，资本与金融项目出现逆差，此时不管最后国际收支是顺差还是逆差，都不失为一种好的国际收支状况，因为它结构较好：经常项目出现顺差表明该国商品、劳务的国际竞争能力很强，出口多于进口，国家外汇储备增加；资本项目出现逆差，反映一国资本的国际竞争力能力很强，对外投资大于资本流入。
+4. 经常项目出现逆差，资本与金融项目出现顺差，此时即使最后国际收支能够达到平衡或顺差，都不是一种好的状态，因为这种国际收支结构不好。
+
+## how decisions by consumers, firms, and government affect the balance of payment
+The primary influences referred to here are on the current account deficit or surplus. Considering the equation
+S = I + (G - T) + (X - M)
+namely
+X - M = private savings + government savings - investment
+
+Lower levels of private savings, large government deficits, and high rates of domestic investment all tend to result in or increase a current account deficit. The intuition here is that low private or government savings in relation to private investment in domestic capital requires foreign investment in domestic capital.
+
+## international organization
++ International Monetary Fund (IMF): to ensure the stability of the international monetary system, the system of exchange rates and international payments that enables countries to buy goods and services from each other. The IMF helps to keep country-specific market risk and global systemic risk under control.
++ World Bank: helps to create the basic economic infrastructure essential for creation and maintenance of domestic financial markets and a well-functioning financial industry in developing
++ World Trade Organization (WTO): to foster free trade by providing a major institutional and regulatory framework of global trade rules without which today's global multinational corporations would be hard to conceive.
+
+# currency exchange rates
+> price/base currency: e.g., 1.25USD/EUR, the USD is the price currency and the EUR is the base currency
+> exchange rate is simply the price or cost of units of one currency in terms of another
+> nominal exchange rate: at a point in time, \$1.46/euro suggests that in order to purchase one euro's worth of goods and services in Euroland, the cost in US dollar will be \$1.46.
+
+$$ real\ exchange\ rate (d/f) = nominal\ exchange\ rate (d/f) ( \frac{CPI_{foreign}}{CPI_{domestic}} ) $$
+
+## spot/forward exchange rate
++ spot exchange rate: is the currency exchange rate for immediate delivery, which for most currencies means the exchange of currencies takes place two days after the trade (T+2).
++ forward exchange rate: is a currency exchange rate for an exchange to be done in the future.
+    $$F_{f/d} = S_{f/d}(\frac{1 + i_f}{1 + i_d})$$
+    where $F_{f/d}$ is the forward exchange rate and $S_{f/d}$ is the spot rate, $i_f$ is the interest rate of foreign currency and $i_d$ is the domestic currency's interest rate
+    For an interest rate of the fractional period ($\tau$):
+    $$F_{f/d} = S_{f/d}(\frac{1 + i_f \tau}{1 + i_d \tau})$$
+
+Forward rates are typically quoted in terms of forward (or swap) points. The swap points are added to the spot exchange rate in order to calculate the forward rate. Occasionally, forward rates are presented in terms of percentages relative to the spot rate.
+
+## exchange rate regime
+### country that Do Not have their own currency
++ a country can use the currency of another country (formal dollarization). The country cannot have its own monetary policy, as it does not create money/currency.
++ a country can be a member of a monetary union in which several countries use a common currency, e.g., European Union.
+
+### areas that have their Own currency
++ a currency board arrangement(货币局制度): 承诺本币与某一确定的外国货币之间可以以固定比率进行无限制兑换，并要求货币当局确保这一兑换义务的实现的汇率制度
++ conventional fixed peg arrangement: a country pegs its currency within margins of $\pm 1\%$ versus another currency of a basket that includes the currencies of its major trading of financial partners.
++ pegged exchange rates within horizontal bands or a target zone, the permitted fluctuations in currency value relative to another currency or basket of currencies are wider (e.g., $\pm 2\%$)
++ crawling peg (爬行钉住汇率制): 视通货膨胀情况，允许货币逐渐升值或贬值的一种汇率制度
++ management of exchange rates within crawling bands: the width of the bands that identify permissible exchange rates is increased over time
++ manged floating exchange rate
++ independently floating (独立浮动汇率制度): the exchange rate is market-determined
+
+## Elasticities ($\epsilon$) of export and import demand must meet the Marshall-Lerner condition for a depreciation of the domestic currency to reduce an existing trade deficit:
+$$ W_X \epsilon_X + W_M (\epsilon_M - 1) > 0$$
+Under the absorption approach, national income must increase relative to national expenditure in order to decrease a trade deficit. This can also be viewed as requirement that national saving must increase relative to domestic investment in order to decrease a trade deficit.
+In conjunction with the Marshall-Lerner condition, our review of the factors that determine price elasticities suggests that exchange rate changes will be a more-effective mechanism for trade balance adjustment if country imports and exports the following:
+
++ goods for which there are good substitute
++ goods that trade in competitive markets
++ luxury goods, rather than necessities
++ goods that represent a large portion of consumer expenditure or a large portion of input costs for final producers
+
+Even when the Marshall-Lerner condition is satisfied, it is still possible that devaluation or depreciation of the currency will initially make the trade balance worse before making it better. This effect, called the J-curve effect.
