@@ -239,7 +239,7 @@ This equation shows that domestic private saving is used or absorbed in one or t
 
 The IS curve (income-saving) illustrates the negative relationship between real interest rates and real income for equilibrium in the **goods market**; the IS curve represents combinations of income and the real interest rate at which planned expenditure equals income.
 
-### equilibrium in the money market: the LM curve
+### equilibrium in the money market: the LM (Liquidity Money) curve
 $$MV = PV$$
 
 In this equation, V is velocity of money, M is the nominal money supply, P is the price level and Y is the real income/expenditure
@@ -293,8 +293,8 @@ decrease in AS | decrease | increase     | increase
 ## economic growth
 ### sustainability of economic growth
 the sustainable rate of growth in an economy is determined by the growth rate of the **labor supply** plus the growth rate of **labor productivity**.
-+ growth in potential GDP = growth in technology + W_L(growth in labor) + W_C(growth in capital)
-    where W_L and W_C are the relative shares of capital and labor in national income.
++ growth in potential GDP = growth in technology (TFP) + W_L(growth in labor) + W_C(growth in capital)
+    where W_L and W_C are the relative shares of capital and labor in national income (GDP).
 + Labor productivity = Real GDP/ aggregate hours
     $$Y/L = A F(1, K/L)$$
 + potential GDP = Aggregate hours worked * labor productivity
@@ -466,9 +466,9 @@ where M is the quantity of money, V is the velocity of circulation of money, P i
 
 ### the demand of money
 there are three reason for holding money:
-1. transaction demand
-2. precautionary demand
-3. speculative demand
+1. transaction demand: held to finance transaction
+2. precautionary demand: held to provide a buffer against unforeseen events that might require money
+3. speculative demand: held in anticipation that other assets will decline in value
 
 ### the supply of money
 the supply of money is determined by the central bank and is independent of the interest rate. This accounts for vertical (perfectly inelastic) supply curve. A central bank can affect short-term interest rates by increasing or decreasing the money supply.
@@ -540,7 +540,7 @@ for a central bank to succeed in its inflation-targeting policies, it should hav
 ## contractionary and expansionary monetary policies and the neutral rate
 + contractionary: tending to cause the real economy to contract
 + expansionary: tending to cause the real economy to grow
-+ neutral rate of interest: the rate of interest that neither spurs or nor slows down the underlying economy.
++ neutral rate of interest: the rate of interest that neither spurs or nor slows down the underlying economy, which should be consistent with stable long-run inflation.
     neutral rate = trend growth + inflation target
 + the source of the shock to the inflation rate:
     * demand shock
@@ -598,7 +598,7 @@ Desirable attributes of tax policy:
     * capital spending also takes a long time to implement. The economy may have recovered by the time its impact is felt.
 
 ### fiscal multiplier
-$$G - T + B = Budget\ suplus\ OR\ deficit$$
+$$G - T + B = Budget\ surplus\ OR\ deficit$$
 where, B is the payment of transfer benefit
 $$YD = Y - NT = (1-t)Y$$
 
@@ -667,7 +667,8 @@ additional macroeconomic issues may hinder usefulness of fiscal policy:
 
 ## Ricardian and Heckscher-Ohlin models of comparative advantage
 + Ricardian model of trade: has only one factor -- labor. The source of differences in production costs in Ricardo's model is different in labor productivity due to difference in technology.
-+ Heckscher-Ohlin model: there are two factor -- capital and labor. The source of comparative advantage (different in opportunity costs) in this model is differences in the relative amounts of each factor the countries possess (factor endowments).
++ Heckscher-Ohlin model: there are two factor -- capital and labor. The source of comparative advantage (different in opportunity costs) in this model is differences in the relative amounts of each factor the countries possess (factor endowments).This model assumes that technology in each industry is the same among countries, but it varies between industries
+
 
 A country captures more of the gains from trade the more the final terms of trade differ from its autarkic prices. 国际市场开放以后价格与自产自销价相差越多则盈利越多。
 
@@ -736,13 +737,14 @@ Overall, capital restrictions are thought to decrease economic welfare. However,
 
 ### current account
 + merchandise trade
-+ service
++ service: such as patent fee, legal services
 + income receipt
 + unilateral transfers
+a current deficit usually result from low private savings, high private investment and low government saving. Of these, only investment can increase productive resources and improve future ability to repay the creditors.
 
 ### capital account
 + capital account
-+ sales and purchase of non-produced, non-financial assets
++ sales and purchase of non-produced, non-financial assets: such as mineral rights
 
 ### financial account
 + government-owned assets abroad
