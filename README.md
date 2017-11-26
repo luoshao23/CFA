@@ -6,4 +6,4 @@ Personal review &amp; summary for CFA
     * Financial reporting and analysis
     * Fixed Income
     * Corporate finance and portfolio management
-    * Economics
+    * [Economics](level_1/Economics.md)
