@@ -735,18 +735,20 @@ Overall, capital restrictions are thought to decrease economic welfare. However,
 ## balance of payments accounts including their components
 > balance of payments (BOP): A double-entry bookkeeping system that summarizes a country's economic transactions with the rest of the world for a particular period of time, typically a calendar quarter or year.
 
-### current account
+### current account: a component of the balance of payments account that measures the flow of goods and services. The current account balance from the perspective of the national income accounts as:
+$$CA = X -M = Y - (C + I + G)$$
+$$CA = S_p + S_g - I$$
 + merchandise trade
 + service: such as patent fee, legal services
 + income receipt
 + unilateral transfers
 a current deficit usually result from low private savings, high private investment and low government saving. Of these, only investment can increase productive resources and improve future ability to repay the creditors.
 
-### capital account
+### capital account: a component of the balance of payments account that measures transfers of capital
 + capital account
 + sales and purchase of non-produced, non-financial assets: such as mineral rights
 
-### financial account
+### financial account: a component of the balance of payments account that records investment flows
 + government-owned assets abroad
 + foreign-owned assets in the country
 
@@ -787,6 +789,10 @@ $$ real\ exchange\ rate (d/f) = nominal\ exchange\ rate (d/f) ( \frac{CPI_{forei
     $$F_{f/d} = S_{f/d}(\frac{1 + i_f \tau}{1 + i_d \tau})$$
 
 Forward rates are typically quoted in terms of forward (or swap) points. The swap points are added to the spot exchange rate in order to calculate the forward rate. Occasionally, forward rates are presented in terms of percentages relative to the spot rate.
+
+## exchange rates, international trade, and capital flows
+Thus, a trade deficit (surplus) must be exactly matched by an offsetting capital account surplus (deficit). This implies that any factor that affects the trade balance must have an equal and opposite impact on the capital account, and vice versa.
+$$X - M = (S - I) + (T - G)$$
 
 ## exchange rate regime
 ### country that Do Not have their own currency
