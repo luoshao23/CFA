@@ -61,6 +61,33 @@ $$Ending\ retained\ earings = Beginning\ retained\ earnings + Net\ income - Divi
 
 ### valuation adjustments
 
+## financial statements and supplementary information
++ balance sheet
++ statement of comprehensive income
++ statement of changes in equity
++ cash flow statement
++ financial notes and supplementary schedules: note disclosures include information about the following:
+    * financial instruments and risks arising from financial instruments
+    * commitments and contingencies
+    * legal proceedings
+    * related-party transactions
+    * subsequent events (events that occur after the balance sheet date)
+    * business acquisitions and disposals
+    * operating segments' performance
++ management commentary of management's discussion and analysis (MD & A)
+    publicly held companies typically include a section in their annual reports where management discusses a variety of issues of concern, including:
+    * the nature of the business
+    * past results
+    * future outlook
++ auditor's reports
+    financial statements presented in companies' annual reports are generally required to be audited (examined) by an independent accounting firm in accordance with specified auditing standards. The independent auditor then provides a written opinion on the financial statements. under ISAs, the objectives of an auditor in conducting an audit of financial statements are:
+    1. to obtain reasonable assurance about whether the financial statements as a whole are free from material misstatement
+    2. to report on the financial statements, and communicate as required by the ISAs, in accordance with the auditor's findings.
+
+### classification
++ classified balance sheet: a balance sheet organized so as to group together the various assets and liabilities into subcategories (e.g., current and non-current)
++ liquidity based presentation: a liquidity-based presentation rather than a current/non-current presentation, is used when such a presentation provides information that is reliable and more relevant. With a liquidity-based presentation, all assets and liabilities are presented broadly in order of liquidity.
+
 ## accounting systems
 ### flow of information in an accounting system
 + general ledger(总分类账): collection of all business transactions sorted by account in an accounting system
@@ -68,11 +95,38 @@ $$Ending\ retained\ earings = Beginning\ retained\ earnings + Net\ income - Divi
 
 `Journal entries and adjusting entries` -> `General ledger and T-accounts` -> `Trial balance and adjusted trial balance` -> `Financial statements`
 
+
+
 # Financial reporting standards
-+ International Accounting Standards Board (IASB): the independent standard-setting body of the IFRS (International Financial Reporting Standards) Foundation
++ International Accounting Standards Board (IASB): the independent standard-setting body of the IFRS (International Financial Reporting Standards) Foundation. Under IAS No.1, a complete set of financial statements includes:
+    * statement of financial position
+    * statement of comprehensive income
+    * statement of changes in equity
+    * statement of cash flows
+    * notes comprising a summary of significant accounting policies
+    * other explanatory information
 + US Financial Accounting Standards Board (FASB): established US GAAP (generally accepted accounting practices)
+
 ## objective of financial reporting
 To provide financial information in making decisions.
+
+### measurement of financial statement elements
++ historical cost: in reference to assets, the amount paid to purchase an asset, including any costs of acquisition and/or preparation; with liabilities, the amount of proceeds received in exchange in issuing the liability.
++ amortised cost: the historical cost (initially recognized cost) of an asset, adjusted for amortization and impairment.
++ current cost: the amount of cash or cash equivalents that would have to be paid to buy the same or an equivalent asset today.
++ realizabel value: the amount of cash or cash equivalents that could currently be obtained by selling the asset in an orderly disposal
++ present value: the present discounted value of future cash flow
++ the amount at which an asset could be exchanged, or a liability settled, between knowledgeable, willing parties in an arm's-length transaction.
+
+the measurement of performance are income and expense
+the measurement of financial position are assets, liabilities and equity
+
+### income statements
++ grouping by nature: with reference to the presentation of expenses in an income statement, the grouping together of expenses by similar nature, e.g., all depreciation
++ grouping by function: with reference to the presentation of expense in an income statement, the grouping together of expenses serving the same function, e.g., all items that are costs of goods sold.
+
++ installment method: with respect to revenue recognition, a method that specifies that the portion of the total profit of the sale that is recognized in each period is determined by the percentage of the total sales price for which the seller has received cash.
++ cost recovery method: a method of revenue recognition in which the seller does not report any profit until the cash amounts paid  by the buyer -- including principal and interest on any financing from the seller -- are greater than all the seller's costs for the merchandise sold.
 
 ### The securities and exchange commission (SEC)
 The following are some of the more common information sources used by analysts
@@ -141,13 +195,13 @@ $$Basic\ EPS = \frac{Net\ income - Preferred\ dividends}{Weighted\ average\ numb
 > weighted average numbers = [T1 * out1 +(T2-T1) * (out2+out1) + (T3-T2) * (out3+out2+out1)+...+(T_N-T_{N-1})*(outN+...+out1)]/(TN)
 
 #### diluted EPS when a company has convertible preferred stock outstanding
-$$Diluted\ EPS = \frac{(Net\ income)}{(Weighted\ average\ number\ of\ shares\ outstanding + New\ common\ shares\ that\ would\ have\ been\ issued\ at\ conversion)}$$
+$Diluted\ EPS = \frac{(Net\ income)}{(Weighted\ average\ number\ of\ shares\ outstanding + New\ common\ shares\ that\ would\ have\ been\ issued\ at\ conversion)}$
 
 #### diluted EPS when a company has convertible debt outstanding
-$$Diluted\ EPS = \frac{(Net\ income + After-tax\ interest\ on\ convertible\ debt - Preferred\ dividends)}{(Weighted\ average\ number\ of\ shares\ outstanding + Additional\ common\ shares\ that\ would\ have\ been\ issued\ at\ conversion)}$$
+$Diluted\ EPS = \frac{(Net\ income + After\ tax\ interest\ on\ convertible\ debt - Preferred\ dividends)}{(Weighted\ average\ number\ of\ shares\ outstanding + Additional\ common\ shares\ that\ would\ have\ been\ issued\ at\ conversion)}$
 
 #### diluted EPS when a company has option outstanding
-$$Diluted\ EPS = \frac{(Net\ income - Preferred\ dividends)}{(Weighted\ average\ number\ of\ shares\ outstanding + (New\ shares\ that\ would\ have\ been\ issued\ at\ option\ exercise - Shares\ that\ could\ have\ been\ purchased\ with\ cash\ received\ upon\ exercise) \times (Proportion\ of\ year\ during\ which\ the\ financial\ instruments\ were\ outstanding)}$$
+$Diluted\ EPS = \frac{(Net\ income - Preferred\ dividends)}{(Weighted\ average\ number\ of\ shares\ outstanding + (New\ shares\ that\ would\ have\ been\ issued\ at\ option\ exercise - Shares\ that\ could\ have\ been\ purchased\ with\ cash\ received\ upon\ exercise) \times (Proportion\ of\ year\ during\ which\ the\ financial\ instruments\ were\ outstanding)}$
 
 ### Income statement ratios
 $$Net\ profit\ margin = \frac{Net\ income}{Revenue}$$
@@ -196,13 +250,13 @@ $$Gross\ profit\ margin = \frac{Gross\ profit}{Revenue}$$
     * long-term financial liabilities
     * deferred tax liabilities
 + current assets minus current liabilities equals **working capital**
-+ equity
++ equity: note the value of share in the statement is the book value instead of the market value
     * contributed capital
     * preferred shares
     * treasury shares
     * retained earning (留存收益)
     * accumulated other comprehensive income
-    * noncontrolling interest (or minority interest)
+    * non-controlling interest (or minority interest): 非控制权益; refers to owners of the remaining shares of the subsidiary that are not owned by the parent.
 
 ## common size analysis
 + vertical common-size analysis
@@ -232,6 +286,10 @@ financial leverage|total assets / total equity| ditto
 ### classification of cash flows and non-cash activities
 + operating activities (CFO)
     * such as selling inventory and providing services, dealing securities or trading securities
+        - for financial assets classified as trading securities, unrealized gains and losses are reported on the income statement and flow to shareholders' equity as part of retained earnings.
+        - for financial assets classified as available for sale, unrealized gains and losses are not recorded on the income statement and instead are part of other comprehensive income. Accumulated other comprehensive income is a component of Shareholders' equity.
+        - for financial assets classified as held to maturity, are measured at amortised cost. Gains and losses are recognized only when realized.
+
 + investing activities (CFI)
     * include purchasing and selling long-term assets and other investments.
 + financing activities (CFF)
@@ -307,7 +365,7 @@ cash flow per share|(CFO - Preferred dividends)/(Number of common shares outstan
 coverage ratios | calculation | what it measures
 -------------------|-------------|-----------------
 Debt coverage| CFO/ total debt| Financial risk and financial leverage
-Interest coverage| (CFO+interest paid+Taxes paid)/Interest paid| Ability to meet interest obligation
+Interest coverage| EBIT/Interest paid| Ability to meet interest obligation
 Reinvestment| CFO/Cash paid for long-term assets|Ability to acquire assets with operating cash flow
 Debt payment|CFO/Cash paid for long-term debt repayment|Ability to pay debts with operating cash flows
 Dividend payment| CFO/Dividends paid|Ability to pay dividends with operating cash flows

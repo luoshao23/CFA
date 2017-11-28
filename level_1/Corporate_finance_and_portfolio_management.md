@@ -587,7 +587,7 @@ the choice of risk-modification method is based on weighing costs versus benefit
 + average return
     * arithmetic
         $$arithmetic\ mean\ return = \frac{R_1 + R_2 + \dots + R_n}{n}$$
-    * geometric mean return: compounds the returns instead of the amount invested
+    * geometric mean return: compounds the returns instead of the amount invested. Basically, the geometric mean reflects a "buy-and-hold" strategy, whereas the arithmetic reflects a constant dollar investment at the beginning of each time period.
         $$geometric\ mean\ return = \sqrt[T]{\prod_{t=1}^{T} (1+R_{it})} - 1$$
     * **money-weighted rate** of return is the internal rate of return on a portfolio based on all of its cash inflows and outflows, similar to internal rate of return and yield to maturity.
 + other return measures
