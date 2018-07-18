@@ -56,4 +56,94 @@
 
 # Ethical and Professional Standards: Application
 # Quantitative Methods for Valuation
+
+`sample covariance`
+$$cov_{XY} = \frac{\sum_{i=1}^n(X_i-\bar{X})(Y_i-\bar{Y})}{n - 1}$$
+
+`sample correlation coefficient`
+$$r_{XY} = \frac{cov_{XY}}{(s_X)(s_Y)}$$
+
+| correlation coefficient | Interpretation               |
+| ----------------------- | ---------------------------- |
+| r= +1                   | perfect positive correlation |
+| 0 < r < +1              | positive linear relationship |
+| r = 0                   | no linear relationship       |
+| -1 < r < 0              | negative linear relationship |
+| r= -1                   | perfect negative correlation |
+
+## test of hypothesis
+
+### to test whether the correlation between the population of two variable is equal to zero
+$$H_0: \rho = 0 \ versus\ H_a:\rho \ne 0$$
+
+we can use a t-test to determine wether the null hypothesis should be rejected with $df=n-2$ :
+
+$$t = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}$$
+
+Reject $H_0$ if $+t_{critical} < t$, or $t < - t_{critical}$
+
+### simile linear regression model
+The estimated slope coefficient for the regression line describes the change in Y for a one unit change in X. And it is calculated as:
+
+$$\hat{b_1} = \frac{cov_{XY}}{\sigma^2_X}$$
+
+the intercept term ($\hat{b_0}$) may be expressed as:
+
+$$\hat{b_0} = \bar{Y} - \hat{b_1}\bar{X}$$
+
+### standard error of estimate (SEE) and coefficient of determination ($R^2$)
+
+The confidence interval for the regression coefficient, $b_1$ is calculated as:
+$$\hat{b_1} \pm (t_c \times s_{\hat{b_1}})$$
+Where, $t_c$ is the critical two-tailed t-value for the selected confidence level with the appropriate number of degrees of freedom, which is equal to the number of sample observation minus 2.
+
+A t-test may also be used to test the hypothesis that the true slope coefficient $b_1$ is equal to some hypothesized value. Letting $\hat{b_1}$ be the point estimate for $b_1$, the appropriate test static with n-2 degrees of freedom is:
+
+$$t_{b_1} = \frac{\hat{b_1} - b_1}{s_{\hat{b_1}}}$$
+
+Reject $H_0$ if $t >  + t_{critical}$ or $t <  - t_{critical}$
+
+### confidence intervals for predicted values
+
+The equation for the confidence interval for a predicted value of Y is:
+
+$$\hat{Y} \pm (t_c \times s_{f})$$
+where:
+
+$t_c$ = two-tailed critical t-value at the desired level of significant with df = n - 2
+
+$s_f$ = standard error of the forecast
+
+If you do need to calculate $s_f$, it can be done with the following formula:
+$$s_f^2 = SEE^2(1+\frac{1}{n} + \frac{(X-\bar{X})^2}{(n-1)s_x^2})$$
+
+### ANOVA
++ Total sum of squares (SST)
+$$SST = \sum_{i=1}^n (Y_i - \bar{Y})^2$$
++ Regression sum of squares (RSS)
+$$RSS = \sum_{i=1}^n (\hat{Y_i} - \bar{Y})^2$$
++ Sum of squared errors (SSE)
+$$SSE = \sum_{i=1}^n (Y_i - \hat{Y_i})^2$$
+
+Thus, total variation = explained variation + unexplained variation, or:
+
+SST = RSS + SSE
+
+| Source of variation    | Degrees fo Freedom | Sum of Squares | Mean Sum of Squares                         |
+| ---------------------- | ------------------ | -------------- | ------------------------------------------- |
+| Regression (explained) | 1                  | RSS            | $MSR = \frac{RSS}{k} = \frac{RSS}{1} = RSS$ |
+| Error (unexplained)    | n - 2              | SSE            | $MSE = \frac{SSE}{n-2}$                     |
+| Total                  | n - 1              | SST            |                                             |
+|                        |                    |                |
+
+k is the number of slope parameters estimated and n is the number of observation. In general, the regression $df = k$ and the error $df = (n-k-1)$. So in one independent variable linear regression, we use $k=1$ for regression and $n-1-1=n-2$ for the error.
+
+### Calculating $R^2$ and SEE
+
+$$R^2 = \frac{SST - SSE}{SST} = \frac{RSS}{SST}$$
+
+The SEE is the standard deviation of the regression error terms and is equal to the square root of the mean squared error (MSE):
+
+$$SEE = \sqrt{MSE} = \sqrt{\frac{SSE}{n-2}}$$
+
 # Economics for Valuation
