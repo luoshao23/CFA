@@ -65,15 +65,15 @@ $$r_{XY} = \frac{cov_{XY}}{(s_X)(s_Y)}$$
 
 | correlation coefficient | Interpretation               |
 | ----------------------- | ---------------------------- |
-| r= +1                   | perfect positive correlation |
-| 0 < r < +1              | positive linear relationship |
-| r = 0                   | no linear relationship       |
-| -1 < r < 0              | negative linear relationship |
-| r= -1                   | perfect negative correlation |
+| $r= +1$                 | perfect positive correlation |
+| $0 < r < +1$            | positive linear relationship |
+| $r = 0$                 | no linear relationship       |
+| $-1 < r < 0$            | negative linear relationship |
+| $r= -1$                 | perfect negative correlation |
 
-## test of hypothesis
+### test of hypothesis
 
-### to test whether the correlation between the population of two variable is equal to zero
+To test whether the correlation between the population of two variable is equal to zero
 $$H_0: \rho = 0 \ versus\ H_a:\rho \ne 0$$
 
 we can use a t-test to determine wether the null hypothesis should be rejected with $df=n-2$ :
@@ -134,7 +134,6 @@ SST = RSS + SSE
 | Regression (explained) | 1                  | RSS            | $MSR = \frac{RSS}{k} = \frac{RSS}{1} = RSS$ |
 | Error (unexplained)    | n - 2              | SSE            | $MSE = \frac{SSE}{n-2}$                     |
 | Total                  | n - 1              | SST            |                                             |
-|                        |                    |                |
 
 k is the number of slope parameters estimated and n is the number of observation. In general, the regression $df = k$ and the error $df = (n-k-1)$. So in one independent variable linear regression, we use $k=1$ for regression and $n-1-1=n-2$ for the error.
 
@@ -145,5 +144,10 @@ $$R^2 = \frac{SST - SSE}{SST} = \frac{RSS}{SST}$$
 The SEE is the standard deviation of the regression error terms and is equal to the square root of the mean squared error (MSE):
 
 $$SEE = \sqrt{MSE} = \sqrt{\frac{SSE}{n-2}}$$
+
+### The F-statistic
+
+$$F = \frac{MSR}{MSE} = \frac{RSS/k}{SSE/(n-k-1)}$$
+**IMPORTANT:** This is always a one-tailed test!
 
 # Economics for Valuation
