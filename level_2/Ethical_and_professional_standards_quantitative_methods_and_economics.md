@@ -57,6 +57,10 @@
 # Ethical and Professional Standards: Application
 # Quantitative Methods for Valuation
 
+`significance level` like 5%
+
+`confidence level` like 95%, i.e. (1 - significance level)
+## correlation and regression
 `sample covariance`
 $$cov_{XY} = \frac{\sum_{i=1}^n(X_i-\bar{X})(Y_i-\bar{Y})}{n - 1}$$
 
@@ -150,4 +154,76 @@ $$SEE = \sqrt{MSE} = \sqrt{\frac{SSE}{n-2}}$$
 $$F = \frac{MSR}{MSE} = \frac{RSS/k}{SSE/(n-k-1)}$$
 **IMPORTANT:** This is always a one-tailed test!
 
+In fact, in simple linear regression we have $t^2 = F$, see [Relationship between F and t statistics](http://www-ist.massey.ac.nz/dstirlin/CAST/CAST/HsimpleAnova/simpleAnova3.html)
+
+## Multiple regression and issues in regression analysis
+
+### Hypothesis testing of regression coefficients
+The t-statistic used to test the significance of the individual coefficients in a multiple regression is calculated using the same formula that is used with simple linear regression.
+$$t = \frac{\hat{b_j} - b_j}{s_{\hat{b_j}}} = \frac{estimated\ regression\ coefficient - hypothesized\ value}{cofficient\ standard\ error\ of\ b_j}$$
+
+### Interpreting p-Values
+The `p-value` or probability value or asymptotic significance is the probability for a given statistical model that, when the null hypothesis is true, the statistical summary (such as the sample mean difference between two compared groups) would be **the same as or of greater** magnitude than the actual observed results.:
+
++ If the p-value is less than significance level, the null hypothesis can be rejected.
++ If the p-value is greater than the significance level, the null hypothesis cannot be
+
+### F statistic
+
+The *F-statistic*, whihc is always a one-tailed test, is calulated as:
+
+$$F = \frac{MSR}{MSE} = \frac{RSS/k}{SSE/(n-k-1)}$$
+where:
+
+$RSS$ = regression sum of squares
+
+$SSE$ = sum of squared errors
+
+$MSR$ = mean regression sum of squares
+
+$MSE$ = mean squared errors
+
+### Coefficient of determination, $R^2$
+$R^2$ is also calculated the same way as in simple linear regression.
+$$R^2 = \frac{SST - SSE}{SST} = \frac{RSS}{SST}$$
+#### Adjusted $R^2$
+Unfortunately, $R^2$ by itself may not be a reliable measure of the explanatory pwoer of the multiple regression model. This is because $R^2$ **almost always increases as variables are added to the model**, even if the marginal contribution of the new variable is not statistically significant. The adjusted $R^2$ value is expressed as:
+$$R_a^2 = 1 - [(\frac{n-1}{n-k-1})\times(1-R^2)]$$
+
+### ANOVA Tables
+
+| Source     | df (Degrees fo Freedom) | SS (Sum of Squares) | MS (Mean Sum of Squares)                    |
+| ---------- | ----------------------- | ------------------- | ------------------------------------------- |
+| Regression | k                       | RSS                 | $MSR = \frac{RSS}{k}$ |
+| Error      | n - k - 1               | SSE                 | $MSE = \frac{SSE}{n-k-1}$                   |
+| Total      | n - 1                   | SST                 |                                             |
+### What is heteroskedasticity?
+`Heteroskedasticity` occurs when the variance of the residual is not the same across all observations in the sample.
+
+#### Effect of heteroskedasticity on regression analysis
+There are four effects of heteroskedasticity you need to be aware of:
++ The stanard errors are usually unreliable estimates.
++ The coefficient estimates (the $\hat{b_j}$) aren't affected.
++ If the standard errors are too small, but the coefficient estimates themselves are not affected, the t-statistics will be too large and the null hypothesis of no statistical significance is rejected too often, The opposite will be true if the standard errors are too large.
++ The F-test is also reliable.
+
+### Detecting heteroskedasticity
+There are two methods to detect heteroskedasticity: examing scatter plots of the residuals and using the Breusch-Pagan chi-square ($\chi^2$) test.
+
+The BP chi-square test, which has a chi-square ($\chi^2$) distribution, is calculated as:
+
+BP chi-square test = $n \times R_{resid}^2$ with k degrees of freedom
+
+where:
+
+n = the number of observations
+
+$R_{resid}^2$ = $R^2$ from a second regression of the squared residuals from the first regression on the independent variables
+
+k = the number of the independent variables
+
+### Correcting heteroskedasticity
+The most common remedy and the one recommended in the CFA exam is to calculate *robust standard errors* (also called White-corrected standard errors or heteroskedasticity-consistent standard errors). The second is to correct for heteroskedasticity is the use of *generalized least squares*.
+
+$$t = \frac{Coefficient}{White-corrected\ standard\ errors}$$
 # Economics for Valuation
