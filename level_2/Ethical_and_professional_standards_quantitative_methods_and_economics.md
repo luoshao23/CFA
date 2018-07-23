@@ -1,3 +1,8 @@
+
+Ethical and professional standards quantitative methods and economics
+
+----
+
 # Ethical and Professional Standards
 
 **The standard of professional conduct**
@@ -226,4 +231,33 @@ k = the number of the independent variables
 The most common remedy and the one recommended in the CFA exam is to calculate *robust standard errors* (also called White-corrected standard errors or heteroskedasticity-consistent standard errors). The second is to correct for heteroskedasticity is the use of *generalized least squares*.
 
 $$t = \frac{Coefficient}{White-corrected\ standard\ errors}$$
+
+### Detecting Serial correlation
+There are 2 methods used to detect the presence of serial correlation: residual plots and the Durbin-Watson statistic.
+
+$$DW = \frac{\sum_{t=2}^T(\hat{\epsilon}_t - \hat{\epsilon}_{t-1})^2}{\sum_{t=1}^T\hat{\epsilon}_t^2}$$
+
+where:
+
+$\hat{\epsilon}_t$ = residual for period t
+
+If the sample size is vary large:
+
+$$DW \approx 2(1-r)$$
+where:
+
+r = correlation coefficient between residuals from one period and those from the previous period.
+
+DW test statistic is approximately equal to 2 if the error terms are homoskedastic and not serially correlated(r=0). DW < 2 if the error terms are positively serially correlated (r>0), and DW > 2 if error terms are negatively serially correlated (r<0).
+
+$H_0$: the regression has no positive serial correlation
++ if DW < $d_l$, the error terms are positively serially correlated (i.e. reject the null hypothesis of no positive serial correlation).
++ if $d_l$ < DW < $d_u$, the test is inconclusive.
++ if DW > $d_u$, there is no evidence that the error terms are positively correlated
+
+### Effect of multicollinearity on regression analysis
+Multicollinearity makes the slope coefficients tend to be unreliable, the standard errors of the slope coefficients are artificially inflated. Hence, there is *a greater probability that we will incorrectly conclude that a variable is not statistically significant*.
+
+### Detecting multicollinearity
+The most common way to detect multicollinearity is the situation where *t-test values are significantly different than zero*, while the *F-test is statistically significant* and the *$R^2$ is high*. If , in CFA exam, the absolute value of the sample correlation between any two independent variables in the regression is greater than **0.7**, multicollinearity is a potential problem.
 # Economics for Valuation
