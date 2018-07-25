@@ -260,4 +260,34 @@ Multicollinearity makes the slope coefficients tend to be unreliable, the standa
 
 ### Detecting multicollinearity
 The most common way to detect multicollinearity is the situation where *t-test values are significantly different than zero*, while the *F-test is statistically significant* and the *$R^2$ is high*. If , in CFA exam, the absolute value of the sample correlation between any two independent variables in the regression is greater than **0.7**, multicollinearity is a potential problem.
-# Economics for Valuation
+
+### Model specification
+There are three broud categories of *model misspecification*:
+1. The function form can be misspecified.
+    + important variables are omitted.
+    + variables should be transformed.
+    + data is improperly pooled.
+2. Explanatory variables are correlated with the error term in time series models.
+    + a lagged dependent variable is used as an independent variable.
+    + a function of the dependent variable is used as an independent variable ("forecasting the past").
+    + independent variables are measured with error.
+
+## Time-series analysis
+A `time series` is a set of observations for a variable over successive periods of time.
+
+### Linear trend model
+
+$$y_t = b_0 + b_1(t) + \epsilon_t$$
+
+where:
+
+$y_t$ = the value of the time series (the dependent variable) at time t
+
+$b_0$ = intercept at the vertical axis
+
+$b_1$ = slope coefficient
+
+$\epsilon_t$ = error term
+
+t = time (independent variable); t = 1, 2, 3...T
+ # Economics for Valuation
