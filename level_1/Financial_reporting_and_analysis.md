@@ -12,6 +12,8 @@ companies classify transaction into common accounts that are components of the f
     <tr><td>Debit</td><td>Credit</td></tr>
 </table>
 
+----
+
 <table>
     <th colspan="2">Balance Sheet</th>
     <tr><td>Assets</td><td align="center">Liabilities<br>Owners' Equity</td></tr>
@@ -20,7 +22,7 @@ companies classify transaction into common accounts that are components of the f
 
 
 ## Basic formula
-<span style="color: red">$$Assets = Liabilities + Owners'\ equity$$</span>
+<span style="color: red"> $$Assets = Liabilities + Owners'\ equity$$ </span>
 
 $$Assets = Liabilities + Contributed\ capital + Ending\ retained\ earnings$$
 
