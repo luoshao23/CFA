@@ -354,4 +354,32 @@ To determin what typr of model is best suited to meet your needs, follow these g
    + If the coefficient is not significantly different from zero, you *can use the model*.
    + If the coefficient is significantly different from zero, ARCH is present. Correct using generalized least squares.
 8. If you have developed two statistically reliable models and want to determin which is better at forecasting, calculate their out-of-sample RMSE.
+
+## Probabilistic approaches: scenario analysis, decision trees, and simulations
+
+### simulation
+#### Steps in simluation
+1. Determin the probabilistic variables.
+2. Define probability distributions for these variables.
+   There are three approaches to specifying a distribution:
+   + Historical data
+   + croess-sectional data
+   + Pick a distribution and estimate the parameters
+3. Check for corrlations among variables
+4. Run the simulation.
+   The number of simulations needed for a good output is driven by:
+   + The number of uncertain variables
+   + The types of distributions
+   + The range of outcomes. The wider, the more.
+#### Advantages if simulations
+There are two advantages of a carefully crafted simulation:
++ Better input quality.
++ Provides a distribution of expected value rather than a point estimate.
+#### Constraints
+There are threee types of constraints:
+1. Book value constraints
+   + regulatory capital requirements
+   + negative equity
+2. Earings and cash flow constraints
+3. Market value constraints
 # Economics for Valuation
