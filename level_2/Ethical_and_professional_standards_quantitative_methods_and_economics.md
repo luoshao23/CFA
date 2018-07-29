@@ -129,6 +129,7 @@ $$s_f^2 = SEE^2(1+\frac{1}{n} + \frac{(X-\bar{X})^2}{(n-1)s_x^2})$$
 ### ANOVA
 + Total sum of squares (SST)
 $$SST = \sum_{i=1}^n (Y_i - \bar{Y})^2$$
+where $\bar{Y}$ is the mean value of $Y$
 + Regression sum of squares (RSS)
 $$RSS = \sum_{i=1}^n (\hat{Y_i} - \bar{Y})^2$$
 + Sum of squared errors (SSE)
@@ -290,4 +291,67 @@ $b_1$ = slope coefficient
 $\epsilon_t$ = error term
 
 t = time (independent variable); t = 1, 2, 3...T
- # Economics for Valuation
+
+### Log=linear trend model
+$$y_t = e^{b_0 + b_1(t)}$$
+When a variable grows at a constant rate, a log-linear model is most appropriate. When the variable increases over time by a constant amount, a linear trend model is most appropriate.
+
+### Autoregressive model
+When the dependent variable is regressed against one or more lagged values of itself, the resultant model is called as an `autoregressive model`.
+
+$$x_t = b_0 + b_1x_{t-1}+...+b_px_{t-p}+\epsilon_t$$
+
+#### Autocorrelation & model fit
+If the resisduals have significant autocorrelation, the AR model that produced the residuals is not the best model for the time series being analyzed. The procudure to test whether an AR time series model is correctly specified involves three steps:
+
+1. **Estimate** the AR model being evaluated using linear regression: Start with a first-order AR model, i.e. AR(1)
+2. **Calculate** the autocorrelations of the model's residuals (i.e., the level of correlation between the forecast errors from one period to the next).
+3. **Test** whether the autocorrelations are significantly different from zero: If the model is correct specified, noen of the autocorrelations will be statistically significant. To test for significance, a *t-test* is used to test the hypothesis thath the residuals are zero. The *t-statistic* is the estimated autocorrelation divided by the standard error (i.e., $1/\sqrt{T}$), so the test statistic for each autocorrelation is $t = \frac{\rho_{\epsilon_t,\epsilon_{t-k}}}{1/\sqrt{T}}$ with (T-2) degrees of freedom.
+
+> t-test is difference of the test index divided by the standard error.
+
+A time series must have a finite mean-reverting level (i.e., $\frac{b_0}{1-b_1}$) to be covariance stationary. Thus, a random wlk, with or without a drift, is not covariance stationary, and exhibits what is known as a unit root ($b_1$=1).
+
+### seasonality
+To adjust for seasonality in an AR model, an additional lag of the dependent variable is added to the orignal model as another independent variable.
+
+### using ARCH models
+An ARCH model is used to test for autoregressive conditional heteroskedasticity. With in the ARCH framework, an ARCH(1) time series is one for which the variance of the residuals in one period is dependent on (i.e., a function of ) the variance of the residuals in the preceding period. To test whether a time series is ARCH(1), the squared residuals from an estimated time-series model, $\hat{\epsilon}_t^2$, are regressed on the first lag of the squared residuals $\hat{\epsilon}_{t-1}^2$. The ARCH(1) regression model is expressed as:
+$$\hat{\epsilon}_t^2 = a_0 + a_1 \hat{\epsilon}_{t-1}^2+ \mu_t$$
+
+### Cointegration
+**Cointegration** means that two time series are economically linked (realted to the same macro varibales) or follow the same trend and that relationship is not expected to change.
+
+### can linear regression be used to model the relationship between two time series?
+<table>
+
+<tr><th></th><th></th><th colspan=2>Independent variable time series</th></tr>
+<tr><td></td><td></td><td>Is covariance stationary</td><td>Is NOT covariance stationary</td></tr>
+<tr><td rowspan=2><strong>Depandent variable time series</strong></td><td>Is covariance stationary</td><td>Yes</td><td>No</td></tr>
+<tr><td>Is NOT covariance stationary</td><td>No</td><td>Yes, IF the two time series are cointegrated</td></tr>
+</table>
+
+To determin what typr of model is best suited to meet your needs, follow these guidelines:
+1. Determin your goal.
+    + Are you attempting to model the relationship of a variable to other variables (e.g., cointegrated time series, cross-sectional multiple regression)?
+    + Are you trying to model the variabel over time (e.g., trend model)
+2. Plot the data to see the trend. A **structural change** is indicated by a significant *shift* in the plotted data at a point in time that seems to divide the data into two or more distinct patterns. You have to run different models for the structural change.
+3. If there is no seasonality or structural shift, use a trand model.
+    + If the data plot on a straight line with an upward or downward slope, use a linear trend model.
+    + If the data plot in a curve, use a log-linear trend model.
+4. Run the trend analysis, compute the residuals, and test for serial correlation using the Durbin Watson test.
+    + If you detect no serial correlation, you *can use the model*.
+    + If you detect serial correlation, you must use another model (e.g., AR)
+5. If the data has serial correlation, reexamine the data for stationarity before running an AR model. If it is not stationary, treat the data for use in an AR model as follows:
+    + If the data has linear trend, first-difference the data.
+    + If the data has an exponential trend, first-difference the natural log of the data.
+    + If there is a structural shift in the data, run two separate models as discussed above.
+    + If the data has seasonal component, incorprate the seasonality in the AR model as discussed below.
+6. After first-differencing in 5 above, if the series is covariance stationay, run an AR(1) model and test for serial corrlation and seasonality.
+    + If there is no remaining serial correlation, you *can use the model*.
+    + If you still detect serial correlation, incorporate lagged values of the variable (possibily including one for seasonality--e.g., for monthly data, add the 12th lag of the time series) into the AR model until you hvae removed any serial correlation.
+7. Test for ARCH. Regress the square of the residuals on squares of lagged values of the residuals and test whether the resulting coefficient is significantly different from zero.
+   + If the coefficient is not significantly different from zero, you *can use the model*.
+   + If the coefficient is significantly different from zero, ARCH is present. Correct using generalized least squares.
+8. If you have developed two statistically reliable models and want to determin which is better at forecasting, calculate their out-of-sample RMSE.
+# Economics for Valuation
