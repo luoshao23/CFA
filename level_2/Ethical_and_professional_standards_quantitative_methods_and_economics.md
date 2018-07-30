@@ -198,11 +198,11 @@ $$R_a^2 = 1 - [(\frac{n-1}{n-k-1})\times(1-R^2)]$$
 
 ### ANOVA Tables
 
-| Source     | df (Degrees fo Freedom) | SS (Sum of Squares) | MS (Mean Sum of Squares)                    |
-| ---------- | ----------------------- | ------------------- | ------------------------------------------- |
-| Regression | k                       | RSS                 | $MSR = \frac{RSS}{k}$ |
-| Error      | n - k - 1               | SSE                 | $MSE = \frac{SSE}{n-k-1}$                   |
-| Total      | n - 1                   | SST                 |                                             |
+| Source     | df (Degrees fo Freedom) | SS (Sum of Squares) | MS (Mean Sum of Squares)  |
+| ---------- | ----------------------- | ------------------- | ------------------------- |
+| Regression | k                       | RSS                 | $MSR = \frac{RSS}{k}$     |
+| Error      | n - k - 1               | SSE                 | $MSE = \frac{SSE}{n-k-1}$ |
+| Total      | n - 1                   | SST                 |                           |
 ### What is heteroskedasticity?
 `Heteroskedasticity` occurs when the variance of the residual is not the same across all observations in the sample.
 
@@ -384,5 +384,25 @@ There are threee types of constraints:
    + regulatory capital requirements
    + negative equity
 2. Earings and cash flow constraints
+   + imposed internally ot meet the analyst expectation
 3. Market value constraints
+
+#### Limitation
+There are several limitations of using simulations as a risk assessment tool:
+1. Input quality.
+2. Inappropriate statistical distributions.
+3. Non-stationary distributions.
+4. Dynamic correltions.
+
+### compare scenario analysis, decision tree, and simulation.
+- Scenario analysis and decision trees are used to analyze discrete risk while simulation are used to analyze continuous risk.
+- Scenario analysis computes finite cases and the combined probability of the outcome is less than 1.
+- Desicion trees is suitable for the condition when risk is both discrete and sequential.
+
+| Appropriate method | Distribution of risk | Sequential?     | Accommodates correlated variables? |
+| ------------------ | -------------------- | --------------- | ---------------------------------- |
+| Simulations        | Continuous           | Does not matter | Yes                                |
+| Senario analysis   | Discrete             | No              | Yes                                |
+| Decision trees     | Discrete             | Yes             | No                                 |
+
 # Economics for Valuation
