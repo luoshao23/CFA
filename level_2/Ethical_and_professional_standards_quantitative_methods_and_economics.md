@@ -306,11 +306,14 @@ If the resisduals have significant autocorrelation, the AR model that produced t
 
 1. **Estimate** the AR model being evaluated using linear regression: Start with a first-order AR model, i.e. AR(1)
 2. **Calculate** the autocorrelations of the model's residuals (i.e., the level of correlation between the forecast errors from one period to the next).
-3. **Test** whether the autocorrelations are significantly different from zero: If the model is correct specified, noen of the autocorrelations will be statistically significant. To test for significance, a *t-test* is used to test the hypothesis thath the residuals are zero. The *t-statistic* is the estimated autocorrelation divided by the standard error (i.e., $1/\sqrt{T}$), so the test statistic for each autocorrelation is $t = \frac{\rho_{\epsilon_t,\epsilon_{t-k}}}{1/\sqrt{T}}$ with (T-2) degrees of freedom.
+3. **Test** whether the autocorrelations are significantly different from zero: If the model is correct specified, noen of the autocorrelations will be statistically significant. To test for significance, a *t-test* is used to test the hypothesis that the residuals are zero. The *t-statistic* is the estimated autocorrelation divided by the standard error (i.e., $1/\sqrt{T}$), so the test statistic for each autocorrelation is $t = \frac{\rho_{\epsilon_t,\epsilon_{t-k}}}{1/\sqrt{T}}$ with (T-2) degrees of freedom.
 
 > t-test is difference of the test index divided by the standard error.
 
-A time series must have a finite mean-reverting level (i.e., $\frac{b_0}{1-b_1}$) to be covariance stationary. Thus, a random wlk, with or without a drift, is not covariance stationary, and exhibits what is known as a unit root ($b_1$=1).
+A time series must have a finite mean-reverting level (i.e., $\frac{b_0}{1-b_1}$) to be covariance stationary. Thus, a random walk, with or without a drift, is not covariance stationary, and exhibits what is known as a unit root ($b_1$=1).
+
+### Unit Root testing for nonstationary
+**Dick and Fuller** created a rather ingenius test for a unit root. Instead of testing whether the original coefficient is different ($b_1 - 1$) is different from zero using a modified *t-test*. If ($b_1 - 1$) is not significantly different from zero, they say that $b_1$ must be equal to 1.0 and, therefore, the series must have a unit root and is nonstationary (i.e., it is not covariance stationary).
 
 ### seasonality
 To adjust for seasonality in an AR model, an additional lag of the dependent variable is added to the orignal model as another independent variable.
