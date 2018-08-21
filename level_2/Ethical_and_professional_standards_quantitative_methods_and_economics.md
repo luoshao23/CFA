@@ -405,4 +405,67 @@ There are several limitations of using simulations as a risk assessment tool:
 | Senario analysis   | Discrete             | No              | Yes                                |
 | Decision trees     | Discrete             | Yes             | No                                 |
 
+## Currency exchange rates: determination and forecasting
+### Exchange rates
+For example, 1.4126 USD/EUR means that each euro costs $1.4126. In this example, euro is called the base currency and USD the price currency.
+
+A `spot exchange rate` is the currency exchange rate for immediate delivery, which for most currencies means the exchange of currencies takes place two days after the trade.
+
+A `forward exchange rate` is a currency exchange rate for an exchange to be done in the future (e.g., 30 days, 60 days, 90 days or one year).
+
+Dealer quotes often include both bid (买入价) and offer （卖出价）(ask) rates. For example, the euro could be quoted as $1.4124 - 1.4128. The bid price ($1.4124) is the price at which the dealer will buy euros, and the offer price ($1.4128) is the price at which the dealer will sell euros. So the rule is **buy the base currency at ask and sell the base currency at bid** for investors.
+> up-the-bid-and-mutiply, down-the-ask-and-divide
+### Foreign exchange spread
+The difference between the offer and bid price is called the *spread*. Spreads are often stated as 'pips' and one pip is 1/10000.
+
+The spread quoted by the dealer depends on:
++ The spread in the interbank market for the same currency pair.
++ The size of the transaction.
++ The relationship between the dealer and client.
+
+The interbank spread on a currency pair depends on:
++ currencies involved. High-volume currency pairs command lower spreads than do lower-volume currency pairs.
++ Time of day. The time overlap during the trading day when both the New York and London currency markets are open is considered the most liquid time window.
++ Market volatility.
+
+### Cross rate
+The `cross rate` is the exchange rate between two currencies implied by their exchange rates with a common third currency, usually the USD or EUR.
+
+For example, we have the following quotes:
+USD/AUD=0.60 and MXN/USD=10.70. The cross rate between Australian dollars and pesos (MXN/AUD):
+$$\frac{MXN}{AUD} = \frac{USD}{AUD}\times\frac{MXN}{USD} = 0.60 \times 10.70 = 6.42$$
+
+### Cross rates with bid-ask spreads
+Rules:
+$$(\frac{A}{C})_{bid} = (\frac{A}{B})_{bid} \times (\frac{B}{C})_{bid}$$
+$$(\frac{A}{C})_{offer} = (\frac{A}{B})_{offer} \times (\frac{B}{C})_{offer}$$
+$$(\frac{A}{C})_{offer} = \frac{1}{(\frac{C}{A})_{bid} }$$
+$$(\frac{A}{C})_{bid} = \frac{1}{(\frac{C}{A})_{offer} }$$
+
+A currency is quoted at a **forward premium** relative to a second currency if the forward price is greater than the sport price and **forward discount** if less than the spot price.
+
+The value of a forward contract (to the party buying the base currency) at maturity (time T) is:
+$$V_T = (FP_T - FP)(contract size)$$
+where:
+
+$V_T$ = value of the forward contract at time T, denominated in price currency
+
+$T$ = maturity of the forward contract
+
+$FP$ = forward price locked in at inception to buy the base currency (and with a maturity of T)
+
+$FP_T$ = forward price to sell the base currency at time T
+
+### Value prior to expiration
+$$V_t = \frac{(FP_T - FP)(contract\ size)}{[1 + R(\frac{days}{360})]}$$
+where:
+
+$V_t$ = value of the forward contract at time t, (t < T) denominated in price currency
+
+$FP_t$ = forward price (to sell base currency) at time t in the market for **a new contract maturing at time T**
+
+$days$ = number of days remaining to maturity of the forward contract (T - t)
+
+$R$ = interest rate of price currency
+
 # Economics for Valuation
