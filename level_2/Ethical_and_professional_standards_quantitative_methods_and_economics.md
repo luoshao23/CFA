@@ -468,4 +468,72 @@ $days$ = number of days remaining to maturity of the forward contract (T - t)
 
 $R$ = interest rate of price currency
 
+### Covered interest rate parity (平价)
+
+Formally, covered interest rate parity requires that (given A/B quote structure):
+$$F = \frac{1+R_A(\frac{days}{360})}{1+R_B(\frac{days}{360})} S_0$$
+
+where:
+
+$F$ = forward rate (quoted as A/B)
+
+$S_0$ = spot rate (quoted as A/B)
+
+$days$ = number of days in the underlying forward contract
+
+$R_A$ = intereest rate for Currency A
+
+$R_B$ = intereest rate for Currency B
+### Covered interest rate parity (平价)
+Given a quote structure of A/B, the base currency (i.e., currency) is expected to appreciate by approximately $R_A - R_B$. (When $R_A - R_B$ is negative, currency B is expected to depreciate).
+$$E(\%\Delta S)_{(A/B)} = R_A - R_B$$
+If the forward rate is equal to the expected future spot rate, we say that the forward rate is an unbiased predictor of the future spot rate. In such an instance, $F = E(S_1)$
+
+### International Fisher Relation
+We can write this relation (known as the Fisher relation) as:
+$$R_{nominal} = R_{real} + E(inflation)$$
+Taking the Fisher relation and real interest rate parity together gives us the international Fisher effect:
+$$R_{nominal\ A} - R_{nominal\ B} = E(inflation_A) - E(inflation_B)$$
+This tells us that the difference between two countries' nominal interest rates shoud be equal to the difference between their expected inflation rates.
+
+### Purchasing power parity
+The law of one price.
+
+Instead of focusing on individual products, **absolute purchsing power parity** (absolute PPP) compares the average price of a representative basket of consumption goods bwtween countries.
+$$S(A/B) = CPI(A) / CPI(B)$$
+
+**Relative PPP** states that changes in exchange rates should exactly offset the price effects of any inflation differential between the two countries.
+
+$$\%\Delta S(A/B) = Inflation_{(A)} - Inflation_{(B)}$$
+where:
+
+$\%\Delta S(A/B)$ = change in spot price (A/B)
+
+### Real exchange rate
+
+$$real\ exchange\ rate = S_t \frac{CPI_B}{CPI_A}$$
+
+where:
+
+$CPI$ = consumer price index at time t
+$S_t$ = spot rate at time t (given as A/B)
+
+### Balance of payments
+**Balance-of-payments** (BOP) accounting is method used to keep track of transactions bwtween a country and its international trading partners. The BOP equation is:
+$$current\ account + financial\ account + official\ reserve\ account = 0$$
++ **current account** measures the exchange of goods, services, investment income and unilateral transfers (gifts).
++ **financial account** measures the flow of funds for debt and equity investment into and out of the country.
++ **offical reserve account** transactions are those made from the reserves held by the official monetary authorities of the country. Normally the official reserve account balance does not change significantly from year to year, and hence, economists focus onthe first two parts of the BOP equation.
+
+### Influence of BOP on exchange rates
+#### current account influences
++ flow mechanism. Current account deficits in a country increase the supply of that currency in the markets. The decrease in the value of the currency may restore the current account deficit to balance -- depending on the following factors:
+    - The initial deficit. The larger the initial deficit, the larger the depreciation of domestic currency needed to restore current account balance.
+    - The influence of exchange rates on domestic import and export prices. However, some of the increase in cost may not be passed on to consumers.
+    - Price elasticity of demand of the traded goods. If the most important imports are relatively price inelastic, the quantity imported will not change.
+
++ Portfolio composition mechanism. When investor countries decide to relalance their investment portfolios, it can have a significant negative impact on the value of those investee country currencies.
++ Debt sustainablility mechanism. When the level of debt gets too high relative to GDP, investors ma question the sustainability of this level of debt, leading to a rapid depreciation of the borrower's currency.
+
+#### capital account influences
 # Economics for Valuation
