@@ -9,5 +9,6 @@ Personal review &amp; summary for CFA
 + [Economics](level_1/Economics.md)
 
 ## level 2
++ [Ethical and professional standards quantitative methods and economics](level_2/Ethical_and_professional_standards_quantitative_methods_and_economics.md)
 
 ## level 3
