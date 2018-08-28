@@ -536,4 +536,82 @@ $$current\ account + financial\ account + official\ reserve\ account = 0$$
 + Debt sustainablility mechanism. When the level of debt gets too high relative to GDP, investors ma question the sustainability of this level of debt, leading to a rapid depreciation of the borrower's currency.
 
 #### capital account influences
+As capital flows into a coutry, demand for the country's currency increase, resulting in appreciation. Excessive capital inflows into **emerging** markets create problems for those countries such as:
++ excessive real apprecaition of the domestic currency.
++ financial asset and/or real estate bubbles.
++ increase in external debt by businesses or government.
++ excessive consumption in the domestic market fueled by credit.
+
+Emerging market governments often counteract excessive capital inflows by inposing capital controls or by dirext intervention in the foreign exchange markets.
+$$real\ echange\ rate(A/B) = equilibrium\ real\ exchange\ rate(A/B) + (real\ interest\ rate_B - real\ interest\ rate_A) - (risk\ premium_B - risk\ premium_A)$$
+
+The real value of a currency is positive related ot its real interest rate and negatively related to the risk premium investors demand for investing in assets denominated in the currency.
+
+#### Talyor Rule
+Central banks are usually charged with setting policy interest rates so as to 1) maintain price stability (inflation target) and 2) achieve the maximum sustainable level of the emloyment.
+$$R = r_n + \pi + \alpha (\pi - \pi^*) + \beta (y - y^*)$$
+
+where:
+
+$R$ = Central bank policy rate implied by the Taylor rule
+
+$r_n$ = Neutral *real* policy interest rate
+
+$\pi$ = current inflation rate
+
+$\pi^*$ = Central bank's target inflation rate
+
+$y$ = log of current level of output
+
+$y^*$ = log of central bank's target(sustainable) output
+
+$\alpha, \beta$ = policy response coefficients (>0, Taylor suggested a value of 0.5 for both)
+
+Subtracting inflation from both sides of the equation above, we get:
+
+$$Real\ interest\ rate = r = (R - \pi) = r_n + \alpha(\pi - \pi^*) + \beta (y - y^*)$$
+
+Further we get:
+
+$$Real\ exchange\ rate(A/B) = equilibrium\ real\ exchange\ rate (A/B) + difference\ in\ neutral\ real\ policy\ interest\ rate\ (B - A) + \alpha [difference\ in\ inflation\ gap (B - A)] + \beta [difference\ in\ output\ gap (B - A)] - (risk\ premium_B - risk\ premium_A)$$
+
+The IMF assesses long-term equilibrium real exchange rate based on three complementary approaches:
++ Macroeconomic balance approach
++ External sustainablility approach
++ Reduced-form econometric model approach(简化形式的计量经济模型方法)
+
+> `Reduced-form` 的翻译有待考证。
+
+#### FX carry trade
+The FX carry trade attempts to capture an interest rate differential and is a bet against uncovered interest rate parity. Carry trades typically perform well during low-volatility periods.
+
+$$return = interest\ earned\ on\ investment - funding\ cost - currency\ depreciation$$
+
+#### risk of the carry trade
+The carry trade is profitable only if uncovered interest rate parity does not hold over the investment horizon.
+
+#### Risk management in carry trades
+There are two approaches to managing crash risk in a carry trade:
+1. Volatility filter: Whenever implied volatility increases above a certain threshold, the carry trade positions are closed.
+2. Valuation filter: A valuation band is established for each currency based on PPP or other models. If the value of a currency falls below the band, the trader will overweight that currency in the trader's carry trade protfolio.
+
+#### MUNDELL-FLEMING Model
+`Mundell-Fleming model` evaluates the impact of monetary and fiscal policies on interest rates -- and consequently on exchange rates. Changes in inflation rates due to changes in monetary or fiscal policy are not explicityly modeled by the Mundell-Fleming model.
+
+#### High capital mobility
+Expansionary monetary policy -> reduce interest rate -> reduce the inflow of capital investment in physical and financial assets(不缺钱，不需引入投资) -> reduce the demand for the domestic currency -> depreciation of the domestic currency
+
+Expansionary fiscal policy (an increased deficit from lower taxes or higher government spending) -> increase government borrowing -> increase real interest rates -> attract foreign investment -> improve the financial account -> increase demand for the domestic currency
+#### Low capital mobility
+In emerging markets, capital flows may be restricted. In that case, the impact of trade imbalance on exchange rates (goods flow effect) is **greater** than the impact of interest rates (financial flows effect). Expansionary fiscal/ monetary policy leads to increases in net imports, leading to depreciation of the domestic currency. Similarly, restrictive monetary/ fiscal policy leads to an appreciation of domestic currency.
+
+> 贸易顺差（所谓贸易顺差是指在特定年度一国出口贸易总额大于进口贸易总额，又称 “ 出超 ”．表示该国当年对外贸易处于有利地位）使得国内外汇市场上的外币供给大于外币需求，必然产生外币贬值的预期和人民币升值的预期。因此，贸易顺差产生人民币升值的压力：贸易顺差越大，人民币升值的压力越大；人民币升值的预期，又加大了外资流入和贸易顺差的扩大，进一步增强了人民币升值的压力。
+
+| Monetary Policy/ Fiscal Policy |              | Capital Mobility |
+| ------------------------------ | ------------ | ---------------- |
+|                                | High         | Low              |
+| Expansionary/Expansionary      | Uncertain    | Depreciation     |
+| Expansionary/Restrictive       | Depreciation | Uncertain        |
+| Restrictive/Expansionary       | Appreciation | Uncertain        |
+| Restrictive/Restrictive        | Uncertain    | Appreciation     |
 # Economics for Valuation
