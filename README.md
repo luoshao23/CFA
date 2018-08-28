@@ -1,5 +1,5 @@
 # CFA
-Personal review &amp; summary for CFA
+Personal review &amp; summary for CFA (Chartered Financial Analyst)
 
 ## level 1
 + [Ethical and professional standards and quantitative methods](level_1/Ethical_and_professional_standards_and_quantitative_methods.md)
