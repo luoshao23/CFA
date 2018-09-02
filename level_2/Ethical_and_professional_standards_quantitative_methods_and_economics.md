@@ -606,6 +606,7 @@ Expansionary fiscal policy (an increased deficit from lower taxes or higher gove
 In emerging markets, capital flows may be restricted. In that case, the impact of trade imbalance on exchange rates (goods flow effect) is **greater** than the impact of interest rates (financial flows effect). Expansionary fiscal/ monetary policy leads to increases in net imports, leading to depreciation of the domestic currency. Similarly, restrictive monetary/ fiscal policy leads to an appreciation of domestic currency.
 
 > 贸易顺差（所谓贸易顺差是指在特定年度一国出口贸易总额大于进口贸易总额，又称 “ 出超 ”．表示该国当年对外贸易处于有利地位）使得国内外汇市场上的外币供给大于外币需求，必然产生外币贬值的预期和人民币升值的预期。因此，贸易顺差产生人民币升值的压力：贸易顺差越大，人民币升值的压力越大；人民币升值的预期，又加大了外资流入和贸易顺差的扩大，进一步增强了人民币升值的压力。
+* Monetary and Fiscal Policy and Exchange Rates
 
 | Monetary Policy/ Fiscal Policy |              | Capital Mobility |
 | ------------------------------ | ------------ | ---------------- |
@@ -614,4 +615,10 @@ In emerging markets, capital flows may be restricted. In that case, the impact o
 | Expansionary/Restrictive       | Depreciation | Uncertain        |
 | Restrictive/Expansionary       | Appreciation | Uncertain        |
 | Restrictive/Restrictive        | Uncertain    | Appreciation     |
+
+#### Fixed exchange rate regimes
+Under a fixed exchange rate regime, an expansionary monetary policy would lead to depreciation of domestic currency as stated above. The government would then have to purchase (sell) its own currency in the foreign exchange market. This action essentially reverses the expansionary (restrictive) stance.
+
+Expansionary (restrictive) fiscal policy leads to appreciation (depreciation) of domestic currency. The government would then sell (buy) its own domestic currency to keep exchange rates stable -- reinforcing the impact of its fiscal policy on aggregate demand.
+> 扩张性的财政政策，主要是指政府减税，增加支出，从而增加社会总需求，进一步增加对货币的总需求。而在货币政策保持不变的情况下，货币总需求增加，导致利率上升。
 # Economics for Valuation
