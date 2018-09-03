@@ -652,3 +652,11 @@ A high level of foreign exchange reserves held by a country typically decreases 
 ## Economic growth and the investment decision
 Cross-country comparisons of GDP should be based on purchasing power parity rather than current market exchange rates.
 `PPP`, purchaing power parity: The idea that exchange rates move to equalize the purchaing power of different currencies.
+
+### preconditions for growth
+1. Savings and investment
+2. Financail markets and intermediaries
+3. The political stability, rule of law, and property rights
+4. Investment in human capital: investing in education and health care
+5. Tax and regulatory systems: All else equal, the lower the tax and regulatory burdens, the higher the rate of economic growth
+6. Free trade and unrestricted capital flows: Unrestricated capital flows mitigate the problem of insufficient domestic savings as foreign capital can increase a country's capital, allowing for greater growth.
