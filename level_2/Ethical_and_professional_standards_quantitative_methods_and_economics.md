@@ -405,6 +405,7 @@ There are several limitations of using simulations as a risk assessment tool:
 | Senario analysis   | Discrete             | No              | Yes                                |
 | Decision trees     | Discrete             | Yes             | No                                 |
 
+# Economics for Valuation
 ## Currency exchange rates: determination and forecasting
 ### Exchange rates
 For example, 1.4126 USD/EUR means that each euro costs $1.4126. In this example, euro is called the base currency and USD the price currency.
@@ -621,4 +622,33 @@ Under a fixed exchange rate regime, an expansionary monetary policy would lead t
 
 Expansionary (restrictive) fiscal policy leads to appreciation (depreciation) of domestic currency. The government would then sell (buy) its own domestic currency to keep exchange rates stable -- reinforcing the impact of its fiscal policy on aggregate demand.
 > 扩张性的财政政策，主要是指政府减税，增加支出，从而增加社会总需求，进一步增加对货币的总需求。而在货币政策保持不变的情况下，货币总需求增加，导致利率上升。
-# Economics for Valuation
+
+#### Expansive fiscal policy
++ short-run response -> increase in real interest rate differential -> currency appreciation
++ long-run response -> governent debt buildup -> 1) central bank monetizes debt; 2) fiscal stance turns restrictive -> currency depreciates
+
+#### exchange rate management: intervention and controls
+Examples of better economic management by a government include:
++ a decrease in inflation and inflation volatility
++ more-flexible exchange rate regimes
++ improved fiscal position
++ privatization of state-owned entities
++ liberalization of financial markets
++ lifting of foreign exchange regulations and controls
+
+#### warning signs of a currency crisis
+1. Prior to a currency crisis, the capital markets have been liberalized to allow the free flow of capital
+2. There are large inflows of foreign capital in the period leading up to a crisis, with short-term funding denominated in a foreign currency being particularly problematic
+3. Currency crises are often preceded by (and often coincide with) banking crises
+4. Countries with fixed or partially fixed exchange rates are more susceptible to currency crises than countries with floating exchange rateds
+5. Foreign exchange reserves tend to decline precipitously as a crisis approuches
+6. In the period leading up to a crisis, the currency has risen substantially relative to its historical mean.
+7. The ratio of exports to imports (known as "the terms of trade") often deteriorates before a crisis
+8. Broad money growth and the ratio of M2 (a measure of money supply) to bank reserves tend to rise prior to a crisis
+9. Inflation tends to be significantly higher in pre-crisis periods compared with tranquil periods.
+
+A high level of foreign exchange reserves held by a country typically decreases the likelihood of a currency crisis.
+
+## Economic growth and the investment decision
+Cross-country comparisons of GDP should be based on purchasing power parity rather than current market exchange rates.
+`PPP`, purchaing power parity: The idea that exchange rates move to equalize the purchaing power of different currencies.
