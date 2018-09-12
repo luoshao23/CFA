@@ -603,10 +603,23 @@ There are two approaches to managing crash risk in a carry trade:
 Expansionary monetary policy -> reduce interest rate -> reduce the inflow of capital investment in physical and financial assets(不缺钱，不需引入投资) -> reduce the demand for the domestic currency -> depreciation of the domestic currency
 
 Expansionary fiscal policy (an increased deficit from lower taxes or higher government spending) -> increase government borrowing -> increase real interest rates -> attract foreign investment -> improve the financial account -> increase demand for the domestic currency
+
+However, in the long run, an excessive buildup in debt may eventually casue downward pressure on the domestic currency.
+
 #### Low capital mobility
 In emerging markets, capital flows may be restricted. In that case, the impact of trade imbalance on exchange rates (goods flow effect) is **greater** than the impact of interest rates (financial flows effect). Expansionary fiscal/ monetary policy leads to increases in net imports, leading to depreciation of the domestic currency. Similarly, restrictive monetary/ fiscal policy leads to an appreciation of domestic currency.
 
+When capital mobility is low, the effects of monetary and fiscal policy on exchange rates will operate primarily through trade flows rather than capital flows. The combination of expansionary monetary and fiscal policy will be bearish for a currency. Earlier we said that expansionary fiscal policy will increase imports and hence the trade deficit, creating downward pressure on the currency. Layering on an expansive monetary policy will further boost spending and imports, worsening the trade balance and exacerbating the downward pressure on the currency.
+
+The combination of restrictive monetary and fiscal policy will be bullish for a currency. This policy mix will tend to reduce imports, leading to an improvement in the trade balance.
+
+The impact of expansionary monetary and restrictive fiscal policies (or restrictive monetary and expansionary fiscal policies) on aggregate demand and the trade balance, and hence on the exchange rate, is indeterminate under conditions of low capital mobility. Exhibit 6 summarizes these results.
+
 > 贸易顺差（所谓贸易顺差是指在特定年度一国出口贸易总额大于进口贸易总额，又称 “ 出超 ”．表示该国当年对外贸易处于有利地位）使得国内外汇市场上的外币供给大于外币需求，必然产生外币贬值的预期和人民币升值的预期。因此，贸易顺差产生人民币升值的压力：贸易顺差越大，人民币升值的压力越大；人民币升值的预期，又加大了外资流入和贸易顺差的扩大，进一步增强了人民币升值的压力。
+>
+> 资本项目的顺差或逆差直接影响着货币汇率的涨跌，当一国资本项目有大量逆差，国际收支的其他项目又不足以弥补时，该国国际收支会出现逆差，从而引起本国货币对外汇率下跌。反之，则会引起本国货币汇率的上升。
+>
+> 简单说，外国人买本国东西要先买本国货币，造成本币升值。另，商品货币除外，贸易对汇率的影响微乎其微。且相当一部分贸易是以美元结算的一国贸易顺差说明这个国家宏观形势好，外国人就会来这个国家投资，那外汇流入就增加了，外汇供大于求，那外汇就贬值了，相对本国货币就升值了。
 * Monetary and Fiscal Policy and Exchange Rates
 
 | Monetary Policy/ Fiscal Policy |              | Capital Mobility |
@@ -622,6 +635,10 @@ Under a fixed exchange rate regime, an expansionary monetary policy would lead t
 
 Expansionary (restrictive) fiscal policy leads to appreciation (depreciation) of domestic currency. The government would then sell (buy) its own domestic currency to keep exchange rates stable -- reinforcing the impact of its fiscal policy on aggregate demand.
 > 扩张性的财政政策，主要是指政府减税，增加支出，从而增加社会总需求，进一步增加对货币的总需求。而在货币政策保持不变的情况下，货币总需求增加，导致利率上升。
+### The Portfolio Balance Approach
+`portfolio balance approach`: A theory of exchange rate determination that emphaizes the portfolio investment decisions of global investors and he requirement that global investors willingly hold all outstanding securities denominated in each currency at prevailing prices and exchange rates.
+In this framework, a growing government budget deficit leads to a steady increase in the supply of domestic bonds outstanding. These bonds will be willingly held only if investors are compensated in the form of higher expected return. Such return could come from 1) higher interest rate and/or
+a higher risk premium, 2) immediate depreciation of the currency to a level sufficient to generate anticipation of gains from subsequent currency appreciation, or 3) some combination of these two factors.
 
 #### Expansive fiscal policy
 + short-run response -> increase in real interest rate differential -> currency appreciation
