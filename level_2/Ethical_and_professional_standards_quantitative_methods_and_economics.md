@@ -497,6 +497,11 @@ Taking the Fisher relation and real interest rate parity together gives us the i
 $$R_{nominal\ A} - R_{nominal\ B} = E(inflation_A) - E(inflation_B)$$
 This tells us that the difference between two countries' nominal interest rates shoud be equal to the difference between their expected inflation rates.
 
+In an ideal world:
++ relative expected inflation rates should determine relative nominal interest rates;
++ relative interest rates should determine forward exchanges; and
++ forward exchange rates should correctly anticipate the path of the future spot exchange rate.
+
 ### Purchasing power parity
 The law of one price.
 
@@ -635,6 +640,8 @@ Under a fixed exchange rate regime, an expansionary monetary policy would lead t
 
 Expansionary (restrictive) fiscal policy leads to appreciation (depreciation) of domestic currency. The government would then sell (buy) its own domestic currency to keep exchange rates stable -- reinforcing the impact of its fiscal policy on aggregate demand.
 > 扩张性的财政政策，主要是指政府减税，增加支出，从而增加社会总需求，进一步增加对货币的总需求。而在货币政策保持不变的情况下，货币总需求增加，导致利率上升。
+`Accommodative`: 宽松的
+
 ### The Portfolio Balance Approach
 `portfolio balance approach`: A theory of exchange rate determination that emphaizes the portfolio investment decisions of global investors and he requirement that global investors willingly hold all outstanding securities denominated in each currency at prevailing prices and exchange rates.
 In this framework, a growing government budget deficit leads to a steady increase in the supply of domestic bonds outstanding. These bonds will be willingly held only if investors are compensated in the form of higher expected return. Such return could come from 1) higher interest rate and/or
@@ -653,7 +660,10 @@ Examples of better economic management by a government include:
 + liberalization of financial markets
 + lifting of foreign exchange regulations and controls
 
+Some studies find, however, that EM policymakers might have greater success in controlling the exchane rates than their inductrial country counterparts because the ratio of EM central bank FX reserve holdings to average daily FX turnover in their domestic currencies is actually quite sizable.
+
 #### warning signs of a currency crisis
+If capital inflows come to a sudden stop, the result may be a financial crisis, in which the economy contracts, asset values plummet, and the currency sharply depreciates.
 1. Prior to a currency crisis, the capital markets have been liberalized to allow the free flow of capital
 2. There are large inflows of foreign capital in the period leading up to a crisis, with short-term funding denominated in a foreign currency being particularly problematic
 3. Currency crises are often preceded by (and often coincide with) banking crises
