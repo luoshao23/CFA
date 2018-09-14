@@ -469,10 +469,21 @@ $days$ = number of days remaining to maturity of the forward contract (T - t)
 
 $R$ = interest rate of price currency
 
-### Covered interest rate parity (平价)
+### International parity conditions
+International parity conditions form the building blocks of most models of exchange rate determination. The key international parity conditions are as follows:
+1. convered interest rate parity
+2. uncovered interest rate  parity
+3. forward rate parity
+4. purchasing power parity
+5. the implementation Fisher effect
 
+The exception to the rule that parity conditions do not hold in the short term is covered interest rate parity, which is the only parity condition that is enforced by arbitrage.
+
+####1. Covered interest rate parity (平价)
+Given the spot exchange rate and domestic and foreign yields, the forward exchange rate must equal the rate that gives these alternative investment strategies -- exactly the same holding period return. Covered interest rate parity is thus said to be a no-arbitrage condition.
+For covered interest rate parity to hold exactly, it must be assumed that there are zero transaction costs and that the underlying domestic and foreign money market instrements being compared are identical in terms of liquidity, maturity and default risk. The freer the markets are the differentials are found to be more close to zero and covered interest rate parity holds.
 Formally, covered interest rate parity requires that (given A/B quote structure):
-$$F = \frac{1+R_A(\frac{days}{360})}{1+R_B(\frac{days}{360})} S_0$$
+$$F = \frac{1+R_A(\frac{days}{360})}{1+R_B(\frac{days}{360})} S_0 = S_0 (R_A - R_B)\frac{\frac{days}{360}}{1+R_B(\frac{days}{360})}$$
 
 where:
 
@@ -587,6 +598,7 @@ The IMF assesses long-term equilibrium real exchange rate based on three complem
 + Reduced-form econometric model approach(简化形式的计量经济模型方法)
 
 > `Reduced-form` 的翻译有待考证。
+
 
 #### FX carry trade
 The FX carry trade attempts to capture an interest rate differential and is a bet against uncovered interest rate parity. Carry trades typically perform well during low-volatility periods.
