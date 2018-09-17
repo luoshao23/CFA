@@ -479,23 +479,49 @@ International parity conditions form the building blocks of most models of excha
 
 The exception to the rule that parity conditions do not hold in the short term is covered interest rate parity, which is the only parity condition that is enforced by arbitrage.
 
-####1. Covered interest rate parity (平价)
+#### 1. Covered interest rate parity (平价)
 Given the spot exchange rate and domestic and foreign yields, the forward exchange rate must equal the rate that gives these alternative investment strategies -- exactly the same holding period return. Covered interest rate parity is thus said to be a no-arbitrage condition.
+
 For covered interest rate parity to hold exactly, it must be assumed that there are zero transaction costs and that the underlying domestic and foreign money market instrements being compared are identical in terms of liquidity, maturity and default risk. The freer the markets are the differentials are found to be more close to zero and covered interest rate parity holds.
+#### 2. Uncovered interest rate parity
+According to the uncovered interest rate parity condition, the expected return on an unvovered foreign currency investment should equal the return on a comparable domestic currency investment. Uncovered interest rate parity states that the change in spot rate over the investment horizon should, on average, equal the **differential in interest rates** between the two countries. That is, the expected appreciation/depreciation of the exchange rate will just offset the yield differential.
+
+In domestic currency terms. the investment return on an uncovered foreign-cuurency-denominated investment is equal to
+$$(1 + i_f)(1 - \%\Delta S_{f/d}) - 1$$
+This return can be approximated using the following equation:
+$$\approx i_f - \%\Delta S_{f/d}$$
+
+Using the example, suppose the return on the one-year foreign money market instrument 10% while the return on the domestic money market instrument is 4%.
+
+1. The $S_{f/d}$ rate is expected to remain unchanged: that is, $\%\Delta S_{f/d}$ = 0. So the investor would prefer the foreign-currency-denominated money market investment.
+2. The domestic currency is expected to appreciate by 10%. So the investor would prefer domestic because the foreign invesmtne is 0% (=10% - 10%)
+3. The domestic currency is expected to appreciate by 6%. In this case, the risk-neutral investor is assumed to be indifferential between the alternatives since 4% = 10% - 6%.
+
+#### 3. Forward rate parity
+Forward rate parity states that the forward exchange rate will be an unbiased predictor of the future spot exchange rate.
 Formally, covered interest rate parity requires that (given A/B quote structure):
-$$F = \frac{1+R_A(\frac{days}{360})}{1+R_B(\frac{days}{360})} S_0 = S_0 (R_A - R_B)\frac{\frac{days}{360}}{1+R_B(\frac{days}{360})}$$
+$$F = \frac{1+R_f(\frac{days}{360})}{1+R_d(\frac{days}{360})} S_0$$
+$$F- S_0= S_0 (R_f - R_d)\frac{\frac{days}{360}}{1+R_d(\frac{days}{360})}$$
 
 where:
 
-$F$ = forward rate (quoted as A/B)
+$F$ = forward rate (quoted as f/d)
 
-$S_0$ = spot rate (quoted as A/B)
+$S_0$ = spot rate (quoted as f/d)
 
 $days$ = number of days in the underlying forward contract
 
-$R_A$ = intereest rate for Currency A
+$R_f$ = intereest rate for foreign currency
 
-$R_B$ = intereest rate for Currency B
+$R_d$ = intereest rate for domestic currency
+
+For the sake of simplicity, we assume that the investment horizon is one year, so that
+
+$$F - S_0 = S_0 \frac{(R_f - R_d)}{1+R_d} \approx S_0 (R_f - R_d)$$
+
+So we have
+
+$$\% \Delta S_{f/d} = \frac{F - S_0}{S_0} = R_f - R_d$$
 ### Covered interest rate parity (平价)
 Given a quote structure of A/B, the base currency (i.e., currency) is expected to appreciate by approximately $R_A - R_B$. (When $R_A - R_B$ is negative, currency B is expected to depreciate).
 $$E(\%\Delta S)_{(A/B)} = R_A - R_B$$
@@ -518,6 +544,7 @@ The law of one price.
 
 Instead of focusing on individual products, **absolute purchsing power parity** (absolute PPP) compares the average price of a representative basket of consumption goods bwtween countries.
 $$S(A/B) = CPI(A) / CPI(B)$$
+$$P^x_f = S_{f/d} \times P^x_d$$
 
 **Relative PPP** states that changes in exchange rates should exactly offset the price effects of any inflation differential between the two countries.
 
