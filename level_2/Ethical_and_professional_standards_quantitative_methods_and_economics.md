@@ -576,7 +576,8 @@ $$current\ account + financial\ account + official\ reserve\ account = 0$$
     - The influence of exchange rates on domestic import and export prices. However, some of the increase in cost may not be passed on to consumers.
     - Price elasticity of demand of the traded goods. If the most important imports are relatively price inelastic, the quantity imported will not change.
 
-+ Portfolio composition mechanism. When investor countries decide to relalance their investment portfolios, it can have a significant negative impact on the value of those investee country currencies.
++ Portfolio composition mechanism. When investor countries decide to rebalance their investment portfolios, it can have a significant negative impact on the value of those investee country currencies.
+
 + Debt sustainablility mechanism. When the level of debt gets too high relative to GDP, investors ma question the sustainability of this level of debt, leading to a rapid depreciation of the borrower's currency.
 
 #### capital account influences
@@ -591,7 +592,9 @@ $$real\ echange\ rate(A/B) = equilibrium\ real\ exchange\ rate(A/B) + (real\ int
 
 The real value of a currency is positive related ot its real interest rate and negatively related to the risk premium investors demand for investing in assets denominated in the currency.
 
-#### Talyor Rule
+>  Correlations between equity returns and exchange rates are unstable in the short term and tend toward zero in the long run.
+
+#### Taylor Rule
 Central banks are usually charged with setting policy interest rates so as to 1) maintain price stability (inflation target) and 2) achieve the maximum sustainable level of the emloyment.
 $$R = r_n + \pi + \alpha (\pi - \pi^*) + \beta (y - y^*)$$
 
@@ -628,10 +631,20 @@ The IMF assesses long-term equilibrium real exchange rate based on three complem
 
 
 #### FX carry trade
-The FX carry trade attempts to capture an interest rate differential and is a bet against uncovered interest rate parity. Carry trades typically perform well during low-volatility periods.
+Aninvestment strategy that involves taking long positions in high-yield currencies and short positions in low-yield currencies.
+The FX carry trade attempts to capture an interest rate differential and is a bet against **uncovered interest rate parity**. Carry trades typically perform well during low-volatility periods.
 
 $$return = interest\ earned\ on\ investment - funding\ cost - currency\ depreciation$$
 
+Assume a trader can borrow Canadian dollars at 1% and earn 9% on an investment in Brazilian reals for one year. To execute the trade to earn 8% from the interest rate differential, the trader will do the following:
+
+1. Borrow Canadian dollars at t=0
+2. Sell the dollars and buy Brazilian reals at the spot rate at t=0
+3. Invest in a real-denominated investment art t=0
+4. Liquidate the Brazilian investment at t=1
+5. Sell the reals and buy dollars at the spot rate at t=1
+6. Pay back the dollar loan
+If the real appreciates, the trader’s profits will be greater than 8% because the stronger real will buy more dollars in one year. If the real depreciates, the trader’s profits will be less than 8% because the weaker real will buy fewer dollars in the future. If the real falls in value by more than 8%, the trader will experience losses.
 #### risk of the carry trade
 The carry trade is profitable only if uncovered interest rate parity does not hold over the investment horizon.
 
