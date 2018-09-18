@@ -728,14 +728,53 @@ If capital inflows come to a sudden stop, the result may be a financial crisis, 
 
 A high level of foreign exchange reserves held by a country typically decreases the likelihood of a currency crisis.
 
-## Economic growth and the investment decision
+# Economic growth and the investment decision
 Cross-country comparisons of GDP should be based on purchasing power parity rather than current market exchange rates.
 `PPP`, purchaing power parity: The idea that exchange rates move to equalize the purchaing power of different currencies.
 
 ### preconditions for growth
 1. Savings and investment
 2. Financail markets and intermediaries
+    1. screening those who seek funding and monitoring those who obtain funding, the financail sector channels financial capital to projects that are likely to generate the highest risk-adjustment returns.
+    2. the financial sector may encourage savings and assumption of risk by creating attractive investment instruments that facilitate risk transfer and diversification and enhance liquidity
+    3. the existence of well-developed financial markets and intermediaries can mitigate the credit constraints that companies might otherwise face in financing capital investments.
 3. The political stability, rule of law, and property rights
 4. Investment in human capital: investing in education and health care
 5. Tax and regulatory systems: All else equal, the lower the tax and regulatory burdens, the higher the rate of economic growth
 6. Free trade and unrestricted capital flows: Unrestricated capital flows mitigate the problem of insufficient domestic savings as foreign capital can increase a country's capital, allowing for greater growth.
+
+### summary of factors limiting growth in developing countries
++ low rates of saving and investment
++ poorly developed financial markets
++ weak, or even corrupt, legal systems and failure to enforce laws
++ lack of property rights and political instability
++ poor public education and health services
++ tax and regulatory polices discourageing entrepreneurship
++ restrictions on international trade and flows of capital
+
+## why potential growth matters to investors
+`potential GDP`, the maximum amount of output an economy can sustainably produce without inducing an increase in the inflation rate. The output level that corresponds to full employment with consistent wage and price expectations.
+
+Letting P represent the aggregate value (price) of equities and E represent aggregate earnings, we can write:
+$$P = GDP (\frac{E}{GDP}) (\frac{P}{E})$$
+
+This equation can be expressed in terms of logarithmic rates of change over a time horizon T:
+
+$$(1/T)\%\Delta P = (1/T)\%\Delta GDP + (1/T)\%\Delta (E/GDP) + (1/T)\%\Delta (P/E)$$
+
+Over the long-term, we have to recognize that growth in earnings relative to GDP is zero; labor will be unwilling to accept an ever decreasing share of GDP. Similarly, growth in the P/E ratio will also be zero over the long term; investors will not continue to pay an ever increasing price for the same level of earnings forever. Hence over a sufficiently long time horizon, the potential GDP growth rate equals the growth rate of aggregate equity valuation.
+
+## determinants of economic growth
+### production function
+$$Y = A F(K, L)$$
+
+where Y denotes the level of aggregate output in the economy, L is the quantity of labor or number of workers or hours worked in the economy, and K is an estimate of the capital services provided by the stock of equipment and structures used to produce goods and services. A is a multiplicative scale factor referred to as total factor productivity (TFP). The **Cobb-Douglas production function**, given by
+$$F(K, L) = K^\alpha L^{1 - \alpha}$$
+
+Profit maximization requires that the marginal product of capital equal **the rental price of capital**. The marginal product of capital (MPK) for the Cobb-Douglas production function is
+
+$$MPK = \frac{\partial Y}{\partial K} = \alpha A K^{\alpha - 1} L^{1 - \alpha} = \alpha Y/K = r$$
+
+Defining y = Y/L as the ouput per worker or (average labor productivity) and k = K/L as the capital-to-labor ratio, we get
+
+$$y = Y/L = AK^\alpha L^{1 - \alpha}/L = A(K/L)^\alpha(L/L)^{1 - \alpha} = Ak^\alpha$$
