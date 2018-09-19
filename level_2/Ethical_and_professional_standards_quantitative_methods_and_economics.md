@@ -780,3 +780,5 @@ Defining y = Y/L as the ouput per worker or (average labor productivity) and k =
 $$y = Y/L = AK^\alpha L^{1 - \alpha}/L = A(K/L)^\alpha(L/L)^{1 - \alpha} = Ak^\alpha$$
 
 > A value of α close to zero means diminishing marginal returns to capital are very significant and the extra output made possible by additional capital declines quickly as capital increases. In contrast, a value of α close to one means that the next unit of capital increases output almost as much as the previous unit of capital.
+
+### Capital deepening vs. technological progress
