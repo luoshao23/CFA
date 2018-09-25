@@ -782,3 +782,76 @@ $$y = Y/L = AK^\alpha L^{1 - \alpha}/L = A(K/L)^\alpha(L/L)^{1 - \alpha} = Ak^\a
 > A value of α close to zero means diminishing marginal returns to capital are very significant and the extra output made possible by additional capital declines quickly as capital increases. In contrast, a value of α close to one means that the next unit of capital increases output almost as much as the previous unit of capital.
 
 ### Capital deepening vs. technological progress
+`Capital deepening`, an increase in the capital-to-labor ratio, is reflected in the exhibit by a move along the production function line. Different $(K/L)$, different $(Y/L)$. Further additions to capital have relatively liitle impact on per capita ouput because the marginal product of capital declines as more capital is added to labor input.
+`TFP` makes the increase move to another line. Same $(K/L)$, different $(Y/L)$.
+
+### Growth accounting
+The **growth accounting equation** states that the growth rate of output equals the rate of technological change plus α times the growth rate of capital plus (1 – α) times the growth rate of labor.
+$$\Delta Y/ Y = \Delta A / A + \alpha \Delta K / K + (1 - \alpha) \Delta L / L$$
+
+An alternative method of measuring potential GDP is the **labor productivity growth accounting equation**.
+
+Growth rate in potential GDP = Long-term growth rate of labor force + Long-term growth rate in labor productivity
+
+### Extending the production function
++ Raw material: natural resources such as oil, lumber, and available land (N)
++ Quantity of labor (L)
++ Human capital: eduction and skill level of these workers (H)
++ Information, computer, and telecommunications (ICT) capital: computer hardware, software, and communication equipment ($K_{IT}$)
++ Non-ICT capital: transport equipment, metal products and plant machinery other than computer hardware and communications equipment, and non-residential buildings and other structures ($K_{NT}$)
++ Public capital ($K_P$)
++ Technological knowledge: the production methods used to convert inputs into final products, reflected by total factor productivity (A)
+
+The expanded production function is expressed mathematically as:
+$$Y = AF(N, L, H, K_{IT}, K_{NT}, K_P)$$
+
+### Natural resources
++ renewable resources
++ non-renewable resources
+
+Even though *access* natural resources is important, *ownership and production* of natural resourcese is not necessary for a country to achieve a high level of income.
+`Dutch disease`: currency appreciation driven by strong export demand for resources makes other segments of the economy, in particular manufacturing, globally uncompetitive.
+
+### Labor supply
+The `labor force` is defined as the working age population (ages 16 to 64) that is either employed or available for work but not working (i.e., unemployed). Thus growth in the labor input depends on four factors: population growth, labor force participation, net migration, average hours worked.
+
++ population growth
+
+    Note that although population growth may increase the growth rate of the overall economy, it has no impact on the rate of increase in per capita GDP.
+
++ labor force participation
+
+    labor force pariticipation is defined as the population of working age population in the labor force
+
+    labor force participation = labor force / working age population
+
++ net migration
+
+    Immigration poses a potentail solution to a declining labor force. Immigration represents a potential source of continued economic grwoth in developed countries.
+
++ average hours worked
+
+    For most countries, the general trend in average hours worked is downward. Possible explanations include legislation limiting the number of hours worked, the "wealth effect" which induces individuals to take more leisure time, high tax rates on labor income, and an increase in part-time and temporary workers.
+
+### human capital
+An economy’s human capital is increased through investment in education and on-the-job training.
+In addition, education may also have a **spillover or externality impact**. Increasing the educational level of one person raises not only the output of that person but also the output of those around that person.
+
+### capital: ICT and non-ICT
+The physical capital stock increases from year to year as long as net investment (gross investment less the depreciation of the capital) is positive. The correlation between economic growth and investment is high.
+
+A second, and closely related, explanation is that the impact of investment spending on available capital depends on the existing physical capital stock.For the developed countries, a sustained high level of investment over many years is required to have a meaningful relative impact on the physical capital stock even though the absolute size of the increase in any given year is still larger than in the developing countries.
+
+Third, because physical capital is not really homogeneous, the composition of investment spending and the stock of physical capital matters for growth and productivity.
+
+`Network externalities`: the more people in the network, the greater the potential producitivity gains.
+
+High levels of capital spending for the non-ICT capital should eventually result in capital deepening and thus have less impact on potential GDP growth. In contrast, a growing share of ICT investments in the economy, through their externality impacts, may actually boost the growth rate of potential GDP.
+
+Nanotechnology could well become the next “super GPT,” at which point investing in ICT may begin to look like mere capital deepening.
+
+### Technology
+The most important factor affecting growth of per capita GDP is technology, especially in developed countries.
+
+### public infrastructure
+As with R&D spending, the full impact of government infrastructure investment may extend well beyond the direct benefits of the projects because improvements in the economy’s infrastructure generally boost the productivity of private investments.
