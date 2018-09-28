@@ -771,7 +771,7 @@ $$Y = A F(K, L)$$
 where Y denotes the level of aggregate output in the economy, L is the quantity of labor or number of workers or hours worked in the economy, and K is an estimate of the capital services provided by the stock of equipment and structures used to produce goods and services. A is a multiplicative scale factor referred to as total factor productivity (TFP). The **Cobb-Douglas production function**, given by
 $$F(K, L) = K^\alpha L^{1 - \alpha}$$
 
-Profit maximization requires that the marginal product of capital equal **the rental price of capital**. The marginal product of capital (MPK) for the Cobb-Douglas production function is
+The parameter $\alpha$ determines the shares of ouput (factor shares) paid by companies to capital and labor and is assumed to have a value between 0 and 1. Profit maximization requires that the marginal product of capital equal **the rental price of capital**. The marginal product of capital (MPK) for the Cobb-Douglas production function is
 
 $$MPK = \frac{\partial Y}{\partial K} = \alpha A K^{\alpha - 1} L^{1 - \alpha} = \alpha Y/K = r$$
 
@@ -855,3 +855,47 @@ The most important factor affecting growth of per capita GDP is technology, espe
 
 ### public infrastructure
 As with R&D spending, the full impact of government infrastructure investment may extend well beyond the direct benefits of the projects because improvements in the economy’s infrastructure generally boost the productivity of private investments.
+
+## Theories of growth
+
+### Classical model
+The key assumption underlying the classical mdoel is that population growth accelerates when the level of per capita income rises above the subsistence income, which is the minimum income needed to maintain life.
+
+The classical model predicts that in the long run, the adoption of new technology results in a larger but not richer population.
+
+The prediction from Malthusian model failed for two reasons:
+1. the link between per capita income and population broke down. In fact, as the growth of per capita income increased, population growth slowed rather than acceleration as predicted by the classical growth model.
+2. Growth in per capita income has been possible becuase technological progress has been rapid enough to more than offset the impact of diminishing marginal returns.
+
+### Neoclassical model
+Its primary focus is on estimating the economy's long-term steady state growth rate. When the output-to-capital ratio is constant, the labor-to-capital ratio and output per capita also grow at the equilibrium growth rate, $g^*$.
+
+$$g^* = growth\ rate\ of\ output\ per\ capita = \Delta y/y = \frac{\theta}{1 - \alpha}$$
+$$growth\ rate\ of\ output = \Delta Y/Y = \Delta y/ y + n = \frac{\theta}{1 - \alpha} + n$$
+
+Considering the equation $\Delta k/k = sY - \delta K$.
+We can get the constant $\Psi$
+
+$$\frac{Y}{K} = (\frac{1}{s})[(\frac{\theta}{1 - \alpha}) + \delta + n] \equiv \Psi$$
+
+Note that even though the capital-to-labor ratio (k) is rising at rate $[\theta/(1 - \alpha)]$ in the steady state, the increase in the capital-to-labor ratio (k) has no impact on the marginal product of capital, which is not changing. Captial deepening is occurring, but is has no effect on the growth rate of the economy or on the marginal product of capital once the steady state is reached.
+
+#### Implications of the Neoclassical Model
+1. Capital accumulation
+    1. capital accumulation affects the level of output but not the growth rate in the long run
+    2. regardless of its initial capital-to-labor ratio or initial level of productivity, a growing economy will move to a point of steady state growth.
+    3. in a steady state, the growth rate of output equals the rate of labor force growth plus the rate of growth in TFP scaled by labor's share of income. The growth rate of output does not depend on the accumulation of capital or the rate of business investment.
+2. Capital deepening vs. technology
+    1. rapid growth that is above the steady state rate of growth occurs when countries first begin to accumulate capital; but growth will slow as the process of accumulation conitnues
+    2. long-term sustainable growth cannot rely solely on capital deepening investment.
+    3. more generally, increasing the supply of some input too rapidly relative to other inputs will lead to diminishing marginal returns and cannot be the basis for sustainable growth.
+    4. in the absense of improvements in TFP, the growth of labor productivity and per capita output would eventually slow.
+    5. because of diminishing marginal returns to capital, the only way to sustain growth in potential GDP per capita is through technological change or growth in total factor productivity.
+3. Convergence
+    1. given the relative scarcity and hence high marginal productivity of capital and potentially higher saving rates in developing countries, the growth rates of developing countries should exceed those of developed countries.
+    2. as a result, there should be a convergence of per capita incomes between developed and developing countries over time.
+4. Effect of savings on growth
+    1. the initial impact of a higher saving rate is to temporarily raise the rate of growth in the economy. However, the economy returns to the balanced growth path after the transition period.
+    2. during the transition period, the economy moves to a higher level of per capita output and productivity.
+    3. once an economy achieves steady state growth, the growth rate does not depend on the percentage of income saved or invested. Higher savings cannot permanently raise the growth rate of output.
+    4. however, coutries with higher saving rates will have a higher level of per capita output, a higher capital-to-labor ratio, and a higher level of labor productivity.
