@@ -203,6 +203,7 @@ $$R_a^2 = 1 - [(\frac{n-1}{n-k-1})\times(1-R^2)]$$
 | Regression | k                       | RSS                 | $MSR = \frac{RSS}{k}$     |
 | Error      | n - k - 1               | SSE                 | $MSE = \frac{SSE}{n-k-1}$ |
 | Total      | n - 1                   | SST                 |                           |
+
 ### What is heteroskedasticity?
 `Heteroskedasticity` occurs when the variance of the residual is not the same across all observations in the sample.
 
@@ -672,7 +673,7 @@ The combination of restrictive monetary and fiscal policy will be bullish for a 
 
 The impact of expansionary monetary and restrictive fiscal policies (or restrictive monetary and expansionary fiscal policies) on aggregate demand and the trade balance, and hence on the exchange rate, is indeterminate under conditions of low capital mobility. Exhibit 6 summarizes these results.
 
-> 贸易顺差（所谓贸易顺差是指在特定年度一国出口贸易总额大于进口贸易总额，又称 “ 出超 ”．表示该国当年对外贸易处于有利地位）使得国内外汇市场上的外币供给大于外币需求，必然产生外币贬值的预期和人民币升值的预期。因此，贸易顺差产生人民币升值的压力：贸易顺差越大，人民币升值的压力越大；人民币升值的预期，又加大了外资流入和贸易顺差的扩大，进一步增强了人民币升值的压力。
+> 贸易顺差（所谓贸易顺差是指在特定年度一国出口贸易总额大于进口贸易总额，又称 “出超”。表示该国当年对外贸易处于有利地位）使得国内外汇市场上的外币供给大于外币需求，必然产生外币贬值的预期和人民币升值的预期。因此，贸易顺差产生人民币升值的压力：贸易顺差越大，人民币升值的压力越大；人民币升值的预期，又加大了外资流入和贸易顺差的扩大，进一步增强了人民币升值的压力。
 >
 > 资本项目的顺差或逆差直接影响着货币汇率的涨跌，当一国资本项目有大量逆差，国际收支的其他项目又不足以弥补时，该国国际收支会出现逆差，从而引起本国货币对外汇率下跌。反之，则会引起本国货币汇率的上升。
 >
@@ -680,7 +681,7 @@ The impact of expansionary monetary and restrictive fiscal policies (or restrict
 * Monetary and Fiscal Policy and Exchange Rates
 
 | Monetary Policy/ Fiscal Policy |              | Capital Mobility |
-| ------------------------------ | ------------ | ---------------- |
+| -- | ------------ | ---------------- |
 |                                | High         | Low              |
 | Expansionary/Expansionary      | Uncertain    | Depreciation     |
 | Expansionary/Restrictive       | Depreciation | Uncertain        |
@@ -868,17 +869,23 @@ The prediction from Malthusian model failed for two reasons:
 2. Growth in per capita income has been possible becuase technological progress has been rapid enough to more than offset the impact of diminishing marginal returns.
 
 ### Neoclassical model
-Its primary focus is on estimating the economy's long-term steady state growth rate. When the output-to-capital ratio is constant, the labor-to-capital ratio and output per capita also grow at the equilibrium growth rate, $g^*$.
+Its primary focus is on estimating the economy's long-term steady state growth rate. When the output-to-capital ratio is constant, the labor-to-capital ratio and output per capita also grow at the equilibrium growth rate, $g^*$. Letting $\theta$ denote the growth rate of TFP (i.e., $\Delta A/A$), $\alpha$ the elasticity of output with repect of captial, $n$ the growth rate of labor.
 
 $$g^* = growth\ rate\ of\ output\ per\ capita = \Delta y/y = \frac{\theta}{1 - \alpha}$$
 $$growth\ rate\ of\ output = \Delta Y/Y = \Delta y/ y + n = \frac{\theta}{1 - \alpha} + n$$
 
-Considering the equation $\Delta k/k = sY - \delta K$.
-We can get the constant $\Psi$
+Considering the equation $\Delta k/k = sY - \delta K$. Where $s$ is the fraction of incoming that is saved and $\delta$ is the change in the physical capital stock.
+We can get the constant, output-to-capital ratio $\Psi$
 
 $$\frac{Y}{K} = (\frac{1}{s})[(\frac{\theta}{1 - \alpha}) + \delta + n] \equiv \Psi$$
 
-Note that even though the capital-to-labor ratio (k) is rising at rate $[\theta/(1 - \alpha)]$ in the steady state, the increase in the capital-to-labor ratio (k) has no impact on the marginal product of capital, which is not changing. Captial deepening is occurring, but is has no effect on the growth rate of the economy or on the marginal product of capital once the steady state is reached.
+Note that even though the capital-to-labor ratio (k = K/L) is rising at rate $[\theta/(1 - \alpha)]$ in the steady state, the increase in the capital-to-labor ratio (k) has no impact on the marginal product of capital, which is not changing. *Captial deepening is occurring, but it has no effect on the growth rate of the economy or on the marginal product of capital once the steady state is reached.*
+
+**Steady State in the Neoclassical Model ($[\frac{\theta}{1 - \alpha}) + \delta + n] = sf(k)$)**
++ Saving rate(s): higher saving rate, higher capital-to-labor ratio
++ Labor force growth (n): higher labor force growth, lower capital-to-labor ratio
++ Depreciation rate($\delta$): higher depreciation rate, lower capital-to-labor ratio
++ Growth in TFP ($\theta$): higher growth in TFP, lower capital-to-labor ratio
 
 #### Implications of the Neoclassical Model
 1. Capital accumulation
@@ -899,3 +906,13 @@ Note that even though the capital-to-labor ratio (k) is rising at rate $[\theta/
     2. during the transition period, the economy moves to a higher level of per capita output and productivity.
     3. once an economy achieves steady state growth, the growth rate does not depend on the percentage of income saved or invested. Higher savings cannot permanently raise the growth rate of output.
     4. however, coutries with higher saving rates will have a higher level of per capita output, a higher capital-to-labor ratio, and a higher level of labor productivity.
+
+If the economy has not yet reached the steady state, the growth rates of output per capita and the capital-to-labor ratio as, respectively,
+
+$$\frac{\Delta y}{y} = \frac{\theta}{1 - \alpha} + \alpha s (\frac{Y}{K} - \Psi) = \frac{\theta}{1 - \alpha} + \alpha s (y/k - \Psi)$$
+
+and
+
+$$\frac{\Delta k}{k} = \frac{\theta}{1 - \alpha} + s (\frac{Y}{K} - \Psi) = \frac{\theta}{1 - \alpha} + s (y/k - \Psi)$$
+
+Where $\Psi$ is the new steady state output-to-capital ratio, y/k is the actual output-to-capital ratio which doesn't change immediately.
