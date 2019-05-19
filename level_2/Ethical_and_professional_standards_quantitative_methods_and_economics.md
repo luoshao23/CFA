@@ -164,6 +164,9 @@ In fact, in simple linear regression we have $t^2 = F$, see [Relationship betwee
 
 ## Multiple regression and issues in regression analysis
 
++ regression model uncertainty: 遗漏变量导致
++ parameter estimate uncertainty: 主观影响，p值
+
 ### Hypothesis testing of regression coefficients
 The t-statistic used to test the significance of the individual coefficients in a multiple regression is calculated using the same formula that is used with simple linear regression.
 $$t = \frac{\hat{b_j} - b_j}{s_{\hat{b_j}}} = \frac{estimated\ regression\ coefficient - hypothesized\ value}{cofficient\ standard\ error\ of\ b_j}$$
@@ -212,7 +215,7 @@ There are four effects of heteroskedasticity you need to be aware of:
 + The stanard errors are usually unreliable estimates.
 + The coefficient estimates (the $\hat{b_j}$) aren't affected.
 + If the standard errors are too small, but the coefficient estimates themselves are not affected, the t-statistics will be too large and the null hypothesis of no statistical significance is rejected too often, The opposite will be true if the standard errors are too large.
-+ The F-test is also reliable.
++ The F-test is also **unreliable**.
 
 ### Detecting heteroskedasticity
 There are two methods to detect heteroskedasticity: examing scatter plots of the residuals and using the Breusch-Pagan chi-square ($\chi^2$) test.
@@ -259,6 +262,14 @@ $H_0$: the regression has no positive serial correlation
 
 ### Effect of multicollinearity on regression analysis
 Multicollinearity makes the slope coefficients tend to be unreliable, the standard errors of the slope coefficients are artificially inflated. Hence, there is *a greater probability that we will incorrectly conclude that a variable is not statistically significant*.
+
+参数误差变大。t检验显著性会改变。
+
+| | 异方差 | 序列自相关 | 多重共线性 |
+|---|--- |----| -----|
+| 参数 | 无影响 | 无影响  | 影响 |
+| $Sb_j$ /F-test / t-test | 影响 | 影响  | 影响 |
+
 
 ### Detecting multicollinearity
 The most common way to detect multicollinearity is the situation where *t-test values are significantly different than zero*, while the *F-test is statistically significant* and the *$R^2$ is high*. If , in CFA exam, the absolute value of the sample correlation between any two independent variables in the regression is greater than **0.7**, multicollinearity is a potential problem.
@@ -307,20 +318,27 @@ If the resisduals have significant autocorrelation, the AR model that produced t
 
 1. **Estimate** the AR model being evaluated using linear regression: Start with a first-order AR model, i.e. AR(1)
 2. **Calculate** the autocorrelations of the model's residuals (i.e., the level of correlation between the forecast errors from one period to the next).
-3. **Test** whether the autocorrelations are significantly different from zero: If the model is correct specified, noen of the autocorrelations will be statistically significant. To test for significance, a *t-test* is used to test the hypothesis that the residuals are zero. The *t-statistic* is the estimated autocorrelation divided by the standard error (i.e., $1/\sqrt{T}$), so the test statistic for each autocorrelation is $t = \frac{\rho_{\epsilon_t,\epsilon_{t-k}}}{1/\sqrt{T}}$ with (T-2) degrees of freedom.
+3. **Test** whether the autocorrelations are significantly different from zero: If the model is correct specified, none of the autocorrelations will be statistically significant. To test for significance, a *t-test* is used to test the hypothesis that the residuals are zero. The *t-statistic* is the estimated autocorrelation divided by the standard error ($\hat{x_t} = 1/\sqrt{T}$), so the test statistic for each autocorrelation is $t = \frac{\rho_{\epsilon_t,\epsilon_{t-k}}}{1/\sqrt{T}}$ with (T-2) degrees of freedom.
 
 > t-test is difference of the test index divided by the standard error.
 
 A time series must have a finite mean-reverting level (i.e., $\frac{b_0}{1-b_1}$) to be covariance stationary. Thus, a random walk, with or without a drift, is not covariance stationary, and exhibits what is known as a unit root ($b_1$=1).
 
+> A sequence of random variables is **covariance stationary** if all the terms of the sequence have the **same mean**, and if the covariance between any two terms of the sequence depends only on the **relative positions** of the two terms, that is, on how far apart they are located from each other, and not on their absolute position, that is, on where they are located in the sequence.
+
+**Def.** A sequence of random variables $\{X_n\}$ is *covariance stationary* if and only if
+
+$$\exists \mu \in \R : E[X_n] = \mu, \forall n > 0$$
+$$\forall j \ge 0, \exists \gamma_j \in \R : Cov[X_n, X_{n-j}] = \gamma_j, \forall n > j$$
+
 ### Unit Root testing for nonstationary
-**Dick and Fuller** created a rather ingenius test for a unit root. Instead of testing whether the original coefficient is different ($b_1 - 1$) is different from zero using a modified *t-test*. If ($b_1 - 1$) is not significantly different from zero, they say that $b_1$ must be equal to 1.0 and, therefore, the series must have a unit root and is nonstationary (i.e., it is not covariance stationary).
+**Dick and Fuller** created a rather ingenius test for a unit root. Instead of testing whether the original coefficient  ($b_1 - 1$) is different from zero using a modified *t-test*. If ($b_1 - 1$) is not significantly different from zero, they say that $b_1$ must be equal to 1.0 and, therefore, the series must have a unit root and is nonstationary (i.e., it is not covariance stationary).
 
 ### seasonality
 To adjust for seasonality in an AR model, an additional lag of the dependent variable is added to the orignal model as another independent variable.
 
 ### using ARCH models
-An ARCH model is used to test for autoregressive conditional heteroskedasticity. With in the ARCH framework, an ARCH(1) time series is one for which the variance of the residuals in one period is dependent on (i.e., a function of ) the variance of the residuals in the preceding period. To test whether a time series is ARCH(1), the squared residuals from an estimated time-series model, $\hat{\epsilon}_t^2$, are regressed on the first lag of the squared residuals $\hat{\epsilon}_{t-1}^2$. The ARCH(1) regression model is expressed as:
+An ARCH model is used to test for *autoregressive conditional heteroskedasticity*. With in the ARCH framework, an ARCH(1) time series is one for which the variance of the residuals in one period is dependent on (i.e., a function of ) the variance of the residuals in the preceding period. To test whether a time series is ARCH(1), the squared residuals from an estimated time-series model, $\hat{\epsilon}_t^2$, are regressed on the first lag of the squared residuals $\hat{\epsilon}_{t-1}^2$. The ARCH(1) regression model is expressed as:
 $$\hat{\epsilon}_t^2 = a_0 + a_1 \hat{\epsilon}_{t-1}^2+ \mu_t$$
 
 ### Cointegration
@@ -444,7 +462,9 @@ $$(\frac{A}{C})_{offer} = (\frac{A}{B})_{offer} \times (\frac{B}{C})_{offer}$$
 $$(\frac{A}{C})_{offer} = \frac{1}{(\frac{C}{A})_{bid} }$$
 $$(\frac{A}{C})_{bid} = \frac{1}{(\frac{C}{A})_{offer} }$$
 
-A currency is quoted at a **forward premium** relative to a second currency if the forward price is greater than the sport price and **forward discount** if less than the spot price.
+> 相除对角，相乘同边
+
+A currency is quoted at a **forward premium** relative to a second currency if the forward price is greater than the spot price and **forward discount** if less than the spot price.
 
 The value of a forward contract (to the party buying the base currency) at maturity (time T) is:
 $$V_T = (FP_T - FP)(contract size)$$
@@ -490,13 +510,19 @@ According to the uncovered interest rate parity condition, the expected return o
 In domestic currency terms. the investment return on an uncovered foreign-cuurency-denominated investment is equal to
 $$(1 + i_f)(1 - \%\Delta S_{f/d}) - 1$$
 This return can be approximated using the following equation:
-$$\approx i_f - \%\Delta S_{f/d}$$
+$$\cong i_f - \%\Delta S_{f/d}$$
 
 Using the example, suppose the return on the one-year foreign money market instrument 10% while the return on the domestic money market instrument is 4%.
 
 1. The $S_{f/d}$ rate is expected to remain unchanged: that is, $\%\Delta S_{f/d}$ = 0. So the investor would prefer the foreign-currency-denominated money market investment.
 2. The domestic currency is expected to appreciate by 10%. So the investor would prefer domestic because the foreign invesmtne is 0% (=10% - 10%)
 3. The domestic currency is expected to appreciate by 6%. In this case, the risk-neutral investor is assumed to be indifferential between the alternatives since 4% = 10% - 6%.
+
+Uncovered interest rate parity says the expected change in the spot exchange rate over the investment horizon should be relfected in the iterest rate differential:
+
+$$ \%\Delta S_{f/d}^e = i_f - i_d$$
+
+where $\Delta S^e$ indicates the change in the spot rate expected for *future periods*.
 
 #### 3. Forward rate parity
 Forward rate parity states that the forward exchange rate will be an unbiased predictor of the future spot exchange rate.
@@ -681,7 +707,7 @@ The impact of expansionary monetary and restrictive fiscal policies (or restrict
 * Monetary and Fiscal Policy and Exchange Rates
 
 | Monetary Policy/ Fiscal Policy |              | Capital Mobility |
-| -- | ------------ | ---------------- |
+| ------------------------------ | ------------ | ---------------- |
 |                                | High         | Low              |
 | Expansionary/Expansionary      | Uncertain    | Depreciation     |
 | Expansionary/Restrictive       | Depreciation | Uncertain        |
@@ -717,15 +743,15 @@ Some studies find, however, that EM policymakers might have greater success in c
 
 #### warning signs of a currency crisis
 If capital inflows come to a sudden stop, the result may be a financial crisis, in which the economy contracts, asset values plummet, and the currency sharply depreciates.
-1. Prior to a currency crisis, the capital markets have been liberalized to allow the free flow of capital
+1. Prior to a currency crisis, the capital markets have been liberalized(自由) to allow the free flow of capital
 2. There are large inflows of foreign capital in the period leading up to a crisis, with short-term funding denominated in a foreign currency being particularly problematic
 3. Currency crises are often preceded by (and often coincide with) banking crises
 4. Countries with fixed or partially fixed exchange rates are more susceptible to currency crises than countries with floating exchange rateds
-5. Foreign exchange reserves tend to decline precipitously as a crisis approuches
-6. In the period leading up to a crisis, the currency has risen substantially relative to its historical mean.
-7. The ratio of exports to imports (known as "the terms of trade") often deteriorates before a crisis
-8. Broad money growth and the ratio of M2 (a measure of money supply) to bank reserves tend to rise prior to a crisis
-9. Inflation tends to be significantly higher in pre-crisis periods compared with tranquil periods.
+5. Foreign exchange reserves tend to **decline↓** precipitously as a crisis approuches
+6. In the period leading up to a crisis, the currency has **risen↑** substantially relative to its historical mean. （均值复归，大涨大跌）
+7. The ratio of exports to imports (known as "the terms of trade") often **deteriorates↓** before a crisis
+8. Broad money growth and the ratio of M2 (a measure of money supply) to bank reserves tend to **rise↑** prior to a crisis
+9. Inflation tends to be significantly **higher↑** in pre-crisis periods compared with tranquil periods.
 
 A high level of foreign exchange reserves held by a country typically decreases the likelihood of a currency crisis.
 
@@ -899,8 +925,9 @@ Note that even though the capital-to-labor ratio (k = K/L) is rising at rate $[\
     4. in the absense of improvements in TFP, the growth of labor productivity and per capita output would eventually slow.
     5. because of diminishing marginal returns to capital, the only way to sustain growth in potential GDP per capita is through technological change or growth in total factor productivity.
 3. Convergence
-    1. given the relative scarcity and hence high marginal productivity of capital and potentially higher saving rates in developing countries, the growth rates of developing countries should exceed those of developed countries.
-    2. as a result, there should be a convergence of per capita incomes between developed and developing countries over time.
+    1. Neoclassical growth theory predicts two types of convergence: *absolute convergence* (developing countries, regardless of their particular characteristics, will eventually catch up with the developed countries and match them in per captia output) and *conditional convergence* (convergence is conditional on the coutries having the same saving rate, population growth rate, and production function). In addtion to the first two convergence concepts, we have the notion of club convergence, where only rich and middle-income countries that are members of the club are converging to the income level of the richest countries in the world.
+    2. given the relative scarcity and hence high marginal productivity of capital and potentially higher saving rates in developing countries, the growth rates of developing countries should exceed those of developed countries.
+    3. as a result, there should be a convergence of per capita incomes between developed and developing countries over time.
 4. Effect of savings on growth
     1. the initial impact of a higher saving rate is to temporarily raise the rate of growth in the economy. However, the economy returns to the balanced growth path after the transition period.
     2. during the transition period, the economy moves to a higher level of per capita output and productivity.
@@ -916,3 +943,16 @@ and
 $$\frac{\Delta k}{k} = \frac{\theta}{1 - \alpha} + s (\frac{Y}{K} - \Psi) = \frac{\theta}{1 - \alpha} + s (y/k - \Psi)$$
 
 Where $\Psi$ is the new steady state output-to-capital ratio, y/k is the actual output-to-capital ratio which doesn't change immediately.
+
+#### Endogenous growth theory
+$$\Delta y_e / y_e = \Delta k_e / k_e = sc - \delta - n$$
+Examination of the equation shows that a higher saving rate (s) implies a permanently higher growth rate. This is the key result of the endogenous growth model.
+
+## Growth in an open economy
+According to the neoclassical model, convergence should occur more quickly if economies are open and there is free trade and international borrowing and lending. Opening up the economy should increase the rate at which countries’ capital-to-labor ratios converge.
+
+# Economics of Regulation
+## Regulatory interdependencies
++ Regulatory capture theory
++ Regulatory competition
++ Regulatory arbitrage
