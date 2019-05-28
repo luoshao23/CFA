@@ -659,7 +659,9 @@ CAL is the combination of the risk-free asset with zero risk and the portfolio o
 ![Optimal Investor Portfolio](https://jigsaw.vitalsource.com/books/9781942471912/epub/OEBPS/images/CFA0159-R-EXH25.png)
 
 # capital market theory
-## capital market line
+
+## capital market line (CML)
+
 > market: a means of bringing buyers and sellers together to exchange goods and services
 
 The portfolio return and portfolio standard deviation can be simplified and rewritten as:
@@ -668,11 +670,14 @@ $$E(R_p) = R_f + (\frac{E(R_m) - R_f}{\sigma_m}) \times sigma_p$$
 Investors who believe market prices are informationally efficient often follow a passive investment strategy.
 
 ## pricing of risk and computation of expected return
+
 ### systemic risk and non-systematic risk
+
 + systematic risk: risk that affects the entire market or economy; it cannot be avoided and is inherent in the overall market. Systematic risk is also known as non-diversifiable or market risk.
 + non-systematic risk: unique risk that is local or limited to a particular asset or industry that need not affect assets outside of that asset class.
 
 e.g.
+
 + a risk-free asset has no risk. Therefore, a risk-free asset has zero systematic risk and zero non-systematic risk.
 
 Total variance = systematic variance + non-systematic variance
