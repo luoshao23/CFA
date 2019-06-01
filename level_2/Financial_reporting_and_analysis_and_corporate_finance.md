@@ -4,9 +4,9 @@
 
 + Current ratio = Current assets ÷ Current liabilities
 
-+ Quick ratio = (Cash + Short-term marketable investments + + Receivables) ÷ Current liabilities
++ Quick ratio = (Cash + Short-term marketable investments + Receivables) ÷ Current liabilities
 
-+ Cash ratio = (Cash + Short-term marketable investments) ÷ Current + liabilities
++ Cash ratio = (Cash + Short-term marketable investments) ÷ Current liabilities
 
 + Defensive interval ratio = (Cash + Short-term marketable + investments + Receivables) ÷ Daily cash expenditures
 
@@ -26,7 +26,7 @@
 
 + Working capital turnover ratio = Total revenue ÷ Average working + capital
 
-+ Fixed asset turnover ratio = Total revenue ÷ Average net fixed  assets
++ Fixed asset turnover ratio = Total revenue ÷ Average net fixed assets
 
 + Total asset turnover ratio = Total revenue ÷ Average total assets
 
@@ -54,7 +54,7 @@
 
 + EBIT margin = Earnings before interest and taxes ÷ Total revenue
 
-+ Financial leverage ratio (equity multiplier) = Average total + assets ÷ Average shareholders’ equity
++ Financial leverage ratio (equity multiplier) = Average total assets ÷ Average shareholders’ equity
 
 + Total debt = The total of interest-bearing short-term and long-term debt, excluding liabilities such as accrued expenses + and accounts payable
 
@@ -91,7 +91,7 @@
 | Current Financail reporting | Held to maturity (**only for bond**); AFS (OCI); Fair value through P/L; Loan & receivables; | Equity method | Consolidation | Equity method or proportionate consolidation |
 | New Financail reporting | FV through P/L; FV through OCI; Amortized cost (HTM); | Equity method | Consolidation | Equity method |
 
-+ financail assets (<20%)
++ financial assets (<20%)
   + Available for sale (AFS): unrealized gain and loss in **OCI**, carried at market value
   + Held for trading: gain and loss in **income**, carried at market value
   + Held-to-maturity (HTM): carried at historical cost plus any discout, or minus any premium, reported on the BS at **amortized cost**
@@ -206,3 +206,45 @@ there are two method used to remeasure or translate the financial statement of a
 
 + **Remeasurement** involves converting the local currency into functional currency using the **temporal method**.
 + **Translation** involves converting the functional currency into the parent's presentation currency using the **current rate method**.
+
+Local currency = Functional currency <Current rate> presentation currency
+Local currency <Temporal> Functional currency = presentation currency
+Local currency <Temporal> Functional currency <Current rate> presentation currency
+
+`current rate` is the exchange rate on the balance sheet date
+
+`average rate` is the average exchange rate over the reporting period
+
+`historical rate` is the actual rate that was in effect when the original transaction occurred.
+
+### Applying the current rate method
+
++ all income statement accounts are translated at the average rate.
++ All balance sheet accounts are translated at the current rate except for common stock, which is translated at the historical rate that applied when the stock was issued.
++ Divivdends are translated at the rate that applied when they were declared
++ translation gain or loss is reported in shareholders' equity as a part of the cumulative translation adjustment (CTA).
+
+### Applying the temporal method
+
++ monetary assets and liabilities are remeasured using the current exchange rate (end-of-period). Monetary assets and liabilities are fixed in the amount of currency to be recerived or paid and include: cash, receivables, payables, and short-term and long-term debt.
++ All other assets and liablilities are considered nonmonetary and are remeasured at the historical rate. The most common nonmonetary assets include inventory, fixed assets, and intangible assets. An example of a nonmonetary liability is unearned revenue.
++ Just like the current rate method, common stock and dividends paid are remeasured at the historical rate.
++ Expenses related to nonmonetary assets such as COGS, depreciation expense, and amortization expense are remeasured based on the historical rates prevailing at the time of purchase.
++ Revenues and all other expenses are translated at the average rate.
++ Remeasurement gain or loss is recognized in the income statement. This results in more volatile net income as compared to the current rate method whereby the translation gain or loass is reported in shareholders' equity.
+
+| Items | Temporal Method | Current Rate Method |
+| ----- | --------------- | ------------------- |
+| Monetary assets and liabilities | Current rate | Current rate |
+| Nonmonetary assets and liabilities | Historical rate | Current rate |
+| Common stock | Historical rate | Historical rate |
+| Equity | Mixed | Current rate |
+| Revenues and SG&A | average rate | average rate |
+| COGS | Historical rate | average rate |
+| Depre & Amort | Historical rate | average rate |
+| Net income | Mixed rate | average rate |
+| Exposure | Net monetary assets | Net rate |
+| Exchange rate gain or loss | Income statement | Equity |
+
+Temporal method exposure = monetoray asset - monetoray liabilities
+Current rate method exposure = total asset - total liabilities
