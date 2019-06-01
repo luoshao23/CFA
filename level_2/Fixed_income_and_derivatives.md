@@ -286,7 +286,7 @@ since $1+R_f = D*P_D + U*P_U = D*(1-P_U) + U*P_U = (U-D)*P_U + D$
 
   r(B) = continuously compounded base currency interest rate
 
-  BASE/PRICE, e.g., 1.25 EURO/USD = 1 euro is equal to 1.25 dollar
+  BASE/PRICE, e.g., EURO/USD: 1.25 = 1 euro is equal to 1.25 dollar
 
 ### The Black Model
 
