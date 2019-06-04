@@ -248,3 +248,141 @@ Local currency <Temporal> Functional currency <Current rate> presentation curren
 
 Temporal method exposure = monetoray asset - monetoray liabilities
 Current rate method exposure = total asset - total liabilities
+
+## Evaluating quality of financail reports
+
+### Financail reports quality (High to low)
+
+1. GAAP compliant and decision-useful, high-quality earning
+2. GAAP compliant and decision-useful, low-quality earning
+3. GAAP compliant but not decision-useful (biased choices).
+4. Non-compliant accounting
+5. Fraudulent accounting
+
+### Quantitative tools
+
+#### The beneish model
+
+M-score = -4.84 + 0.920(DSRI) + 0.528(GMI) + 0.404(AQI) + 0.892(SGI) + 0.115(DEPI) - 0.172(SGAI) + 4.67(Accruals) -0.327(LEVI)
+
+#### ALtman Model
+
+## Integration of financial statement analysis techniques
+
+ROE= Tax Burden * Interest Burden * EBIT Margin * Total asset turnover * Financail leverage
+
+= (NI / EBT) * (EBT /EBIT) * (EBIT/revenue) * (revenue/average assets) * (average assets/average equity)
+
+#### Accruals Ratio
+
+NOA: Net operating assets
+
+accruals_BS = NOA_END - NOA_BEG
+
+accruals ratio_BS = (NOA_END - NOA_BEG) / [(NOA_END + NOA_BEG)/2]
+
+accruals_CF = NI - CFO - CFI
+
+accrauls ratio_CF = (NI - CFO - CFI) / [(NOA_END + NOA_BEG)/2]
+
+## Capital budgeting
+
+### Extension project analysis
+
++ Initail investment outlay
+
+  outlay = FCInv + NWCInv
+
+  where:
+
+  FCInv = shipping and installation
+
+  NWCInv = investment in net working capital = $\Delta$non-cash current assets - $\Delta$non-debt current liabilities = $\Delta$NWC
+
++ After-tax operating cash flows (CF)
+
+  $$CF = (S-C-D)(1-T) + D = (S-C)(1-T) + TD = EBIT(1-T) + D = EBITDA + TD$$
+
+  where:
+
+  S = sales, C = cash operating costs, D = depreciation expense, T = marginal tax rate
+
++ Terminal year after-tax non-operating cash flows (TNOCF)
+
+  $$TNOCF = Sal_T + NWCInv -T(Sal_T - B_T)$$
+
+  where:
+
+  $Sal_T$ = pre-tax cash proceeds from sale of fixed capital
+
+  $B_T$ = book vlaue of the fixed capital sold
+
+### Replacement Project Analysis
+
+1. outlay = FCInv + NWCInv - ($Sal_0 - T(Sal_0 - B_0)$)
+2. $\Delta CF = (\Delta S - \Delta C) (1-T) + \Delta DT$
+3. $TNOCF = (Sal_{TNew} - Sal_{TOld}) + NWCInv - T[(Sal_{TNew} - B_{TNew}) - (Sal_{TOld} - B_{TOld})]$
+
+### infaltion effect
+
++ if inflation is higher, future project cash flows are worth less, and value of the project will be lower.
++ inflation reduces the tax savings from depreciation
++ inflation decrease the value of payments to bondholders
++ inflation may affect revenues and costs differently.
+
+### Mutually exclusive projects with different lives
+
+1. Least common multiple of lives approach
+2. Equivalent annual annuity (EAA) approach
+
+$$R_{project} = R_F + \beta_{project}[E(R_{MKT}) - R_F ]$$
+
+where:
+
+$R_F$ = risk-free rate
+
+$\beta_{project}$ = project beta
+
+$E(R_{MKT}) - R_F$ = market risk premium
+
+### Real options and evaluate a capital prokkect using real options
+
++ Timing options, allow a company to delay making an investment with the hope of having better information in the future
++ Abandonment options, similar to put options, abandon a project; A project should be abandoned in the future only when its abandonment value is more than the discounted value of the remaining cash flows.
++ Expansion options, similar to call options, make additional investments
++ Flexibility options
+  + Price-setting options, change the price of a product
+  + Production-flexibility
++ Fundamental options, are projects that are options themselves. For example, a copper mine which is related to copper price.
+
+overall NPV = project NPV (based on DCF) - option cost + option value
+
+### economic income
+
+economic income = cash flow + (ending market value - beginning market value)
+
+economic income = cash flow - economic depreciation
+
+For year 1 = $CF_1 - (V_0 - V_1)$
+
+### Economic profit
+
+$EP = NOPAT - \$WACC$
+
+where:
+
+$NOPAT = EBIT(1- tax rate)$
+
+$WACC = WACC * capital
+
+WACC = (Market weight of debt * After-tax cost of debt) + (Market weight of equity * cost of equity)
+
+### Residual income
+
+$$RI_t = NI_t - r_e B_{t-1}$$
+
+### Market value added
+
+$$MVA = \sum_t PV(EP_t)$$
+
+## Capital structure
