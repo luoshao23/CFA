@@ -231,7 +231,7 @@ Local currency <Temporal> Functional currency <Current rate> presentation curren
 + Just like the current rate method, common stock and dividends paid are remeasured at the historical rate.
 + Expenses related to nonmonetary assets such as COGS, depreciation expense, and amortization expense are remeasured based on the historical rates prevailing at the time of purchase.
 + Revenues and all other expenses are translated at the average rate.
-+ Remeasurement gain or loss is recognized in the income statement. This results in more volatile net income as compared to the current rate method whereby the translation gain or loass is reported in shareholders' equity.
++ Remeasurement gain or loss is recognized in the income statement. This results in more volatile net income as compared to the current rate method whereby the translation gain or loss is reported in shareholders' equity.
 
 | Items | Temporal Method | Current Rate Method |
 | ----- | --------------- | ------------------- |

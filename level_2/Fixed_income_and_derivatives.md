@@ -146,6 +146,9 @@ The owner of a `convertible bond` has the right to convert the bond into a fixed
 + The fact that the one-sided up-duration is higher than the one-sided down-duration confirms that the callable bond is more sensitive to interest rate rises than to interest rate declines.
 + putable bond is more sensitive to interest rate declines than to interest rate rises.
 
+> A bond’s sensitivity to changes in the shape of the yield curve, steepening or flattening, is captured by key rate duration. One-sided duration (up or down) is better than effective or two-sided duration at capturing the interest rate sensitivity of a callable or putable bond but only for a parallel shift in the yield curve, not for changes in the shape of the yield curve.
+
+
 ## Credit analysis models
 
 `Recovery rate`: Loss given defualt (%) = 100 - recovery rate
