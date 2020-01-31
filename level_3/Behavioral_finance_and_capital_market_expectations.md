@@ -309,6 +309,15 @@ Low wealth / High SLR | close to the rational asset allocation suggestion: +/- 0
   | bias types     | emotinal | cognitive | cognitive | emotional |
   | BITs           | Passive Preserver (PP) | Friendly Follower (FF) | Independent Individualist (II) | Active Accumulator (AA) |
 
+  + PP
+    + passive; low risk, emotional; a great deal on financial security; focus on family and security; more receptive to "big picture"
+  + FF
+    + passive; low to medium risk tolerance, cognitive; follow leads from others; be in the latest investment without regard to current market conditions; **overestimate their risk tolerance**; comply with proffesional advice when getting it; regret aversion
+  + II
+    + active; medium to high risk tolerance, cognitive; self-assured when making decisions while susceptible to acting on informaiton available; sometime make an investment without consulting anyone; maintain the opinion even when market conditions change; most likely to be contrarian
+  + AA
+    + active; high risk tolerance,emotional bias; most aggressive; entrepreneurial and first generation to create wealth; overconfidence; high  turnover rate; heavily involved in decision making process
+
 #### limitations
 
 1. individuals may exhibit both cognitive errors and emtional bias
@@ -331,7 +340,7 @@ defined contribution (DC) plan
 + inertia and default
   + consistent with status quo
   + target date fund: 定期变动fund
-+ naive diversification: 1/n strategy
++ naive diversification: 1/n strategy, of framing bias
 + investing in the familiar: company stock
   + familarity and overconfidence
   + naive extrapolation of past returns: representativeness bias
@@ -374,6 +383,14 @@ defined contribution (DC) plan
   + herding
   + regret: trending-chasing effect
 + bubbles and crash: deviate from the mean value by over 2 sigma
+  + overconfidence
+  + confirmation bias, self-attribution bias
+  + illusion of knowledge
+  + disposition effect
+  + hindsight bias
++ value and growth
+  + halo effect(光环效应): an emotional bias that extends a favorable evaluation of some characteriscs to other characteristics
+  + home bias: a preference for securities listed on the exchanges of one's home country.
 
 ### 九大challenge
 
