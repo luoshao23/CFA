@@ -10,6 +10,7 @@
 + BSM model
     $$C_0 = [S_0 \times N(d_1)] - [X \times e^{-R_f^c \times T} \times N(d_2)]$$
 + factors affect the value of an option, $P_{option} = f(S, X, T, r_f, \sigma)$
+
   | sensitivity factor | calls | puts |
   | ------------------ | ----- | ---- |
   | underlying price   |  +    |  -   |
