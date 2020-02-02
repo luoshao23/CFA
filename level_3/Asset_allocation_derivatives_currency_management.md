@@ -166,3 +166,53 @@ $$\sigma_{Annual}(\%) = \sigma_{Monthly}(\%) \sqrt{\frac{252}{21}}$$
 | Expected Move in Implied Volatility | Decrease | Write calls | Write straddle | Write puts |
 |  | Remain Unchanged | Write calls and buy puts | Calendar spread | Buy calls and write puts |
 |  | Increase | Buy puts | Buy straddle | Buy calls |
+
+## interest rate risk
+
+### interest rate swap
+
+for individual assets and liabilities, the tradeoff is between the market value risk associated with fixed rates and the cash flow risk associated with floating rates
+
+interest rate swaps can be used to
+
++ convert between floating exposure and fixed exposure
+
+    | existing exposure | converting | interest rate swap required | beneficial when |
+    | ------| ------- | ------- | -------- |
+    | floating-rate liability | floating to fixed | payer swap | floating rates expected to rise |
+    | fixed-rate liability | fixed to floating | recerver swap | flaoting rates expected to fall |
+    | floating-rate asset | floating to fixed | receiver swap | floating rates expected to fall |
+    | fixed-rate asset | fixed to floating | payer swap | floating rates expected to rise |
++ alter the duration of a fixed-income protfolio
+
+  + **duration** = $duration_{receive} - duration_{pay}$
+  + A pay-fixed, receive-floating swap has a negative (positive) duration from the perspective of a fixed-rate payer
+  + for fixed-rate side, duration is approximately **0.75**
+  + for floating-rate side, reset period 0.5 or average 0.5*1/2 = 0.25
+  + the portfolio manager can achieve a combination of the existing portfolio and the interest rate swap that sets the overall protfolio duation to the target dutation:
+    $$MV_P \cdot MDUR_P + N_S \cdot MDUR_S = MV_P \cdot MDUR_T$$
+
+    or
+
+    $$N_S = \frac{MDUR_T - MDUR_P}{MDUR_S} MV_P$$
+
+### Forward rate agreement (FRA)
+
+A forward rate agreement is an OTC derivative instruemnt that is used mainly to hedge a loan expected to be taken out in the near future or to hedge against changes in the level of interest rates in the future.
+
+可能会违约
+
+### Short-term interest rate (STIR) futures
+
++ Eurodollar futures 报价 100 - annualized forward rate
++ the pricing convention means that futures prices will rise when forward rates fall
++ one basis point change in the forward rate will cause the contract's value to change by $25 ($1 million * 0.0001 (1bps) * 90/360 = $25)
+
+#### Eurodollar futures v.s. FRA
+
++ a long Eurodollar futures position will increase in value as forward rates decrease, and decrease in value as forward rates increase，场内，基本无违约风险，标准化
++ a long FRA position, which increase in value as forward rates increase, and decrease in value as forward rares decrease，场外，有违约风险，可以任意定制
+
+why? 一个是利率，一个是100-利率
+
++ both eurodollar futures and FRA agreements allow lenders and borrowers to lock in rates for future borrowing and lending
