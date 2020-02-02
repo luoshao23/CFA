@@ -55,11 +55,6 @@
 
 ### investment objectives of covered calls
 
-+ Delta ($\Delta$) = change in value of option / change in value of underlying, + for long call, - for long put
-+ Gamma ($\Gamma$) = change in delta / change in value of underlying, + for long call and put
-+ Vega ($\nu$) = change in value of option / change in volatitlity of underlying, + for long call and put
-+ Theta ($\Theta$) = daily change in an option's price, - for long call and put
-
 covered call profit at expiratin = $S_T - Max[(S_T - X), 0] + c_0 - S_0$
 
 maximum gain = $X - S_0 + c_0$
@@ -111,3 +106,63 @@ Breakeven price (if exists) = $S_0 + p_0 - c_0$
 
 + put spread: 熊市用put顺势而为，$put_H - put_L - p_H + p_L$
 + call spread: 熊市用call赚premium，$-call_L + call_H + c_L - c_H$
+
+### calendar spread
+
+\- near-dated call + longer-dated one
+
+## straddle
+
+*put + call* at same **exercise price** and same **expiration date**, on same **underlying asset**
+
+## option Greeks
+
++ Delta ($\Delta$) = change in value of option / change in value of underlying, + for long call, - for long put
+  + call delta 0->1 when stock price increases
+  + put delta -1->0 when stock price increases
+  + $\Delta = N(d_1)$ for call, and $\Delta = N(d_1) - 1$ for put
++ Gamma ($\Gamma$) = change in delta / change in value of underlying, + for long call and put
+  + Gamma = $\Delta delta / \Delta S$
+  + call and put options on the same stock with the same T and X have equal gamma
+  + Gamma is largest when the option is **at-the-money** or **near expiration**
+  + if the option is deep in- or out- of the money, gamma approaches 0.
++ Vega ($\nu$) = change in value of option / change in volatitlity of underlying, + for long call and put
++ Theta ($\Theta$) = daily change in an option's price, - for long call and put
++ Rho ($\Rho$), + for call, - for put
+  + small impact compared to vega
+
+## implied volatility and volatility skew
+
+`volatility smile`: the implied volatility is relatively low for **at-the-money** options. It becomes progressively higher as an option moves either **into the money or out of the money**.
+
+`volatility skew` (smirk): the volatility used to price a **low-strike-price** option is significantly higher than that used to price a **high-strike-pirce** option (especially **equity** options)
+
+### why smirk?
+
++ leverage (equity price -> volatility), companies become more risky
++ volatility feedback effect (volatility -> equity price), investors require a high return when price declines
++ *crashophobia* (expected equity-> implied volatility), 恐慌
+
+### strategy
+
+因为低价的风险高估，所以**long call and short put**，但存在下行风险 a long exposure to the underlying
+
+### alternative ways of characterizing the volatility smile
+
++ K/S_0 or K/F_0
++ delta
+
+### volatility surfaces
+
++ implied volatility tends to be an increasing fucniton of maturity when short-dated volitilities are historically low
++ implied volatility tends to be an decreaing fucniton of maturity when short-dated volitilities are historically high
+
+$$\sigma_{Annual}(\%) = \sigma_{Monthly}(\%) \sqrt{\frac{252}{21}}$$
+
+### criteria for identifying appropriate option strategies
+
+|  |  | Bearish | Neutral View | Bullish |
+|---|---|------|--------|---------|
+| Expected Move in Implied Volatility | Decrease | Write calls | Write straddle | Write puts |
+|  | Remain Unchanged | Write calls and buy puts | Calendar spread | Buy calls and write puts |
+|  | Increase | Buy puts | Buy straddle | Buy calls |
