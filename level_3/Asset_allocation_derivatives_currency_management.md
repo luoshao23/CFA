@@ -213,7 +213,17 @@ A forward rate agreement is an OTC derivative instruemnt that is used mainly to 
 
 + a long Eurodollar futures position will increase in value as forward rates decrease, and decrease in value as forward rates increase，场内，基本无违约风险，标准化
 + a long FRA position, which increase in value as forward rates increase, and decrease in value as forward rares decrease，场外，有违约风险，可以任意定制
++ borrower long FRA, short Eurodollar futures
++ lender short FRA, long Eurodollar
 
-why? 一个是利率，一个是100-利率
+why? 一个是利率，一个报价是100-利率
 
 + both eurodollar futures and FRA agreements allow lenders and borrowers to lock in rates for future borrowing and lending
+
+### fixed-income futures
+
+underlying: hyoothetical 30 year treasury bond with 6% coupon rate (why 6%?推出期货前后国债的收益率)
+
+虚拟债券，实体交割，实际债券由卖方决定，防止逼空（即买方自己囤积该类债券做多，然后让卖方按该类债券交割）。故卖方交割CTD(cheapest-to-deliver) bond, bond can be deliverable: $100000 par value T-bonds with any coupon with a maturity of at least 15 years.
+
+for a specific bond A: $FP_f = FP_A \times \frac{1}{CF_A}$ or $FP_A = CF_A \times FP_f$
