@@ -227,3 +227,36 @@ underlying: hyoothetical 30 year treasury bond with 6% coupon rate (why 6%?推�
 虚拟债券，实体交割，实际债券由卖方决定，防止逼空（即买方自己囤积该类债券做多，然后让卖方按该类债券交割）。故卖方交割CTD(cheapest-to-deliver) bond, bond can be deliverable: $100000 par value T-bonds with any coupon with a maturity of at least 15 years.
 
 for a specific bond A: $FP_f = FP_A \times \frac{1}{CF_A}$ or $FP_A = CF_A \times FP_f$
+
+$$N = \frac{D_T - D_P}{D_f} \cdot \frac{P_\$}{f_\$} = \frac{D_T - D_P}{D_{CTD} / CF_{CTD}} \cdot \frac{P_\$}{f_\$} = \frac{BPV_T - BPV_P}{BPV_{CTD}} CF_{CTD}$$
+
+a.k.a.,
+
+$$HR = \frac{\Delta P}{\Delta CTD} CF$$
+
+$$BPVHR = \frac{-BPV_P}{BPV_{CTD}} CF$$
+
+### Equity swaps
+
+An equity swap is used to convert the returns from an equity investment into another series of returns, which either can be derived from another equity series or can be a fixed rate.
+
+`!Note`: 可能出现双收双支
+
++ receive-equity return, pay-fixed
++ receive-equity return, pay-floating;
++ receive-equity return, pay-another equity return
+
+The equity return may include dividend return plus price return based on
+
++ a single stock
++ a basket of equities
++ an equity index
+
+### Equity forwards and futures
+
+$$N_f = \frac{\beta_T - \beta_S}{\beta_f} \frac{MV_P}{F} = \frac{\beta_T - \beta_S}{\beta_f} \frac{MV_P}{f \times multiplier}$$
+
++ synthetic risk-free asset = Long stock - stock index future
+  $$N_f = \frac{- \beta_S}{\beta_f} \frac{MV_P}{F}$$
++ synthetic equity = Long risk-free asset + stock index future
+  $$N_f = \frac{\beta_T}{\beta_f} \frac{MV_P}{F}$$
