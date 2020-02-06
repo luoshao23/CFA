@@ -260,3 +260,35 @@ $$N_f = \frac{\beta_T - \beta_S}{\beta_f} \frac{MV_P}{F} = \frac{\beta_T - \beta
   $$N_f = \frac{- \beta_S}{\beta_f} \frac{MV_P}{F}$$
 + synthetic equity = Long risk-free asset + stock index future
   $$N_f = \frac{\beta_T}{\beta_f} \frac{MV_P}{F}$$
+
+### currency swap
+
+reason for currency swap:
+
++ converting a loan in one currency into a loan in another currency
+  + cross-currency basis swap: in which **notional principals are exchanged** because the goal of the transaction is to issue at a more favorable funding rate and swap the amount back to the currency choice
++ converting foreign cash receipts into domestic currency
+  + synthetic borrowing **with no principal**
+
+### currency forwards
+
+HR = Amount of currency to be exchanged / Futures contract size
+
+### Derivatives on volatility
+
+VIX index measures implied volatitlity in the S&P 500 Index over a forward period of 30 days.
+
+As VIX returns and equity returns are mostly negatively correlated. VIX is known as the fear index or fear guage as we can directly view the market's expectation of future volatility.
+
+VIX value is the annualized standard deviation of the expected percentage moves in the S&P 500 Index over the following 30 days.
+
++ VIX futures
+  + cannot invest in spot VIX
++ VIX option
+  + cash-settled European-style
++ Variance swaps
+  + realized variance = $252 \times [\sum_{i=1}^{N-1} R_i^2 / (N-1)]$, where $R_i = ln(P_{i+1}/P_i)$ and N is the number of days observed
+  + variance notional = vega notional / 2K
+  + settlement amount = $N_{Vega}(\frac{\sigma^2 - X^2}{2K}) = N_{variance}(\sigma^2 - X^2)$
+  + market-to-market valuation:
+    $$V_t = PV_t\{variance\ notional \times (\frac{t}{T}[RealizedVol(0,t)]^2 + \frac{T-t}{T}[ImpliedVol(t,T)]^2 - K^2)\}$$
