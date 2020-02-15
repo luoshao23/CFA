@@ -220,9 +220,11 @@ why? 一个是利率，一个报价是100-利率
 
 + both eurodollar futures and FRA agreements allow lenders and borrowers to lock in rates for future borrowing and lending
 
-### fixed-income futures
+### fixed-income futures (长期！)
 
-underlying: hyoothetical 30 year treasury bond with 6% coupon rate (why 6%?推出期货前后国债的收益率)
+underlying: hypothetical 30 year treasury bond with 6% coupon rate (why 6%?推出期货前后国债的收益率)
+
+T-bills: < 1 year; Treasury notes: < 10 years; Treasury bonds: < 30 years
 
 虚拟债券，实体交割，实际债券由卖方决定，防止逼空（即买方自己囤积该类债券做多，然后让卖方按该类债券交割）。故卖方交割CTD(cheapest-to-deliver) bond, bond can be deliverable: $100000 par value T-bonds with any coupon with a maturity of at least 15 years.
 
@@ -292,3 +294,222 @@ VIX value is the annualized standard deviation of the expected percentage moves 
   + settlement amount = $N_{Vega}(\frac{\sigma^2 - X^2}{2K}) = N_{variance}(\sigma^2 - X^2)$
   + market-to-market valuation:
     $$V_t = PV_t\{variance\ notional \times (\frac{t}{T}[RealizedVol(0,t)]^2 + \frac{T-t}{T}[ImpliedVol(t,T)]^2 - K^2)\}$$
++ Fed Funds
+  + Fed funds futures contract price = 100 - Expected FFE rate
+  + 25 bps "target range"
+  + Prob = (effective Fed funds rate implied - current Fed funds rate) / (Fed funds rate assuming a rate hike - current Fed funds rate)
+
+## Currency Managemenet
+
++ 直接报价 A/B, B为考察对象, DC/FC = P/B
++ Bid/Asked Rule: bid(low)/ask(high) = buy/sell (for dealer)
++ Forward points: divide 10000
++ market-to-market value: (FP_t - FP)(contract size)/(1 + R(days/360))
+
+### FX swap
+
+> 先close原先的swap，再long一个新的下一期swap
+
+Similar to currency swaps, FX swaps involve an exchange of principal amounts in different currencies at swap initiation that is reversed at swap maturity.
+
+Unlike currency swaps, FX swaps have no interim interest payments and are nearly always of much shorter term than currency swaps.
+
+Interest rate parity: $\frac{F}{S} = \frac{1 + r_{DC}}{1 + r_{FC}}$
+
+### Return decomposition
+
+$$R_{DC} = (1 + R_{FC})(1 + R_{FX}) - 1$$
+
+where $R_DC$ is the domestic-currency return (in percent), $R_FC$ is the foreign-currency return, and $R_{FX}$ is the percent change of the foreign currency against the domestic currency
+
+$$R_{DC} = \sum_{i=1}^n \omega_i (1 + R_{FC, i})(1 + R_{FX, i}) - 1$$
+
+where $\omega_i$ are the portfolio weights of the foreign-currency assets (defined as the percent of the aggregate domestic-currency value of the portfolio) and $\sum_{i = 1}^n \omega_i = 1$
+
+### Volatility decomposition
+
+$$R_{DC} = (1 + R_{FC})(1 + R_{FX}) - 1 = R_{FC} + R_{FX} + R_{FC}R_{FX} \approx R_{FC} + R_{FX}$$
+
+we have combination equation of volatility:
+
+$$\sigma^2(\omega_x X + \omega_y Y) = \omega_x^2\sigma^2(X) + \omega_y^2\sigma^2(Y) + 2 \omega_x \omega_y \rho(X, Y) \sigma(X) \sigma(Y)$$
+
+since holding a foreign asset is equivalent to holding foreign currency and foreign equity at the same time, so
+
+$$\sigma^2(R_{DC}) = \sigma^2(R_{FC}) + \sigma^2(R_{FX}) + 2 \rho(R_{FC}, R_{FX}) \sigma(R_{FC}) \sigma(R_{FX})$$
+
+出口型公司 本币下跌，股票上升；进口型公司 本币上升，股票上升；
+
+if $R_{FC}$ is a risk-free return:
+
+$$\sigma(R_{DC}) = (1 + R_{FC})\sigma(R_{FX})$$
+
+### strategic currency management
+
++ long run currency effects cancel out to zero due to: (不hedge)
+  + exchange rates revert to historical means or their fundamental values
+  + an efficient currency market is a zero-sum game
+  + management and transaction costs
++ can have a dramatic impact on short-run returns and return volatility: 短期hedge长期不hedge
+  + there are pricing inefficiencies in currency markets
+  + much of the flow in currency markets is related to international trade or capital flows in which FX trading is being done on a need-to-do basis and these currency trades are just a spinoff of the other transactions
+  + some market participants are either not in the market on a purely profit-oriented basis (e.g., central banks, government agencies) or are believed to be uniformed traders
+
+### the IPS
+
+most IPS specify many of the following points: 要在IPS中说好如何hedge风险
+
++ general objectives of the invesment protfolio
++ the risk tolerance of the porfolio and its capacit for beaing risk
++ the time horizon over which the portfolio is to be invested
++ the ongoing income/liquidity needs (if any) of the portfolio
++ the benchmanrk against which the portfolio iwll measure overall investment returns
+
+the currency risk management policy will usually address such issue as
+
++ target proportion of currency exposure to be passively hedged（和benchmark一样hedge）
++ latitude for active currency management around this target
++ frequency of hedge rebalancing
++ currency hedge performance benchmark to be used
++ hedging tools permitted
+
+### choice of currency exposure
+
+#### diversification considerations
+
++ 长期不用hedge，短期要hedge
++ negative correlation不用hedge，positive要
++ depend on market conditions and longer-term trands in currency pairs
++ fixed-income(和利率相关性更大) 更需要hedge than equity portfolios
++ hedge ratios vary widely in practice among different investors
+
+#### cost consideration
+
++ trading expenses is expensive
++ if the options expire out of money, this cost is unrecoverable
++ rolled forward with an FX swap to maintain the hedge. rolling hedges will typically generate cash inflows or outflows (roll时会调整金额)
++ maintain an administrative infrastructure
++ opportunity cost of the hedge:
+  + split the difference and have a 50% hedge ratio
+  + not to hedge every minor, daily change, but only the larger adverse movements
+
+#### choice of currency management strategies
+
+1. passive hedging
+   + benchmark
+   + rules-based approach
+2. discretionary hedging (自主)
+   + the primary duty is to protect the portfolio from currency risk 降风险
+3. active currency management
+   + the active currency manager is supposed to take currency risks and mange them for profit 原有基金经理在原来货币上追求收益
+4. currency overlay used differently by different sources, 外汇视为单独资产大类，进行积极投资，可以在任意货币追求收益
+   + hired currency overlay manager
+   + sometimes a distinciton is made between currency overlay and foreign exchange as an asset class
+
+#### formulatinh a currency mgt. program
+
+the strategic currency positioning of the portfolio should be biased toward a more-fully hedged currency management program the more:
+
++ short term
++ rsik averse
++ immediate the incomme and/or liquidity needs
++ fixed-income assets
++ cheaply a hedging program can be implemented
++ volatile financial markets are
++ skeptical the beneficial owners are of the expected benefits of active currency management
+
+## active (tactical) currency management
+
+tactival decision involve active currency management based on
+
++ economic fundamentals
+  + all else equal, the base currency's real exchange rate should appreciate if there is an upward movement in:
+    + long-run equilibrium real exchange rate
+    + its real or nominal interest rates, which should attract foreign capital
+    + expected foreign inflation, which should cause the foreign currency to depreciate
+    + the foreign risk premium, which should make foreign assets less attractive compared with the base currency nation;s domestic assets
++ technical analysis
++ carry trade
+  + covered interest rate parity (CRIP):
+    $$\frac{F_{P/B} - S_{P/B}}{S_{P/B}} = \frac{(i_P - i_B)(t/360)}{1+i_B(t/360)}$$
+  + if uncovered interest rate parity holds, 高收益会被贬值抵消，无意义。但是历史数据表明，短期存在deviation
+  + leverage involved magnifying their losses
+  + lower volatility is better for a carry trade position. if implied volatility rises, close the trade
+  + often referred to as the forward rate bias
+    + carry trade: 借入低利率A，换成高利率B，即现货市场卖A买B
+    + forward rate bias: A低利率所以远期合约是溢价，B高利率所以远期折价，现货市场卖出A买入B
+
+    |  | Buy/invest | Sell/borrow |
+    |--|-----|----|
+    |Implementing the carry trade | high-yield currency | low-yield currency |
+    |Trading the forward rate bias | forward discount currency | forward premium currency |
+
++ volatility trading
+  + strangle: a variation on a straddle in which the put and call have different exercise prices, 便宜，更难赚钱
+
+#### Factors affect tactical trading decision
+
+| Expectations |  | Actions |   |
+| --- | --- | --- | ----|
+| Relative currency | Appreciation | Reduce the hedge or increase the long position in the currency |
+| Relative currency | Depreciation | Increase the hedge or decrease the long position in the currency |
+| Volatility | rising | long straddle (or strangle) |
+| Volatility | failing | short straddle (or strangle) |
+| market conditions | stable | a carry trade |
+| market conditions | crisis | discontinue a carry trade |
+
+### Tools of currency management
+
++ forward contract (优于futures)
+  + not standardized
+  + futures contracts may not always be available in the currency pair that portfolio manager wants to hedge
+  + futures require initial margin and ongoing margin
+  + daily trade volume larger than futures
+  + roll yield (also roll return, carry trade) is given by
+    $$\frac{F_{P/B} - S_{P/B}}{S_{P/B}}$$
+
+
+  + consideration of static/dynamic hedge
+    + cost-benefit trade-offs
+    + higher the degree of risk aversion, more dynamic
+    + the greater the tolerance for acvtive trading, and the stronger the commitment to a particular market view (more static)
++ currency option
++ strategies to reduce hedging costs and modify a portfolio's risk profile
+  + over-/under-hedging using forward contracts
+  + protective put using OTM options
+  + risk reversal (or collar)
+  + put spread
+  + seagull spread (下跌风险打开，但是可以赚期权费)
+    + a bull call spread - OTM put
+    + a bear put spread - OTM call
+  + exotic options (奇异期权)
+    + knock-in(生效): up-in/down-in
+    + knock-out(失效): up-out/down-out
+    + binary option(digital option): pay fixed amount if condition meets
+
+### hedging multiple foreign currencies
+
+must consider the correlation between the various foreign-currency risk exposures, e.g., AUZ and NZD
+
++ cross hedge (proxy hedge)
+  + normally, no need, since forward can be customized
+  + however, if the portfolio already has "natural" cross hedges
++ macro hedge: 一揽子货币综合考虑
++ Minimum-Variance hedge ratio (MVHR):
+  $$\frac{cov(y, x)}{var(x)} = corr(y, x) \times \frac{std(y)}{std(x)}$$
++ basis risk: the risk resulting from using a hedging instrument that is imperfectly matched to the investment being hedged，使用的工具和要对冲的标的不完全一致
+  + not perfectly correlated
+  + correlation will change with time
+
+### basic intuitions for using currency Mgt. tool
+
++ not a free good
++ cost vary depending on condition
++ cost is focused on its core
+  + writing options to gain upfront premiums
+  + varying the strike prices
+  + varying notional amounts
+  + using exotic features
++ reduced cost : residual risk, 风险与收益并存
++ natural hedges
++ no single ro best way to hedge
