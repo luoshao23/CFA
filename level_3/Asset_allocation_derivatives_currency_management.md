@@ -512,4 +512,4 @@ must consider the correlation between the various foreign-currency risk exposure
   + using exotic features
 + reduced cost : residual risk, 风险与收益并存
 + natural hedges
-+ no single ro best way to hedge
++ no single or best way to hedge
