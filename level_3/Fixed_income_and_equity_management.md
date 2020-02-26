@@ -598,4 +598,158 @@ for investment-grade: **credit migration risk**, **spread risk**, **interest rat
       + outperform a benchmark
       + generate positive absolute returns(买保护): buy CDS/put option, or short verizon bonds
     + bond structure: the priority in the capital structure
+    + issuance date: recently issued bonds have narrower bid-offer spreads and greater daily transaction volume
+    + supply: new bond issue make the existing bonds decline in value
+    + issue size: 大流动性好，但是debt ratio高，违约风险提高
 + top-down approach
+  + macro factor, important!
+  + desired credit quality determination
+    + credit cycle
+    + credit spread changes: a good predictor to default
+  + assess the credit quality
+    + average credit rating: arithmetic weighting (S&P) and non-arithmetic (Moody's)weightings. arithmetic weighting (S&P) will underestimate its credit risk
+    + average OAS
+    + average spread duration
+    + duration times spread: DTS = spread duration * OAS
+  + industry sector allocation
+    + quantitative tools: such as regression
+    + information
+    + financial ratio analysis
+  + expected excess return in top-down approach
+    + $EXR \approx (s \times t) - (\Delta s \times SD) - (t \times p \times L)$
+
+#### bottom-up portfolio construction
+
+portfolio construction: 1) divided the universe into sectors, 2) weightings of these sector(market value, spread duration)
+
+when cannot obtain desired bonds:
+
++ substitution
++ indexing: portfolio to mirror the performance
++ cash: hold cash to wait if the bonds will soon be available
+
+#### top-down approach
+
+1. interest rate measurement and management
+   + manage interest rate exposure 1) derivatives
+     + advantages: key rate durations can be controlled independently of credit spread curve exposure; high liquidity
+     + disadvantages: not willing to use
+   + manage interest rate exposure 2) maturity management
+     + advantages: without derivatives
+     + disadvantages:
+       + difficult to match key rate duration
+       + duration and yield curve exposure will change in the same direction
+       + without using derivatives, impossible to structure portfolio with low interest rate exposure
+     + manage interest rate exposure 3) volatility management
+       + managed with credit securities (callable bonds / MBS) or with derivatives (options)
+2. country and currency exposure
+3. spread curves
+
+#### ESG consideration in portfolio management
+
+> ESG: environmental, social, and governance
+
++ relative value considerations: poor ESG practice with more credit risk
++ guideline constraints (negative impact)
++ positive impact investing opportunity
++ portfolio-level risk measures
+  + monitoring of exposures to ESG-related risk factors
+  + targeting an average ESG portfolio score
+
+### liquidity risk
+
+measure of secondary market liquidity risk
+
++ US data are used
++ trading volume
++ spread sensitivity to fund outflows
++ bid-ask spreads
+
+structural industry changes and liquidity risk
+
++ structural changes following the 2008-2009 global financial crisis
+  + new regulations
+  + dealers became more risk averse
++ effects in liquidity risk
+  + dealer decrease bond positions -> decrease liquidity
+  + reduce position concentration -> increase liquidity
+
+management of liquidity risk
+
++ holding cash
++ managing position sizes: more liquid, greater weight
++ holding liquid, non-benchmark bonds
++ CDS index derivative to protect
++ ETF
+
+### tail risk
+
+> tail risk is the risk that there are more actual events in the tail of a porbability ditribution than probability models would predict
+
+asset tail risk
+
++ scenario analysis:
+  + historical scenario analysis
+  + hypothetical scenario analysis
++ correlation in scenario analysis
+
+manage tail risk
+
++ portfolio diversification
+  + advantage: may have only a modest incremental cost
+  + limitations:
+    + difficult to identify opportunities
+    + may not fully achieve an investor's objectives
++ tail risk hedge: CDS and options
+  + disadvantages:
+    + cost, expensive to hedge
+    + investors who cannot use derivatives
+
+### international credit markets
+
++ investment opportunities
+  + credit cycle
+  + credit quality or issuer (when market change extremely)
+  + sector composition (when market change extremely)
+  + market factor
++ risk consideration
+  + emerging markets credit (risk)
+    + concentration in commodities and banking
+    + government ownership
+      + advantage: provide support
+      + disadvantage: the uncertainty in the contractual rights and interests of non-domestic bondholders
+    + credit quiality
+      + apply a "sovereign ceiling", high concentration in both the lower portion of the investment-grade rating spectrum and the upper portion of high yield
+  + global liquidity (risk)
+  + currency risk
+  + legal risk
+
+### structured financial instruments
+
+include: mortgage-backed securities (MBS), asset-backed securities (ABS), collateralized debt obligations (CDOs) and covered bonds
+
++ MBS: a form of ABS thaht represent rights to receive cash flows from portfolios of mortgage loans
+  + advantages:
+    + high liquidity
+    + less default risk
+    + exposure to real estate
+    + exposure to expected changes in interest rate volatility (MBS negative convexity)
++ ABS: backed by several non-mortgage assets as collateral, including automobile loans, automobile lease receivables, credit card receivables, student loans, bank loans, and accounts receivable
+  + advantages:
+    + more liquid alternatives to corporate bonds for expressing views on some sectors
+    + can express views on consumer credit
+    + can provide portfolio diversification and return benefits
++ CDO: a security backed by a diversified pool of one or more debt obligations
+  + exposure to default correlations:
+    + senior/ mezzanine/ subordinated
+    + as correlation increase, value of mezzanine tranches increase
+    + correlation tend to be highly negative can profit selling the subordinated and buying the senior tranche (买不容易违约的)
+    + correlation tend to be highly positive can profit buying the subordinated and selling the senior tranche (都违约，买便宜的)
+  + advantages:
+    + relative value: 套利, 也可以使用sythetic CDO (buy T-bond + sell CDS)
+    + leveraged exposure to credit: mezzanine and equity tranches can gain additional return if the underlying collateral has strong returns
+  + disadvantages:
+    + do not provide much diversification
+    + do not offer unique exposure to a sector or market factor
++ covered bond: is a debt obligation issued by a financial institution, usually a bank, and backed by a segregated pool of assets called a coverd pool
+  + in the event of default, bondholders have recourse against both the financail institution and the assets in the cover pool. Because of this dual protection for creditors, covered bonds usually carry lower credit risk and offer lower yields than otherwise similar corporate bonds or ABS
