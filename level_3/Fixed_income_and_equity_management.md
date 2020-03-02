@@ -6,7 +6,7 @@
 
 $$convexity = \frac{MacD^2 + MacD + Dispersion}{(1 + yield)^2}$$
 
-dispersion（方差）越大，convexity越大
+dispersion（方差）越大，convexity越大，structural risk越大
 
 ## roles of fixed-income in portfolios
 
@@ -86,6 +86,17 @@ liability-based mandates (or Asset liability management (ALM)/ structured mandat
   | portfolio | same as benchmark or only slight mismatches | small deviations from underlying benchmark | significant deviations from underlying benchmark |
   | risk | risk factors are matched exactly | most primary risk factors are closely matched (duration) | deviations from benchmark (duration)|
   | turnover | similar to underlying benchmark | slighly higher then underlying benchmark | considerably higher turnover than the benchmark |
+
+### DB plan
+
++ accumlated benefit obligation (ABO):
+  $$ABO = \frac{1}{(1+r)^T} \times [\frac{m \times G \times W_0}{1+r} + \frac{m\times G \times W_0}{(1+r)^2} + ... + \frac{m \times G\times W_0}{(1+r)^Z}]$$
++ projected benefit obligation (PBO):
+  $$PBO = \frac{1}{(1+r)^T} \times [\frac{m \times G \times W_T}{1+r} + \frac{m\times G \times W_T}{(1+r)^2} + ... + \frac{m \times G\times W_T}{(1+r)^Z}]$$
++ effective duration
+  $$\frac{(PV_-) - (PV_+)}{2 \times \Delta Curve \times (PV_0)}$$
++ interest rate swap
+  $$Asset\ BPV + [NP \times \frac{Swap\ BPV}{100}] = Liability\ BPV$$
 
 ## bond market liquidity
 
@@ -475,11 +486,15 @@ assumption: yield curve is upward sloping
     + negative convexity
     + benefit from steep and stable yield curve
 
+partial PVBP: measure the change in dollar value of per 100 par bond when part of the yield curve changes for 1 bps
+
+predicted change = portfolio par amount * partial PVBP * (-curve shift) * 100
+
 ### derivatives used to implement strategies
 
 + duration management (if increase duration)
   + leverage buy bonds
-  + long futures
+  + long futures (Short maturity at- or near-the-money options on long-term bond futures contain a great deal of convexity)
   + buy receiver swap
   + buy swaption
 
@@ -504,6 +519,7 @@ assumption: yield curve is upward sloping
   + assuming normal upward sloping yield curves
     + receive fixed/pay floating in the steeper market and pay fixed/receive floating in the flatter market (yield curve strategy)
     + long bond futures in the steeper market and a short futures in the flatter market
+    + net carry = lend deep long-term yield - borrow flat long-term yield + lend flat short-term yield - borrow deep short-term yield
 
 ### hedge
 
@@ -519,6 +535,7 @@ most of the yield curve risk can be adequately captured by a small set of standa
 + shift non-parallel level change, 82%
 + twist: slope change, 12%
 + butterfly: curvature change, 4%
++ parallel = shift + twist - butterfly
 
 ## Fixed-income active management: credit strategies
 
@@ -544,9 +561,9 @@ for investment-grade: **credit migration risk**, **spread risk**, **interest rat
   + in practice, credit spreads tend to be negatively correlated with risk-free interest rates(垃圾债更关注spread risk, 不关注interest rate risk)
     + changes in risk-free rates tend to generate smaller changes in corporate bond yields than theoretical measures of duration suggest
     + bonds with large credit spreads have less sensitivity to interest rate changes than bonds with smaller credit spread
-  + empirical duration: is a measure of interest rate sensitivity that is determined from market data.
+  + empirical duration: is a measure of interest rate sensitivity that is determined from market data. run a regression of its price returns on changes in a benchmark interest rate
 + liquidity risk
-  + effective factor: issuze size; the size of the market; bonds that are held in dealers' inventories; liquidity
+  + effective factor: issuze size; the size of the market; bonds that are held in dealers' inventories (high credit ratings); liquidity
   + implication
     + high yield(typically low grade) bond is more costly
 + credit risk
@@ -574,8 +591,13 @@ for investment-grade: **credit migration risk**, **spread risk**, **interest rat
 
 + holding-period excess return
   + $XR \approx (s \times t) - (\Delta s \times \Delta SD)$
+
+  where $XR$ is the holding-period excess return, $s$ is the spread at the beginning of the holding period expressed in fractions of a year, $\Delta s$ is the change in the credit spread during the holding period, and $SD$ is the spread duration of the bond.
+
 + expected excess return
   + $EXR \approx (s \times t) - (\Delta s \times \Delta SD) - (t \times p \times L)$
+
+  where p is the annualized expected probability of default and L is the expected loss severity.
 
 ## credit strategy approaches
 
@@ -662,7 +684,7 @@ measure of secondary market liquidity risk
 
 + US data are used
 + trading volume
-+ spread sensitivity to fund outflows
++ spread sensitivity to fund outflows. percentage outflow = total US dollars withdrawn from high-yield or investment-grade funds / divided by the funds' assets under mangement
 + bid-ask spreads
 
 structural industry changes and liquidity risk
@@ -691,7 +713,7 @@ asset tail risk
 + scenario analysis:
   + historical scenario analysis
   + hypothetical scenario analysis
-+ correlation in scenario analysis
++ correlation in scenario analysis: increasing in correlation generates more extrmely unusual outcomes
 
 manage tail risk
 
@@ -714,10 +736,10 @@ manage tail risk
   + market factor
 + risk consideration
   + emerging markets credit (risk)
-    + concentration in commodities and banking
+    + concentration in commodities and banking, higher proportion
     + government ownership
       + advantage: provide support
-      + disadvantage: the uncertainty in the contractual rights and interests of non-domestic bondholders
+      + disadvantage: the uncertainty in the contractual rights and interests of non-domestic bondholders. lower recovery rate than in developed markets
     + credit quiality
       + apply a "sovereign ceiling", high concentration in both the lower portion of the investment-grade rating spectrum and the upper portion of high yield
   + global liquidity (risk)
@@ -730,8 +752,7 @@ include: mortgage-backed securities (MBS), asset-backed securities (ABS), collat
 
 + MBS: a form of ABS thaht represent rights to receive cash flows from portfolios of mortgage loans
   + advantages:
-    + high liquidity
-    + less default risk
+    + high liquidity, less default risk
     + exposure to real estate
     + exposure to expected changes in interest rate volatility (MBS negative convexity)
 + ABS: backed by several non-mortgage assets as collateral, including automobile loans, automobile lease receivables, credit card receivables, student loans, bank loans, and accounts receivable
