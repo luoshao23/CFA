@@ -33,10 +33,15 @@
       + tax reduction: tax-exempt bonds; tax-efficient asset classes
       + tax deferral:
         + by deferring the recognition of certain taxes untial a later date
-    + other relevant information
+    + other relevant information:
+      + estate plan
+      + life insurance/ disability insureance/ excess liability coverage
 + client goals: goal quantification, goal prioritization, goal changes
   + planned goals
-    + retirement
+    + retirement: different methods to analyze a client’s retirement goals,
+      + mortality tables
+      + annuities
+      + Monte Carlo simulation
     + specific purchases
     + education
     + family events
@@ -46,12 +51,16 @@
     + property repairs, 房屋维修
     + medical expenses
     + other unforeseen spending
++ wealth manager's role
+  + goal quantification
+  + goal prioritizaiton
+  + goal changes
 + private client risk tolerance
   + risk tolerance (willingness)
     + increase: sufficient insurance, pension, healthy, big asset base
     + decrease: high required return, important goal
   + risk capacity
-  + risk perception
+  + risk perception: how a client perceives the riskiness of an investment decision or the investment climate
 + technical and soft skills for wealth managers
   + technical skills:
     + capital markets proficiency
@@ -66,6 +75,16 @@
     + education and coaching skills
     + business development and sales skills
 
+Ethical considerations for private wealth managers include:
+
++ “know your customer” (KYC)
++ fiduciary duty and suitability
++ confidentiality
++ conflicts of interest.
+
+### inputs to capital sufficiency analysis
+
+return assumption, current value of the portfolio, anticipated future contributions to the porfolio and cash flow
 
 ## return 计算
 
@@ -73,20 +92,22 @@
 
 1. open ended
 
-Return% = Cash flow needs / TIA + Asset (inflation compensation)
+    Return% = Cash flow needs / TIA + Asset (inflation compensation)
 
-Cash flow needs = cash in - cash out
+    Cash flow needs = cash in - cash out
 
-if expected return > 10%, 一般指asset base较小
+    if expected return > 10%, 一般指asset base较小
 
-+ Assumption:
-  + salary/expense 发生在期末
-  + current portfolio 无成本变现，通通计入TIA
-  + TIA收入为税后
+    + Assumption:
+      + salary/expense 发生在期末
+      + current portfolio 无成本变现，通通计入TIA
+      + TIA收入为税后
 
 2. close ended
 
 ## investment planning
+
+`capital sufficiency analysis`: also known as capital needs analysis, the process by which a wealth manager determmines whether a client has, or is likely to accumulate sufficient financial resources to meet his or her objectives
 
 after understaning, begin to meet their objectives
 
@@ -100,7 +121,28 @@ after understaning, begin to meet their objectives
         + delaying the timing of a goal
         + adopting an investment strategy with higher expected returns
 + retirement planning
-+ investment policy statement
+
+    financial stages of life:
+    + education
+    + early career
+    + career development
+    + peak accumulation
+    + pre-retirement
+    + early retirement
+    + late retirement
+
+    analyzing retirement goals
+    + motality tables
+    + annuities
+    + Monte Carlo simulation revisited
+
+    behavioral considerations in retirement planning
+    + heightened loss aversion
+    + consumption gaps: spend less
+    + the annuity puzzle: dislike of losing control over the assets, in many case, the high cost of annuities
+    + preference for investment income over capital appreciation: lack self-control with respect to spending
+
++ investment policy statement (IPS)
   + background and investment objectives
   + investment parameters
     + risk tolerance: ability and willingness
@@ -123,6 +165,17 @@ after understaning, begin to meet their objectives
       + proprietary investment
   + duties and responsibilities
     + wealth manger responsibilities
+      + developing an appropriate asset allocation
+      + recommending or selecting investment options, such as pooled investment vehicles or individual securities
+      + monitoring the asset allocation and rebalancing
+      + using derivatives, leverage, short sales, and repurchase agreements
+      + monoitoring the costs associated with implementing the investment strategy
+      + monitoring the activities of third-party service provdiers
+      + drafting and maintaining the IPS
+      + reporting of performance, including an indication of the base currency
+      + reporting of taxes and financial statements
+      + voting proxies
+      + assisting with the preparation of agreements associated with private fund offerings
     + IPS review
   + IPS appendix
     + modeled portfolio behavior
@@ -132,8 +185,23 @@ after understaning, begin to meet their objectives
 
 + portfolio construction
   + traditional approach
-  + goal-based investing approach
+    + identify asset classes
+    + develop captial market expectations
+    + determine portfolio allocations
+    + assess constraints
+    + implement the portfolio
+    + determine asset location
+  + goal-based investing approach: optimized either to **a stated maximum level of volatility** or to **a specified probability of success**
+    + advantage: easier to express the risk tolerance
+    + disadvantage: may not lead to a optimal mean-variance efficiency
 + portfolio reporting and review
+  + A portfolio asset allocation report, which may reflect strategic asset allocation targets
+  + a performance summary report for the current period
+  + a detailed performace report, which may include asset class and/or individual security performance
+  + a historical performance repot covering the period since the inception of the client's investment strategy
+  + a contribution and withdrawal report for the current period
+  + a purchase and sale report for the current period
+  + a currency exposure report detailing the effects of exchange rate fluctuations
 + ethical and compliance consideration in private wealth management
 + evaluating the success of an investment program
   + goal achievement
@@ -143,10 +211,39 @@ after understaning, begin to meet their objectives
 
 ## private client segments
 
-+ mass affluent segment
-+ high-net-worth
-+ ultra-high-net-worth
++ mass affluent segment: focused on building their investment portfolio and financial planning needs; no typically customized approach
++ high-net-worth: lower client-to-manager ratio; customized investment management, tax planning, wealth transfer issues
++ ultra-high-net-worth: multi-generational time horizons, highly complex tax and estate-planning consideration, and a wider range of service needs
 + robo-advisor (<$25w)
+
+## returns for taxable accounts
+
+
++ returns-based taxes: accrual taxes on interest and divide
+
+$$FVIF_i = [1 + r(1 - t_i)]^n$$
+
++ returns-based taxes: deferred capital gains
+
+$$FVIF_{cg} = (1 + r)^n - [(1 + r)^n - 1]t_{cg}$$
+
++ cost basis
+
+$$FVIF_{cgb} = (1 + r)^n(1 - t_{cg}) + t_{cg}B$$
+
++ wealth-based taxes
+
+$$FVIF_w = [(1 + r)(1 - t_w)]^n$$
+
++ blended taxing environments
+
+$$r^* = r(1 - p_i t_i - p_d t_d - p_{cg} t_{cg})$$
+
++ effective capital gains tax rate
+
+$$T^* = t_{cg}(1 - p_i - p_d - p_{cg}) / (1 - p_i t_i - p_d t_d - p_{cg} t_{cg})$$
+
+$$FVIF_{Taxable} = (1 + r^*)^n(1 - T^*) + T^* - (1 - B)t_{cg}$$
 
 ## accrual taxation
 
@@ -206,7 +303,7 @@ $$T_{AE} = 1 - \frac{R_{AE}}{r}$$
 
 + tax allocation
 + time period management
-+ tax loss saving/ harvesting
++ tax loss saving/ harvesting: The practice of realizing a loss to offset a gain or income—and thereby reducing the current year’s tax obligation—is called tax loss harvesting
 + HIFO: highest in, first out
 
 ## estate planning in a global context
@@ -293,3 +390,215 @@ where $N = n_1 + n_2$
   + credit method(complete): max(source, residence)
   + exemption method(complete): 只交source
   + deduction method(partial): T_source + (1 - T_source) * T_residence
+
+
+<!-- $$J_{\theta} = -log\frac{exp(h^Tv_w')}{\sum_{w_i\in V}exp(h^Tv_w')} \\
+             = -h^Tv_w' + log{\sum_{w_i\in V}exp(h^Tv_w')} \\
+             =  \varepsilon (w) + log\sum_{w_i\in V}exp(-\varepsilon (w_i))$$
+
+so we have
+
+$$\nabla_{\theta} J_{\theta} = \nabla_{\theta} \varepsilon (w) + \nabla_{\theta} log\sum_{w_i\in V}exp(-\varepsilon (w_i)) \\
+= \nabla_{\theta} \varepsilon (w) - \frac{1}{\sum_{w_j\in V} exp(-\varepsilon (w_j))}\sum_{w_\in V}exp(-\varepsilon (w_i)) \nabla_{\theta}\varepsilon (w_i) \\
+= \nabla_{\theta} \varepsilon (w) - \sum_{w_i\in V} \frac{exp(-\varepsilon (w_i))}{\sum_{w_j\in V} exp(-\varepsilon (w_j))} \nabla_{\theta}\varepsilon (w_i) \\
+= \nabla_{\theta} \varepsilon (w) - \sum_{w_i\in V} P(w_i) \nabla_{\theta}\varepsilon (w_i) \\
+= \nabla_{\theta} \varepsilon (w) - \mathbb{E}_{w_i \sim P}[\nabla_{\theta}\varepsilon (w_i))$$ -->
+
+## concentrated single-asset positions
+
+### types of concentrated asset
+
++ public stock
++ private equity
++ real estate
+
+### basic
+
++ common objectives
+  + risk reduction
+  + csh flow needs should be identified, liquidity
+  + maximize after-tax return
++ specific objectives and constraints
+  + mandated to hold shares
+  + maintain effective voting control
+  + enchance the current income
+  + necessary for the successful operation of a business enterprise
+
+### tax and illiquidity
+
++ trigger an immediate and sometimes significant taxable capital gain for the owner
++ generally illiquid
+
+### capital market and institutional constraints
+
++ the legal relationship
++ margin lending rules: 如股权质押
++ company insiders and executive
++ contractual restrictions and employer mandates
++ capital market limitations
+
+### pyschological consideration
+
++ emotional error
++ cognitive bias
+
+### goal-based decision process
+
++ personal: prevent poverty
++ market: maintain current style
++ aspirational: imporve lifestyle
+
+### asset location and transfer
+
++ asset location
++ wealth transfer
+  + estate tax freeze: voting preferred shares / non-voting common shares
+
+### tachniques to manage concentrated position
+
++ outright sale
++ monetization strategies(货币化): 股权质押
+  + step1: remove a large portion of the risk inherent in the concentrated position
+    + short sale against box: 做空
+    + total return equity swap
+    + option forward
+    + short forward
+  + step2: borrow against the hedged position
++ hedging the value of the concentrated asset
+  + protective puts
+  + a pair of puts
+  + knock-out puts
+  + cashless collars
+  + prepaid variable forwards (PVF) = short forward + loan
+  + choosing the best hedging strategy
+  + mismatch in character (tax mismatch)
+  + yield enhancement: write covered call
+  + other tool:
+    + index tracking with active tax mangement, 买个指数
+    + a completeness portfolio, 和原来股票互补
+  + cross hedge, 交叉对冲，用其他类似的衍生品对冲
+  + an exchange fund, 同其他股票成为一个pool，交换股票份额
+
+### privat held business
+
+characteristic of privately held business
+
++ considerable concentration risk
++ high company specific risks
++ illquidity
+
+exit strategies
+
++ IPO
++ strategic buyers
++ private equity firms
++ recapitalization: 先一部分收购，后n年另外部分收购
+  + staged exit
+  + 优点: 增加liquidity; 降低risk; retain incentiveness
+  + 缺点: lose control
++ sale to management or key employees
++ sale or gift to family members
++ divestiture(剥离不良资产)
++ employee stock ownership plan
++ personal line of credit secured by company shares
+
+### real estate positions
+
+factors determin the attractiveness of the market from the seller's perspective
+
++ current valuation relative to historical levels and future expectations
++ tax rate
++ condition of the credit markets and lending conditions
++ level of interest rate
+
+monetization strategies for real estate owners
+
++ mortgage financing
++ charitably inclined
++ sale and leasback (售后回租)
+
+## risk management for individuals
+
++ human capital
++ financial capital
+  + personal assets: real estate and colletibles considered a "mixed" assets
+  + investment assets
+    + marketable
+    + non-marketable
+
+### net worth
+
++ net worth: 金融资产和负债
++ net wealth: economic net worth，还要考虑未来现金流
+
+net wealth = net worth + PV of future earnings + PV of pension benefit(unvested) - PV of future consumption - PV of bequest
+
+### individual balance sheet
+
++ economic (holistic balance sheet)
+
+### implementation of risk management
+
+|    | risk management techniques |    |
+|----|-----|------|
+| loss characteristics | high frequency | low frequency |
+| high severity | risk avoidance | risk transfer |
+| low severity | risk reduction | risk retention |
+
++ risk avoidance: 不要游泳
++ risk transfer: 用保险
+
+### individual risk exposure
+
+another classification
+
++ earning risk (insure with disability insurance), regular job, negatively affect human and financial capital
++ premature death risk, 可重复投保
++ longevity risk (insure with annuities)
++ property risk (insure with property insurance)
++ liability risk (insure with liability insurance)
++ health risk (insure with health insurance)
+
+### life insurance_
+
++ life related
+  + 死亡险:
+    + term life/whole life
+    + participate/ non participate: 分红不分红
+  + annuity:
+    + immediate/deferred
+    + fixed/variable
+  + universal, 万能险，保障+投资
++ non-life
+
+use of life insurance
+
++ hedge against the risk of premature death
++ importance estate-planning tool
++ a tax-sheltered savings instrument
+
+the basic elements of a life insurance policy
+
++ term
++ amount of benefits
++ limitations under which the death benefit could be withheld (e.g., suicide within two years)
++ contestability period: 调查期
++ identity of the insured (被保人)
++ policy owner (投保人)
++ beneficiary (受益人)
++ premium schedule 保费
++ coverage 保额
++ elimination/waiting
++ non-forfeiture clause: 不丧失现金价值
++ guaranteed insurability: 保证续保条款
+
+### annuity
+
++ advanced life deferred annuities: 高龄递延年金
++ mortality credits: 活得长的收益
++ payout methods: joint life(家庭成员), period-certain annuity(固定年限), life annuity with period certain(确保支付的最少年份), and life annuity with refund(确保所支付保费总额，不计时间价值)
+
+### other types of insurance
+
++ disability income insurance:
+  + wavier of premium: 失去能力时，投保人免缴保费
