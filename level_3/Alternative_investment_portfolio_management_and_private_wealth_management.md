@@ -324,6 +324,14 @@ some instances, probate can be avoided:
 
 ## wealth transfer taxes
 
++ tax on income
++ tax on spending
++ tax on wealth
+  + net worth/ wealth tax: a tax based on a person's assets, less liabilities
++ tax on wealth transfer
+  + lifetime gratuitous transfer, or inter vivos transfers
+  + testamentary gratuitous transfer: the bequeathing or transfer of assets upon one's death
+
 ## ownership rights
 
 + forced heirship rules: 强制继承权，父子...整个estate
@@ -333,6 +341,12 @@ some instances, probate can be avoided:
 ## core capital
 
 core capital is the amount of assets (i.e., present value) necessary to meet all future liabilities. CC用无风险利率折现
+
+`human capital`: an implied asset; the net present value of an investor's future expected labro income weighted by the probability of surviving to each future age.
+
+## excess capital
+
+an investor's capital over and above that which is necessary to fund their lifestyle and reserves
 
 ## relative aftwer-tax values
 
@@ -379,8 +393,12 @@ where $N = n_1 + n_2$
 
 ## tax jurisdiction
 
-+ source (属地) jurisdiction (territorial tax system)
++ source (资产属地) jurisdiction (territorial tax system)
 + residence (属人) jurisdiction
+
+`Source tax system`: A jurisdiction that imposes tax on an individual’s income that is sourced in the jurisdiction.
+
+`Residence tax system`: A jurisdiction that imposes a tax on an individual’s income based on residency whereby all income (domestic and foreign sourced) is subject to taxation.
 
 ### double taxation
 
@@ -410,29 +428,44 @@ $$\nabla_{\theta} J_{\theta} = \nabla_{\theta} \varepsilon (w) + \nabla_{\theta}
 
 + public stock
 + private equity
-+ real estate
++ commercial or real estate
+
+### investment risks
+
++ systematic risk
++ company-specific risk
++ property-specific risk: the non-systematic risk taht is specific to woning a particular piece of real estate
 
 ### basic
 
 + common objectives
   + risk reduction
-  + csh flow needs should be identified, liquidity
+  + cash flow needs should be identified, liquidity
   + maximize after-tax return
 + specific objectives and constraints
-  + mandated to hold shares
-  + maintain effective voting control
-  + enchance the current income
-  + necessary for the successful operation of a business enterprise
+  + with respect to concentrated stock position
+    + incentive compensation or mandated to hold shares
+    + maintain effective voting control
+    + enchance the current income
+  + with respect to privately owned businesses
+    + growth phase has just begun
+    + maintain total control of the company
+    + give senior management and other key employees the opportunity to eventually acquire control of the business
+    + plans to pass control of the business to the next generation
+  + with respect to real estate
+    + maintain control because the property is an essential asset necessary for the successful operation of a business enterprise
+    + retain ownership to pass to the next generation
+    + benefit from a recent purchase or development through price appreciation
 
 ### tax and illiquidity
 
-+ trigger an immediate and sometimes significant taxable capital gain for the owner
++ asset **outright** will usually trigger an immediate and sometimes significant taxable capital gain for the owner
 + generally illiquid
 
 ### capital market and institutional constraints
 
 + the legal relationship
-+ margin lending rules: 如股权质押
++ margin lending rules(保证金贷款): 如股权质押
 + company insiders and executive
 + contractual restrictions and employer mandates
 + capital market limitations
@@ -440,7 +473,17 @@ $$\nabla_{\theta} J_{\theta} = \nabla_{\theta} \varepsilon (w) + \nabla_{\theta}
 ### pyschological consideration
 
 + emotional error
+  + overconfidence and familarity
+  + status quo bias
+  + naive extrpolation of past returns
+  + endowment effect
+  + loyalty effects
 + cognitive bias
+  + conservatism
+  + confirmation
+  + illusion of control
+  + anchoring and adjustment
+  + availability heuristic
 
 ### goal-based decision process
 
@@ -602,3 +645,4 @@ the basic elements of a life insurance policy
 
 + disability income insurance:
   + wavier of premium: 失去能力时，投保人免缴保费
+
