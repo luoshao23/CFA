@@ -126,7 +126,7 @@ after understaning, begin to meet their objectives
     + education
     + early career
     + career development
-    + peak accumulation
+    + peak accumulation: ages of 51-60
     + pre-retirement
     + early retirement
     + late retirement
@@ -464,9 +464,8 @@ $$\nabla_{\theta} J_{\theta} = \nabla_{\theta} \varepsilon (w) + \nabla_{\theta}
 
 ### capital market and institutional constraints
 
-+ the legal relationship
 + margin lending rules(保证金贷款): 如股权质押
-+ company insiders and executive
++ securities laws and regulations
 + contractual restrictions and employer mandates
 + capital market limitations
 
@@ -487,26 +486,46 @@ $$\nabla_{\theta} J_{\theta} = \nabla_{\theta} \varepsilon (w) + \nabla_{\theta}
 
 ### goal-based decision process
 
-+ personal: prevent poverty
-+ market: maintain current style
-+ aspirational: imporve lifestyle
++ personal risk bucket: prevent poverty
++ market risk bucket: maintain current standard of living
++ aspirational risk bucket: improve lifestyle
 
 ### asset location and transfer
 
-+ asset location
++ asset location: the type of account an asset is held within taxbale or tax deferred
 + wealth transfer
-  + estate tax freeze: voting preferred shares / non-voting common shares
+  + estate tax freeze: voting preferred shares / non-voting common shares, 刻意估低价值
 
-### tachniques to manage concentrated position
+### concentrated wealth decision making: a five-step process
 
-+ outright sale
+1. identify and establish objectives and constraints
+2. identify tools/ strategies that can satisfy these objectives
+3. compare tax advantages and disadvantages
+4. compare non-tax advantages and disadvantages
+5. formulate and document an overall strategy
+
+### techniques to manage risk of concentrated position
+
++ outright sale: 直接卖
 + monetization strategies(货币化): 股权质押
-  + step1: remove a large portion of the risk inherent in the concentrated position
-    + short sale against box: 做空
-    + total return equity swap
-    + option forward
-    + short forward
-  + step2: borrow against the hedged position
+  + equity derivatives to hedge value:
+    + exchange-traded options
+    + OTC derivatives
+      + options
+      + forwards
+      + swaps
+  + borrowing to monetize the position
+    + margin loans
+    + recourse and non-recourse debt
+    + fixed- and floating-rate debt
+    + loans embedded within a derivative
+  + other monetization
+    + short sales against box
+    + restricted stock sales
+    + public capital market-absed transactions
+      + debt exchangeable for common offerings
+    + rule 10b5-1plans and blind trusts (U.S.)
+    + exchange funds (U.S.)
 + hedging the value of the concentrated asset
   + protective puts
   + a pair of puts
@@ -534,10 +553,10 @@ exit strategies
 
 + IPO
 + strategic buyers
-+ private equity firms
-+ recapitalization: 先一部分收购，后n年另外部分收购
++ financial buyers, private equity buyers
++ leveraged recapitalization: replace equity with senior/ subordinate bond 先一部分收购，后n年另外部分收购
   + staged exit
-  + 优点: 增加liquidity; 降低risk; retain incentiveness
+  + 优点: 增加liquidity; 降低risk; retain incentiveness; tax shield
   + 缺点: lose control
 + sale to management or key employees
 + sale or gift to family members
@@ -556,18 +575,34 @@ factors determin the attractiveness of the market from the seller's perspective
 
 monetization strategies for real estate owners
 
-+ mortgage financing
++ mortgage financing: LTV (loan to value)
 + charitably inclined
 + sale and leasback (售后回租)
 
 ## risk management for individuals
 
+`life-cycle finance`: a concept in finance that recognizes as an investor ages, the fundamental nature of wealth and risk evolves
+
+`economic balance sheet`: a balance sheet that provides an individual's totla wealth portfolio, supplementing traditional balance sheet assets with human capital and pension wealth, and expanding liabilities to include consumption and bequest goals. holistic balance sheet.
+
 + human capital
+
+$$HC_0 = \sum_{t=1}^N \frac{w_t}{(1+r)^t}$$
+
+$$HC_0 = \sum_{t=1}^N \frac{p(s_t) w_t (1 + g_t)}{(1 + r_f + y)^t}$$
+
+where $p(s_t)$ is the probability of surviving to a given year
+
 + financial capital
   + personal assets: real estate and colletibles considered a "mixed" assets
   + investment assets
     + marketable
     + non-marketable
+      + employer pension plans(vested)
+
+    $$mNPV_0 = \sum_{t=1}^N \frac{p(s_t) b_t}{(1 + r)^t}$$
+
+      + government pensions
 
 ### net worth
 
@@ -576,9 +611,16 @@ monetization strategies for real estate owners
 
 net wealth = net worth + PV of future earnings + PV of pension benefit(unvested) - PV of future consumption - PV of bequest
 
-### individual balance sheet
+### the risk management strategy for individuals
 
-+ economic (holistic balance sheet)
+1. specify the objective
+2. identify risks
+3. evaluate risks and select appropriate methods to manage the risks
+   + risk avoidance
+   + risk reduction
+   + risk transfer
+   + risk retention
+4. monitor outcomes and risk exposures and make appropriate adjustments in methods
 
 ### implementation of risk management
 
@@ -596,13 +638,15 @@ net wealth = net worth + PV of future earnings + PV of pension benefit(unvested)
 another classification
 
 + earning risk (insure with disability insurance), regular job, negatively affect human and financial capital
-+ premature death risk, 可重复投保
-+ longevity risk (insure with annuities)
-+ property risk (insure with property insurance)
++ premature death risk, 可重复投保, risk of an individual dying earlier than anticipated; mortality risk
++ longevity risk (insure with annuities), risk associaged with living to an advanced age in retirement; the risk of outliving one's financial resources
++ property risk (insure with property insurance), possibility that a person's property may be damaged. destroyed, stolen, or lost
 + liability risk (insure with liability insurance)
 + health risk (insure with health insurance)
 
 ### life insurance_
+
+`life insurance`: protects against the loss of human capital for those who depend on an individual's future earnings.
 
 + life related
   + 死亡险:
@@ -635,7 +679,12 @@ the basic elements of a life insurance policy
 + non-forfeiture clause: 不丧失现金价值
 + guaranteed insurability: 保证续保条款
 
+gross premium = net premium + expense + projected profit
+
 ### annuity
+
++ immediate annuity
++ deferred annuity
 
 + advanced life deferred annuities: 高龄递延年金
 + mortality credits: 活得长的收益
