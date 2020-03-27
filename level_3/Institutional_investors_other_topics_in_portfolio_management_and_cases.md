@@ -62,12 +62,17 @@ investment approaches:
 #### stakeholders
 
 + DB plan:  employer; plan beneficiaries (employees and retirees); the CIO and investment staff; the investment committee and/or board; and the government, unions, and shareholders in the case of corporate DB plans
-+ DC plan: plan beneficiaries (e.g., the employer), the board, and the government.
++ DC plan: plan sponsor (employer), plan beneficiaries (e.g., the employee), the board, and the government.
 
 #### liabilities and investment horizon
 
 + DB plan
   `vesting`: a term indicating that employees only become eligible to receive a pension after meeting certain criteria, typically a minimum number of years of service.
+
+  + some key elements common among DB plans in the calculation of expected cash flows:
+    + service/ tenure
+    + salary/ earnings
+    + mortality/ longevity
 
   Funded ratio = fair value of plan assets / PV of DB obligations
 
@@ -82,10 +87,20 @@ investment approaches:
   | discount rate | lower liability |
 
 + DC plan
-  + `participant-switching life-cycle options`: automatically switch DC plan members into a more conservative asset mix as their age increases. There may be several automatic de-risking switches at different age targets.
-  + `participant/cohort option`: pools the DC member with a cohort that has similar target retirement date
+  + `participant-switching life-cycle options`: **automatically** switch DC plan members into a more conservative asset mix as their age increases. There may be several automatic de-risking switches at different age targets.
+  + `participant/cohort option`: pools the DC member with a cohort that has **similar target retirement date**
 
-### risk considerations of DB
+#### liquidity needs
+
++ DB plan: liquidity needs are generally higher when:
+  + proportion of retired lives in the plan is higher. Frozen plans will have higher liquidity needs since no addtional contribution.
+  + workforce is older
+  + if plan well funded, the plan sponsor may reduce contributions, generating a need to hold higher balances of liquid assets to pay benefits
+  + the plan participants have the ability to switch or withdraw from the plan
++ DC plan:
+  + age of the workforce and ability of participants to switch or withdraw from the plan
+
+#### risk considerations of DB
 
 | category | variable | explanation |
 | -------- | -------- | ----------- |
@@ -94,3 +109,164 @@ investment approaches:
 | sponsor and pension fund common risk exposures | correlation of sponsor operating results with pension asset returns | lower the correlation, greater the risk tolerance |
 | plan features | provision for early retirement; provision for lump-sum distributions | such options tend to reduce the duration of plan liabilities, implying lower risk tolerance |
 | workforce characteristics | age of workforce; active lives relative to retired lives | the younger the workforce and greater the proportion of active lives, the greater the duration of plan liabilities and the greater the risk tolerance |
+
+#### investment objectives
+
++ DB plan
+  + the primary objective: to achieve a long-term target return over a specified investment horizon with an appropriate level of risk that allows the plan to meet its contractual liabilities.
+  + the secondary objective could be to minimize the present value of expected cash contributions
+  + if underfunded, additional contribution or make g_A > g_L
++ DC plan
+  + primary objective: to prudently grow assets that will support spending needs in retirement
+  + secondary objective: outperform the long-term policy benchmark
+
+#### external constraints
+
++ regulations
++ tax: favorable tax treatment
++ accounting rules
+
+#### asset allocation
+
++ equity decrease from 57% to 46%
++ alternative increased from 4% to 25%
++ home bias
+
+### Sovereign wealth funds
+
+| type | objective | examples |
+| ---- | --------- | -------- |
+| budget stabilization funds | set up to insulate the budget and economy from commodity price volatitily and external shocks | Russia's Oil Stabilization Fund |
+| development funds | established to allocate resources to priority socio-economic projects, usually infrastructure| Ireland Strategic Investment Fund |
+| Saving funds | Intended to share wealth across generations by transforming non-renewable assets into diversified financial assets | Russia's National Wealth Fund |
+| Reserve funds | Intended to reduce the negative carry costs of holding reserves or to earn higher return on ample reserves | China Investment Corporation |
+| Pension reserve funds | set up to meet identified future outlfows with respect to pension-related contingent type liabilities on governments' balance sheets | National Social Security Fund (China) |
+
+#### stakeholders
+
++ current and future citizens
++ investment offices
++ board
++ government
+
+#### liability and investment horizon
+
++ budget stabilization funds
+  + uncertain liabilities, relatively **short** investment horizons
+  + returns in excess of inflation with a low probability of a negative return in any year
++ development funds
+  + liabilities **not clearly defined**, overall objective is to raise a country's economic **growth** or to **diversify** the economy
++ saving funds
+  + liabilities are **long-term**. Some saving funds have a real return objective or an explicit spending policy
++ reserve funds
+  + achieve a return higher than that on FX reserves
+  + monetory stabilization bonds
+  + investment horizons are **very long**
++ pension reserve funds
+  + **long-term** investment horizons
+  + accumulation phase / decumulation phase
+  + meet future pension
+
+#### liquidity needs
+
++ budget stabilization funds
+  + highest liquidity level
++ development funds
+  + generally low liquidity needs
++ saving funds
+  + lowest liquidity
++ reserve funds
+  + liquidity needs are lower compared to stabilization funds but higher compared to saving funds
++ pension reserve funds
+  + liquidity needs vary, being lower during the accumulation stage and higher during the decumulation stage
+
+saving funds < pension reserve funds on accumulation stage < development funds, reserve funds < pension reserve funds on decumulation stage < budget stabilization funds
+
+#### external constraints
+
++ legal regulatory
++ generally tax exempt
+
+#### investment objectives
+
+| SWF type | Investment objectives |
+| -------- | --------------------- |
+| budget stabilization funds | capital preservation; aims to earn returns above inflation with a low probability of losses; should avoid assets correlated with the source of government revenues |
+| development funds | support a nation's economic development and increase long-run economic growth; implicit objective is to earn a real rate of return greater than real domestic GDP growth or productivity growth |
+| saving funds | maintain purchasing power of the assets over time while making ongoing spending on government budgetary needs |
+| reserve funds | earn a rate of return in excess of the yield the government / central bank pays on bonds it has issued |
+| pension reserve funds | earn return to meet future unfunded pension and social care payments promised by the government |
+
+#### asset allocation
+
++ budget stabilization funds
+  + the majority of fixed income and cash is due to the defensive nature of the fund
++ development funds
+  + these are driven by the socioeconomic mission fo the fund (e.g., investment in local infrastructure projects)
++ saving funds
+  + a long investment horizon means relatively high allocations toward equities and alternative investments such as private equity and real assets
++ reserve funds
+  + allocation are similar to those of saving funds, but with lower allocation to alternatives due to the potentially higher liquidity needs
++ pension reserve funds
+  + these have high allocations to equities and alternatives due to a long investment horizon and low liquidity needs in the accumulation phase
+
+### university endowments
+
+#### stakeholders
+
++ current and future students, alumni and university employees
++ stakeholders often have representation on board or committee, such as alumni who may be investment professionals
+
+#### liability and investment horizon
+
++ a perpetual investment horizon
++ liabilities are future payouts promised to the university
++ should ensure smoothing payouts to insulate the university from market volatility
++ spending each year = weighted average of the previous year's spending and usually between 4% ~ 6%
+
+spending amount in year t+1 = w * [spending amount in year t * (1 + inflation rate)] + (1 - w) * spending rate * average AUM
+
+#### liquidity needs
+
++ relatively low (compared to foundations) liquidity needs
++ high significant allocations to illiquid asset
+
+#### investment objectives
+
+a total real rate of return of 5%, to be achieved over 3 to 5 years, with expected volatility of returns 10% to 15%
+
+### private foundations
+
+#### stakeholders
+
++ founding family, donors, grant  recipients, and the broader community
++ board members for foundations are typically individuals involved with grant making and not necessarily investment professionals
++ mission-related investing: Aims to direct a significant portion of assets in excess of annual grants into projects promoting a foundation’s mission.
++ 较高成本完成特定任务
+
+#### liability and investment horizon
+
++ perpetual investment horizons, although some foundations may have finite lives
++ legally required to pay out 5% of assets plus investment expenses
++ debt especially during periods of market stress
++ rely almmost exclusively on their investment portfolios to support operating budgets. More conservative, more liquid investment portfolios compared to endowments
++ a trend toward limited-life foundations as some founders seek to maintain control of spending while they are still alive
+
+#### liquidity needs
+
++ the liquidity needs is relatively low but still higher than those of university endowments
+
+| | US Foundation | US university endowment |
+| --- | -------- | -------------|
+| purpose | grant-making for social, educational, and charitable purposes;  principal preservation focus | general support of institution or restricted support; principal preservation focus |
+| stakeholders | founding family, donors, grant recipients, and braoder community that may benefit from foundation's activities | current/ future students, alumni, university faculty and administration, and the larger university community |
+| liabilities/ spending | legally mandated to spend 5% of assets + investment expenses + 100% of donations | flexible spending rules (headline spending rate with between 4% and 6% of assets) with smoothing |
+| other liability considerations | future gifts and donations, or just one-time gift? | gifts and donations, percentage of operating budget supported by endowment, and ability to issue debt. |
+| very long-term/ perpetual (except limited-life foundations) | perpetual |
+| risk high risk tolerance with some short-term liquidity needs | high risk tolerance with low liqudity needs |
+| liquidity needs | annual net spending is at least 5% of assets | annual net spending is typically 2% to 4% of assets, after alumni gifts and donations | 
+
+#### external constraints affecting investment
+
++ legal and regulatory constraints
++ tax and accounting constraints
