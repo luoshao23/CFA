@@ -1,3 +1,30 @@
+## Hedge fund strategies
+
+### classification of hedge funds and strategies
+
+the most important **characteristics** of hedge funds are summarized as follows:
+
+1. legal/ regulatory overview
+2. flexible mandates -- few investment constraints
+3. large investment universe
+4. aggressive investment styles
+5. relatively liberal use of leverage
+6. hedge fund liquidity constraints
+7. relatively high fee structure
+
+hedge funds can be **classified** as:
+
++ single-manager fund: a fund in which one portfolio manager or team of portfolio managers invests in one strategy or style
++ multi-manager fund
+  + multi-strategy fund: in which teams of portfolio managers trade and invest in multiple different strategies within the same fund
+  + fund-of-fund: in which manager allocates capital to separate, underlying hedge funds that themselves run a range of different strategies
+
+**single manager** fund can be classified in various ways:
+
+1. the instruments in which the managers invest (e.g., equities, commodities, foreign exchange, convertible bonds)
+2. the trading philosophy followed by the managers (e.g., sysytematic, discretionary)
+3. the types of risk the managers assume (e.g., directional, event driven, relative value)
+
 ## Private clients versus institutional clients
 
 | summary |        | private clients | institutional clients |
