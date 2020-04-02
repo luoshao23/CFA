@@ -233,7 +233,13 @@ spending amount in year t+1 = w * [spending amount in year t * (1 + inflation ra
 
 #### investment objectives
 
-a total real rate of return of 5%, to be achieved over 3 to 5 years, with expected volatility of returns 10% to 15%
++ a total real rate of return of 5%, to be achieved over 3 to 5 years, with expected volatility of returns 10% to 15%
++ secondary investment objective: outperform the long-term policy benchmark
++ tertiary investment objective: outperform a set of pre-defined peers (average of the 20 largest university endowments)
+
+#### asset allocation
+
+rely heavily on alternative investments
 
 ### private foundations
 
@@ -264,9 +270,118 @@ a total real rate of return of 5%, to be achieved over 3 to 5 years, with expect
 | other liability considerations | future gifts and donations, or just one-time gift? | gifts and donations, percentage of operating budget supported by endowment, and ability to issue debt. |
 | very long-term/ perpetual (except limited-life foundations) | perpetual |
 | risk high risk tolerance with some short-term liquidity needs | high risk tolerance with low liqudity needs |
-| liquidity needs | annual net spending is at least 5% of assets | annual net spending is typically 2% to 4% of assets, after alumni gifts and donations | 
+| liquidity needs | annual net spending is at least 5% of assets | annual net spending is typically 2% to 4% of assets, after alumni gifts and donations |
 
 #### external constraints affecting investment
 
 + legal and regulatory constraints
 + tax and accounting constraints
+
+#### investment objectives
+
++ primary investment objective: to generate a total real return over consumer price inflation of 5%, plus investment expenses, with a reasonable expected volatility (10% - 15% std) over a 3 - 5 year period
++ secondary investment objective: outperform the policy benchmark with a specified tracking error budget
+
+#### asset allocation
+
+Foundations tend to follow a similar investment approach compared to endowments. Two of the most notable differences between foundations and endowments:
+
+1. foundations support the entire budget of their organization, while universities have significant other sources of financing available besides the endowment
+2. foundations are mandated to pay out at least 5% of their assets to maintain tax-exempt status and typically receive no additional inflows in the form of gifts and donations, whereas university endowments typically have a net payout of less than 5%
+
++ larger foundations have higher percentage of alternatives investment and lower portion of bonds
+
+### banks and insurers
+
++ bank
++ insurer
+  + life insurers
+  + property and casualty (P&C) insurers
+
+### banks
+
+#### stakeholders
+
++ external parties: shareholders, creditors, customers, credit rating agencies, regulators, and the communities where they operate
++ internal parties: employees, management, and boards of directors
++ on the liability side, bank customers are comprised of a variety of depositors: financing, safekeeping, transaction, fixed-income issuers
++ on the asset side, mortgages, commercial real estate loans and commercial and industrial loans
+
+#### liabilities and investment horizon
+
+bank assets = loans + debt securities + currency + deposits with central banks, receivables and bullion
+
+bank liabilities = deposits + short-term funding + longer term debt
+
+Bank deposits include the following:
+
++ time deposits or term deposits: interest-bearing accounts that have a specified maturity date. This category includes savings accounts and certificates of deposit.
++ demand deposits: accounts that can be drawn upon regularly and without notice. This category includes checking accounts and certain savings accounts that are often accessible through online banks or automated teller machines.
+
+The difference between the long time horizon of the institution and much shorter maturity of most of its assets and liability may ssem counterintuittive. The long-term horizon of the bank is evidenced by: 1) cutting back new lending, 2) selling part of its existing loan porfolio, 3) increasing allocations to short-maturity, liquid securities, and 4) decreasing leverage through fewer large wholesale time deposits
+
+#### liquidity needs
+
+In general, contrasting commercial banks and retail-oriented banks, commercial banks have a higher cost of funds and lower liquidity because of wholesale funding of loan commitments and other contingent commitments. Conversely, retail banks have a lower cost of funds and better liquidity because their retail deposits are relatively low cost and tend to be more stable.
+
+### insurers
+
+#### stakeholders
+
++ external parties: shareholders, derivatives counterparties, policyholders, creditors, regulators and rating agencies
++ internal parties: employees, management, and boards of directors.
+
+
++ general account: account holding assets to fund future liabilities from traditional life insurance and fixed annuities, the products in which the insurer bears all the risks particularly mortality risk and longevity risk.
++ separate accounts: accounts holding assets to fund future liabilities from variable life insurance and variable annuities, the products in which customers make investment decisions from a menu of options and themselves bear investment risk
+
+#### liabilities and investment horizon
+
++ life insurers: face a liability stream and timme horzion with a long duration, 20 to 40 years
++ property & casualty insurers: face a shorter duration liability stream and investment horizon than life insurers with lower probability of occurrence and potentially higher cost, i.e., short durationo and high uncertainty
+
+### liquidity needs
+
+liquidity needs can vary greatly based on the business line
+
++ internal liquidity: cash and cash equivalents
++ external liquidity: issue bonds and access credit lines
++ manage short-term liquidity by actively buying and selling repurchase agreements
+
+### external constrints affecting investment
+
++ legal and regulatory constraints
+  + clearly and contractually defined
+  + the need to regulate banks and insurance companies at high levels, rather than local
++ accounting and tax considerations
+  + standard financial accounting
+  + statutory accounting: usually results in lower earnings and lower common equity capital
+  + true economic accounting: provide best picture of an entity's assets, liabilities and changes in economic well-being
+
+### invesment objectives
+
++ banks: manage the bank's liquidity and risk position relative to its non-securities assets, derivatives positions, liabilities, and shareholders' capilitalization
++ insurers: manage the investment porfolios with a focus on liquidity as well as interest rate, foreign exchange, credit and other risk factor
+
+### banks and insurers - balance sheet management and investment considerations
+
+In the case of banks and insurance companies, the need is to fund deposits, policy claims, derivatives payoffs, and debtholders.
+
+The underlying investment strategy is mainly liability driven investing (LDI as earlier defined)
+
+$$A = L + E$$
+
+$$\Delta A = \Delta L + \Delta E$$
+
+so we have
+
+$$\frac{\Delta E}{E} = \frac{\Delta A}{A}(\frac{A}{E}) - \frac{\Delta L}{L}(\frac{A}{E} - 1)$$
+
+Small losses in the market value of assets can have a pronounced negative effect on the institution's equity account because of the leverage factor
+
+Financial institutions face the possibility of loss from adverse changes in the market value of liabilities.
+
++ insurers company: unexpectedly high policy loss claim
++ banks: make a forward-funding commitment, the exercise of a guarantee, or a loss on forward currency purchase contracts.
+
+$$D_E^* = (\frac{A}{E}) D_A^* - (\frac{A}{E} - 1) D_L^* (\frac{\Delta i}{\Delta y})$$
