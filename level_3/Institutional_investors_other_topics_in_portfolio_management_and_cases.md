@@ -385,3 +385,118 @@ Financial institutions face the possibility of loss from adverse changes in the 
 + banks: make a forward-funding commitment, the exercise of a guarantee, or a loss on forward currency purchase contracts.
 
 $$D_E^* = (\frac{A}{E}) D_A^* - (\frac{A}{E} - 1) D_L^* (\frac{\Delta i}{\Delta y})$$
+
+$$\sigma^2_{\frac{\Delta E}{E}} = (\frac{A}{E})^2 \sigma^2_{\frac{\Delta A}{A}} + (\frac{A}{E} - 1)^2 \sigma^2_{\frac{\Delta L}{L}} - 2 (\frac{A}{E}) (\frac{A}{E} - 1) \rho \sigma_{\frac{\Delta A}{A}} \sigma_{\frac{\Delta L}{L}}$$
+
+| portfolio strategy considerations | main factors affected | explanation/ tationale | additional regulatory concerns |
+| --------- |--------- |--------- |--------- |
+| diversified fixed-income investments | decreases sigma_A |  |  |
+| high-quality bond/ debt investment | decreases sigma_A | | |
+| maintain reasonable balance between asset and liability durations| increase rho | | |
+| common stock investments | increase sigma_A typically decreases rho | | |
+| derivatives transparency, collateralization | decreases both sigma_A and sigma_L and increase rho | | |
+| liquidity of porfolio investments | decreases sigma_A | | |
+| surrender penalties | decrease sigma_L | such penalties cushion losses to financail institutions for having to pay back liabilities at par when rising interest rates would otherwise have reduced the discounted present value of the obligations | |
+| prepaymant penalties on debt investments | increase rho | When interest rates are declining, borrowers must incur a penalty to repay loans at par to refinance.
+Also, prepayment penalties help institutions offset rising values of their fixed-rate liabilities in falling rate environments. | |
+| catastrophic insurance risks | increases sigma_L | | |
+| predicatability of underwriting losses | decreases sigma_L | High frequency, low cost loss events caused by law of large numbers make total insurance liabilities less uncertain. | |
+| diversifying insurance business | decreases sigma_L | | |
+| variable annuities | increases rho, and sigma_A & sigma_L diminish in relevance | | |
+
+## Trade strategy and execution
+
+### Motivations to trade
+
++ profit seeking
+  + short-term profit motivated trading
+  + long-term profit motivated trading
++ risk management/ hedging needs
++ cash flow needs
++ corporate actions/ index reconstitutions/ margin calls
+
+### Trading strategies and strategy selection
+
++ trade strategy inputs
+  + order characteristics
+    + side: buy, sell, cover, or short
+    + size
+    + relative size (% of ADV)
+  + security characteristics
+    + security type
+    + short-term alpha
+    + price volatility
+    + security liquidity
+  + market conditions: liquidity crises
+  + user-based considerations: trading cost risk aversion
+  + market impact and execution risk:
+    + Trader's dilemma: Trading too fast results in too much market impact, but trading too slow results in too much market risk
+
+### Reference prices
+
++ pre-trade benchmark
+  + decision price
+  + previous close
+  + opening price
+  + arrival price
++ intraday benchmark
+  + VMAP(volume weighted average price)
+  + TWAP
++ post-trade benchmark
+  + closing price
++ price target benchmark
+
+### Trade strategies
+
++ short-term alpha: short-term alpha-driven equity trade
++ long-term alpha: long-term alpha-driven fixed-income trade
++ risk rebalance: buy/sell basket trade to rebalance a fund's risk exposures
++ cash flow driven: client redemption trade to raise proceeds
++ cash flow driven: cash equitization trade to invest a new client mandate
+
+## Trade execution
+
+### Trade implementation choices
+
++ principal trades/ broker risk trades, market makers and dealers become a disclosed counterparty to their clients' orders and buy securities into or sell securities from their own inventory or book.
++ quote-driven, over-the-counter, or off-exchange markets: in such bilateral dealer markets, customers trade at prices quoted by dealers.
++ request for quote (RFQ): A non-binding quote provided by a market maker or dealer to a potential buyer or seller upon request. Commonly used in fixed income markets these quotes are only valid at the time they are provided.
++ Direct market access (DMA): Access in which market participants can transact orders directly with the order book of an exchange using a broker's exchange connectivity.
+
+### Algorithmic trading
+
++ execution algorithms
+  + scheduled: POV(percentage of volume), VWAP, TWAP
+  + liquidity seeking: opportunistic algorithms
+  + arrival price: Arrival price algorithms seek to trade close to current market prices at the time the order is received for execution
+  + Dark strategies/liquidity aggregators: execute shares away from “lit” markets
+  + smart order routers: choose best order and venue
++ profit-seeking algorithms
+
+### comparison of markets
+
++ equities
+  + alternative trading systems
+  + multilateral trading facilities
++ fixed incomme
++ exchange-traded derivatives
++ off-excahnge (OTC) derivatives
++ spot currencies
+
+## Trade evaluation
+
+### trade cost measurement
+
++ implementation shortfall: difference between the return for a notional or paper portfolio
+
+$$IS = paper\ return - actual\ return$$
+
+$$paper\ return = (P_n - P_d)S = S P_n - S P_d$$
+
+where, S = total order shares, S > 0 for buy, S < 0 for sell, Pd = price at the time of the investment decision, and Pn = the current price
+
+$$Actual = (\sum s_j) P_n - \sum s_j p_j - Fees$$
+
+$$IS = execution\ cost + opportunity\ cost + Fees = \sum s_j p_j - \sum s_j p_d + (S - \sum s_j)(P_n - P_d) + Fees$$
+
++ expanded implementaiton shortfall
