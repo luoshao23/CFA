@@ -500,3 +500,43 @@ $$Actual = (\sum s_j) P_n - \sum s_j p_j - Fees$$
 $$IS = execution\ cost + opportunity\ cost + Fees = \sum s_j p_j - \sum s_j p_d + (S - \sum s_j)(P_n - P_d) + Fees$$
 
 + expanded implementaiton shortfall
+
+$$Expanded\ IS = delay\ cost + trading\ cost + opportunity\ cost + Fees = \sum s_j p_0 - \sum s_j p_d + \sum s_j p_j - \sum s_j p_0 + (S - \sum s_j)(P_n - P_d) + Fees$$
+
+Delay cost: The (trading related) cost associated with not submitting the order to the market in a timely manner
+
+### trade governance
+
++ meaning of best execution
+  + executing price
+  + trading costs
+  + speed of execution
+  + likelihood of execution and settlement
+  + order size
+  + nature of the trade
++ factors determining the optimal order execution approach
+  + urgency of an order
+  + charactreristics of the securities traded
+  + characteristics of the execution venues used
+  + investment strategy objectives
+  + rationale for a trade
++ listing of eligible brokers and execution venues
+  + quality of service
+  + financial stability
+  + reputation
+  + settlement capabilities
+  + speed of execution
+  + cost competitiveness
+  + willingness to commit capital
++ process to momitor execution arrangements
+  + trade submission: has the trading/ execution strategy been implemented consistent with the investment process, and is it optimal for the asset type traded?
+  + what was the execution quality of a trade relative to its benchmark
+  + is there an appropriate balance between trading costs and opportunity costs
+  + could better execution have been achieved using a differenct trading strategy, different intermeidaries, or different trading venues
+
+trading records may be used to do the following:
+
++ address client concerns
++ address regulator concerns
++ assist in improving execution quality
++ monitor the parties involved in trading/ order execution
