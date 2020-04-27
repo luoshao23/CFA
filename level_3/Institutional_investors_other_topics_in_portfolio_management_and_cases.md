@@ -540,3 +540,36 @@ trading records may be used to do the following:
 + address regulator concerns
 + assist in improving execution quality
 + monitor the parties involved in trading/ order execution
+
+## Portfolio performance evaluation
+
+### the components of performance evaluation
+
++ performance measurement - what was the portfolio's performance
++ performance attribution - how was the performance achieved
++ performance appraisal - was the performance achieved through manager skill or luck?
+
+excess return: 1) the difference between the portfolio return and the benchmark return; 2) the return in excess of the risk-free rate
+
+### performance attribution
+
+an effective perfromance attribution process must
+
++ account for *all* of the portfolio's return or risk exposure,
++ reflect the investment decision-making process,
++ quantify the active decisions of the portfolio manager, and
++ provide a complete understanding of the excess return/ risk of the portfolio
+
+performance attribution includes: return attribution and risk attribution
+
+
++ micro attribution: attribution at the portfolio manager level
++ macro attribution: attribution at the sponsor level
+
+performance attribution may be either returns based, holdings based, or transactions based.
+
++ returns-based attribution: uses only the total portfolio returns over a period to identify the components of the investment process that have generated the returns
++ holdings-based attribution: a "buy and hold" attribution approach which calculates the return of portfolio and benchmark components based upon the price and foreign exchange rate changes applied to daily snapshots of portfolio holdings
++ transactions-based attribution: an attribution approach that captures the impact of intra-day trades and exogenous events such as a significant class action settlement
+
+### approaches to return attribution
