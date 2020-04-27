@@ -573,3 +573,39 @@ performance attribution may be either returns based, holdings based, or transact
 + transactions-based attribution: an attribution approach that captures the impact of intra-day trades and exogenous events such as a significant class action settlement
 
 ### approaches to return attribution
+
+arithmetic attribution ($R - B$) / geometric attribution ($\frac{1 + R}{1 - B} - 1$)
+
+#### equity return attribution - the Brinson Model
+
+$$Excess\ return = R - B = \sum{w_i R_i} - \sum{W_i B_i} = \sum{A_i} + \sum{S_i} + \sum{I_i}$$
+
+where $A_i$ is allocation attribution, $A_i= (w_i - W_i) B_i$,
+
+$S_i$ is selection attribution, $S_i = W_i(R_i - B_i)$,
+
+$I_i$ is interaction attribution, $I_i = (w_i - W_i)(R_i - B_i)$
+
+#### equity return attribution - Factor-Based Return Attribution
+
+Carhart model:
+
+$$R_p - R_f = a_p + b_{p1} RMRF + b_{p2} SMB + b_{p3} HML + b_{p4} WML + E_p$$
+
+where
+
+$R_p$ and $R_f$ = the return on the portfolio and the risk-free rate of return, respectively
+
+$a_p$ = "alpha" or return in excess of that expected given the portfolio's level of systematic risk
+
+$b_p$ = the sensitivity of the portfolio to the given factor
+
+$RMRF$ = the return on a value-weighted equity index in excess of the one-month T-bill rate
+
+$SMB$ = small minus big, a size factor, < 0 means large-cap oriented
+
+$HML$ = high minus low, a value factor, high book-to-price - low book-to-price, > 0 means value-oriented
+
+$WML$ = winner minus losers, a momentum factor, past year's winners - past year's losers
+
+$E_p$ = an error term  that represents the portion of the return to the portfolio, p, not explained by the model
