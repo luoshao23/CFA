@@ -609,3 +609,38 @@ $HML$ = high minus low, a value factor, high book-to-price - low book-to-price, 
 $WML$ = winner minus losers, a momentum factor, past year's winners - past year's losers
 
 $E_p$ = an error term  that represents the portion of the return to the portfolio, p, not explained by the model
+
+#### fixed-income return attribution
+
++ exposure decomposition - duration based
++ yield curve decomposition - duration based
++ yield curve decomposition - full repricing based
+
+we can infer the following about the portfolio investment process over this period:
+
++ yield
++ roll
++ shift
++ slope
++ curvature
++ spread
++ specific spread
++ residual
+
+### risk attribution
+
+| investment decision-making process | relative(vs. benchmark) | absolute |
+| ---- | ------ | ----- |
+| bottom up | position's marginal contribution to tracking risk | position's marginal contribution to to total risk |
+| top down | attribute tracking risk to relative allocation and selection decisions | factor's marginal contribution to total risk and specific risk |
+| factor based | factor's marginal contribution to tracking risk and active specific risk | factor's marginal contribution to total risk and specific risk |
+
+for relative, a common measure of risk is tracking risk; for absolute mandates, the risk of portfolio is explained by exposures to the market, size and style factors, and the specific risk due to stock selections.
+
++ marginal contribution to total risk: bottom-up with an absolute return target
++ marginal contribution to tracking risk: bottom-up with a relative return target
++ factor's marginal contributions to total risk and specific risk: top-down with an absolute return target
+
+### return attribution analysis at multiple levels
+
++ macro attribution
