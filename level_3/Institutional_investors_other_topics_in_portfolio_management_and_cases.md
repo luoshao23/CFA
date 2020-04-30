@@ -670,3 +670,31 @@ in investment practice, we use benchmarks as
 + reflective of current investment opinions:
 + specified in advance: the benchmark must be constructed prior to evaluation period so that the manager is not judged against benchmarks created after the fact.
 + accountable: the manager should be able to demonstrate the validity of his or her benchmark
+
+### evaluating benchmark quality
+
+$$P = M + S + A$$
+
+where
+
+M = market index return, S = manager's style return, A = active management decision
+
+### benchmarking alternative investments
+
++ hedge fund investments
++ real estate investments
++ private equity
++ commodity investments
++ managed derivatives
++ distressed securities
+
+## Performance appraisal
+
++ distinguish investment skill from luck
++ appraisal measures
+  + Sharpe ratio
+  + Treynor ratio
+  + Information ratio
+  + Appraisal ratio
+  + Sortino ratio
+  + Capture ratios
