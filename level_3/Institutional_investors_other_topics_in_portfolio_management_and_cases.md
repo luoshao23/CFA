@@ -644,3 +644,29 @@ for relative, a common measure of risk is tracking risk; for absolute mandates, 
 ### return attribution analysis at multiple levels
 
 + macro attribution
++ micro attribution
+
+## benchmarking investments and managers
+
+in investment practice, we use benchmarks as
+
+### asset-based benchmarks
+
++ asset-based benchmarks
+  + absolute return benchmark
+  + broad market indexes
+  + style indexes
+  + factor-model-based benchmarks: $R_p = a_p + b_1 F_1 + b_2 F_2 ... b_k F_k + \epsilon_p$
+  + returns-based benchmark
+  + manager universes
+  + custom security-based benchmarks
+
+### properties of a valid benchmark
+
++ unambiguous
++ investable
++ measurable
++ appropriate
++ reflective of current investment opinions:
++ specified in advance: the benchmark must be constructed prior to evaluation period so that the manager is not judged against benchmarks created after the fact.
++ accountable: the manager should be able to demonstrate the validity of his or her benchmark
