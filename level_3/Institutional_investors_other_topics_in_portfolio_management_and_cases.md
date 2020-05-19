@@ -698,3 +698,22 @@ M = market index return, S = manager's style return, A = active management decis
   + Appraisal ratio
   + Sortino ratio
   + Capture ratios
+
+## Case study in portfolio management: institutional
+
+tools at insitutional investors disposal to manage a portfolio's liquidity risk, including:
+
++ liquidity profiling and time-to-cash tables
+  + time-to-cash table and liquidity budget
+  | time to cash | liquidity classification | liquidity budget (% of portfolio) |
+  | -------------| -------------------------| ----------------------------------|
+  | < 1 week     | highly liquid            | at least 10%                      |
+  | < 1 quater   | liquid                   | at least 35%                      |
+  | < 1 year     | semi-liquid              | at least 50%                      |
+  | > 1 year     | illiquid                 | up to 50%                         |
++ rebalancing and commitment strategies
+  + systematic rebalancing policies: such as calendar rebalancing and percent-range rebalancing
+  + automatic adjustment mechanisms
++ strees testing analysis
++ derivatives
++ earning an illiquidity premium
