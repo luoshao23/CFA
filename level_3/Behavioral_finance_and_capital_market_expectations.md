@@ -3,6 +3,8 @@
 + traditional finance: `normative`
 + behavioral finance: `descriptive`, `prescriptive(预测性)`
     understand and explain observed investor and market behaviors
+    + cognitive errors
+    + emotional biases
 
 ### Traditional finance perspectives on individaul behavior
 
@@ -27,6 +29,7 @@ rational investors make decisions consistent with utility theory.
 + people have difficulty prioritizing short-term spending goals over long-term (spending versus saving) goals and do not behave with perfect self-interest
 + absnece of perfect information
 + wealth utility functions
++ double inflection utility function: a utility function that changes based on levels of wealth
 
 ## Decision making
 
@@ -41,6 +44,8 @@ Bounded rationality assumes knowledge capacity limits and removes the assumption
 It describes the phenomenon whereby people gather some (but not all) available information.
 
 ### Prospect theory
+
+The value function is defined by deviations from a reference point and is normally concave for gains (implying risk aversion), convex for losses (risk-seeking), and steeper for losses than for gains (loss aversion).
 
 > steeper for losses than for gains
 
