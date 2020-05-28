@@ -377,7 +377,7 @@ an investor's capital over and above that which is necessary to fund their lifes
 
 ## relative aftwer-tax values
 
-+ taxable
++ taxable, receiver交税
 
 $$RV_{taxableGift} = \frac{FV_{Gift}}{FV_{Bequest}} = \frac{[1 + r_g (1 - t_{ig})]^n (1 - T_g)}{[1 + r_e (1 - t_{ie})]^n (1 - T_e)}$$
 
@@ -385,7 +385,7 @@ $$RV_{taxableGift} = \frac{FV_{Gift}}{FV_{Bequest}} = \frac{[1 + r_g (1 - t_{ig}
 
 $$RV_{taxableGift} = \frac{FV_{Gift}}{FV_{Bequest}} = \frac{[1 + r_g (1 - t_{ig})]^n }{[1 + r_e (1 - t_{ie})]^n (1 - T_e)}$$
 
-+ A给B钱A交税
++ A给B钱A(giver)交税
 
 $$RV_{taxableGift} = \frac{FV_{Gift}}{FV_{Bequest}} = \frac{[1 + r_g (1 - t_{ig})]^n (1 - T_g + T_g T_e)}{[1 + r_e (1 - t_{ie})]^n (1 - T_e)}$$
 
